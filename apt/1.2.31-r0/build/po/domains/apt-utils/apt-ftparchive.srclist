@@ -1,0 +1,8 @@
+ftparchive/apt-ftparchive.cc
+ftparchive/cachedb.cc
+ftparchive/writer.cc
+ftparchive/contents.cc
+ftparchive/override.cc
+ftparchive/multicompress.cc
+ftparchive/sources.cc
+ftparchive/byhash.cc

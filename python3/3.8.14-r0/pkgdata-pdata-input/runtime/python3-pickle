@@ -1,0 +1,16 @@
+PN: python3
+PV: 3.8.14
+PR: r0
+PKGV: 3.8.14
+PKGR: r0
+LICENSE: PSF-2.0 & BSD-0-Clause
+DESCRIPTION: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+SUMMARY_python3-pickle: Python serialisation/persistence support
+RDEPENDS_python3-pickle: python3-core glibc (>= 2.31+git0+d4b7559457)
+SECTION: devel/python
+PKG_python3-pickle: python3-pickle
+FILES_python3-pickle:  /usr/lib/python3.8/_compat_pickle.py /usr/lib/python3.8/lib-dynload/_pickle.*.so /usr/lib/python3.8/pickle.py /usr/lib/python3.8/pickletools.py /usr/lib/python3.8/shelve.py /usr/lib/python3.8/__pycache__/_compat_pickle.*.pyc /usr/lib/python3.8/__pycache__/pickle.*.pyc /usr/lib/python3.8/__pycache__/pickletools.*.pyc /usr/lib/python3.8/__pycache__/shelve.*.pyc
+FILES_INFO: {"/usr/lib/python3.8/__pycache__/_compat_pickle.cpython-38.opt-1.pyc": 5443, "/usr/lib/python3.8/__pycache__/_compat_pickle.cpython-38.opt-2.pyc": 5443, "/usr/lib/python3.8/__pycache__/_compat_pickle.cpython-38.pyc": 5501, "/usr/lib/python3.8/__pycache__/pickle.cpython-38.opt-1.pyc": 46791, "/usr/lib/python3.8/__pycache__/pickle.cpython-38.opt-2.pyc": 40919, "/usr/lib/python3.8/__pycache__/pickle.cpython-38.pyc": 46908, "/usr/lib/python3.8/__pycache__/pickletools.cpython-38.opt-1.pyc": 66314, "/usr/lib/python3.8/__pycache__/pickletools.cpython-38.opt-2.pyc": 57221, "/usr/lib/python3.8/__pycache__/pickletools.cpython-38.pyc": 67204, "/usr/lib/python3.8/__pycache__/shelve.cpython-38.opt-1.pyc": 9490, "/usr/lib/python3.8/__pycache__/shelve.cpython-38.opt-2.pyc": 5339, "/usr/lib/python3.8/__pycache__/shelve.cpython-38.pyc": 9490, "/usr/lib/python3.8/_compat_pickle.py": 8749, "/usr/lib/python3.8/lib-dynload/_pickle.cpython-38-arm-linux-gnueabi.so": 69116, "/usr/lib/python3.8/pickle.py": 64467, "/usr/lib/python3.8/pickletools.py": 93486, "/usr/lib/python3.8/shelve.py": 8527}
+FILERDEPENDSFLIST_python3-pickle: /usr/lib/python3.8/lib-dynload/@underscore@pickle.cpython-38-arm-linux-gnueabi.so
+FILERDEPENDS_/usr/lib/python3.8/lib-dynload/@underscore@pickle.cpython-38-arm-linux-gnueabi.so_python3-pickle:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_python3-pickle: 610408

@@ -1,0 +1,71 @@
+OEOuthashBasic
+5
+SSTATE_PKGSPEC=sstate:python3:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:3.8.14:r0:cortexa7t2hf-neon-vfpv4:3:
+task=package_write_deb
+drwxrwxr-x                                                                                       .
+drwxr-xr-x                                                                                       ./deploy-debs
+drwxr-xr-x                                                                                       ./deploy-debs/cortexa7t2hf-neon-vfpv4
+-rw-r--r--               825628 1ff6f3faccb31d5e9e94969a1eefd60519630a9fcbc1f11e375820da272a3e38 ./deploy-debs/cortexa7t2hf-neon-vfpv4/libpython3.8-1.0_3.8.14-r0_armhf.deb
+-rw-r--r--              4748892 191a11aae72b1cac510c18f086a8752242663b7605cfd3c32774f9c6ff05592d ./deploy-debs/cortexa7t2hf-neon-vfpv4/libpython3.8-staticdev_3.8.14-r0_armhf.deb
+-rw-r--r--               149496 89a54d373b3856c001b7168260b76f012207d65c0e341c9add43811b1a0a306f ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-2to3_3.8.14-r0_armhf.deb
+-rw-r--r--               226056 4646ac4274230be15ee7a67a5af1a3c253388e1bb2b4f2543180801ec4d2ac2a ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-asyncio_3.8.14-r0_armhf.deb
+-rw-r--r--                40916 a4e7d61aa7651d0b79612f58ac3ffc2c8aba0ffc4e5e6942c1729c210d632cc2 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-audio_3.8.14-r0_armhf.deb
+-rw-r--r--                15360 0e16a1981528debd9b947d245360030149f51290aa510ed353bf5c779dda5672 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-codecs_3.8.14-r0_armhf.deb
+-rw-r--r--                12120 725ec73d806d4e747df26238e40999efe059b6eb778174ae248b0b3d15a9a057 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-compile_3.8.14-r0_armhf.deb
+-rw-r--r--                93704 e5499d696aba47969e53e16976786c16af4373651d1218f2d4bc29f05d5e2799 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-compression_3.8.14-r0_armhf.deb
+-rw-r--r--              1247144 059a5085ea81248fff17f5af0699cbbfc7e206e64b0c02e01a6b17be55cb6fc9 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-core_3.8.14-r0_armhf.deb
+-rw-r--r--                70444 38ef064d787c57725352034e07be9def22a11c7c113a3e436c708a3bc6ea19bd ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-crypt_3.8.14-r0_armhf.deb
+-rw-r--r--                74176 5583c4f1832076396385efa2990e0d5e6f6fa572d5cb842e08d649fce1ba59e2 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-ctypes_3.8.14-r0_armhf.deb
+-rw-r--r--                44032 4ab6ae24b86f0dd4b25b9efe03c22879632ffb35523caef5dfdf907598813919 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-curses_3.8.14-r0_armhf.deb
+-rw-r--r--                93636 4c0bf2a4b190532d4214d049638d4bccc34fbd3d1565afcf67eea5019f624f66 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-datetime_3.8.14-r0_armhf.deb
+-rw-r--r--                14960 f0f629822fac6039330e9fff4248421c3845b7f29f464f16270309716cd16493 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-db_3.8.14-r0_armhf.deb
+-rw-r--r--              5047336 573ed4ef74a250456cd3b148ba2fb40e13e95273cd3e6eca6985d22c0443d44a ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-dbg_3.8.14-r0_armhf.deb
+-rw-r--r--                45328 a6a4a7e35f7cebfdc15585cb0844b6c25cd65ece69affc547ecc862118f07a92 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-debugger_3.8.14-r0_armhf.deb
+-rw-r--r--               138296 8083a985d7258dbccdbbc4787957c0d38a7cdfaa2d6dd7f3a59ff5df46279995 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-dev_3.8.14-r0_armhf.deb
+-rw-r--r--                34824 f4c62dc27c701de115e2b8d50cbf1f6c53727d4a0fe079bfa4b5b2f95dafefee ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-difflib_3.8.14-r0_armhf.deb
+-rw-r--r--               874360 459052b66a332d72930088b593ac51e32d63e2c1deea8383f9e66a632692efc8 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-distutils_3.8.14-r0_armhf.deb
+-rw-r--r--                 7456 6b716ab3de4a47a260f246e9f7b3025b702237a753c9e8bd30192c3a6039ee58 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-doc_3.8.14-r0_armhf.deb
+-rw-r--r--                43832 c424622c99299f28201289d47f669eab249c579d264e845dc6d588a7b898951c ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-doctest_3.8.14-r0_armhf.deb
+-rw-r--r--               183120 408e3d87c640930c374d86cd85b6dbe815a41b5b0a682b39220cac77b51c998f ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-email_3.8.14-r0_armhf.deb
+-rw-r--r--                 6408 9b69df568d7edf46e41a61b352de706ac4975c0f89f54891f12cd26ff6bb0b2f ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-fcntl_3.8.14-r0_armhf.deb
+-rw-r--r--                 6860 07b3b1f69cf655da4733a2fa254d82b9a7b82020b574d5cac99863720c73dcdb ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-gdbm_3.8.14-r0_armhf.deb
+-rw-r--r--                50704 093108121709f351eeee8f32520ffeff9f3e144fe367426799606f32523079f8 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-html_3.8.14-r0_armhf.deb
+-rw-r--r--               464536 f9a0ae9781ce09ba8943eba1557f6ba6a495711467580274c060a00d4e435a07 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-idle_3.8.14-r0_armhf.deb
+-rw-r--r--                 6488 88ebcbc99fd3a4bb7f3abf663fc7e87e688d25dc1c309a39db775df459b25f6c ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-image_3.8.14-r0_armhf.deb
+-rw-r--r--               191100 6112c0a93432b500a83050617c7d293911b261642e9a99311a16c3ecc51556e3 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-io_3.8.14-r0_armhf.deb
+-rw-r--r--                31924 9e768ebdd987b0c536f3f60cbaf61efda80c57fc5ee25ba409fece18334bd12e ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-json_3.8.14-r0_armhf.deb
+-rw-r--r--                74900 1ef53b47bb9330d7ff9340aaf7c74de4618064d400e2f67bc7c5b47530b41a50 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-logging_3.8.14-r0_armhf.deb
+-rw-r--r--                37260 322369968f5588c136015c68ca3c5b376fd7e20da44ae302a53e3fe20f7393f8 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-mailbox_3.8.14-r0_armhf.deb
+-rw-r--r--                28964 b46505995f679ca49b40c947c08c63acdfcb53956e9f6a29f6526ad6ed8e1163 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-math_3.8.14-r0_armhf.deb
+-rw-r--r--                10140 66b4139f1356a5d1a822d26cd7283267aa7de090e57efd64d0dd6fc793a48c8e ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-mime_3.8.14-r0_armhf.deb
+-rw-r--r--              3354620 16aadbc8b1e4e4b1bd56a72335e2d7543c64c7316f4444e0ec7328ea39454200 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-misc_3.8.14-r0_armhf.deb
+-rw-r--r--                 8208 e6bd4edb540a3e2fcf95a46c017cecb2e0b2c22f794c11774213a38f15c415a0 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-mmap_3.8.14-r0_armhf.deb
+-rw-r--r--                 1140 45e736f806825aa0834a254532e8c52dcc124e0ba102b0074d5af7d5f3b6d259 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-modules_3.8.14-r0_armhf.deb
+-rw-r--r--               140124 cc208f247d59b0032e1efad7826669e6c74b3d21a1027c578c782289cb0caffb ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-multiprocessing_3.8.14-r0_armhf.deb
+-rw-r--r--               274120 07ca41d27f361f8bf5f3c204c47acbadf38f449fb7c8913769ba11cf8780b004 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-netclient_3.8.14-r0_armhf.deb
+-rw-r--r--                30724 7aa8f09995ef3e6c5122dd45b14cf1cfe4ff689e4951bad0880f2022e6e6919f ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-netserver_3.8.14-r0_armhf.deb
+-rw-r--r--               170372 f3acbb6ef0f31b7c192bf91dd47f5b0672a162d6009b5af8e89150abbca8bd81 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-numbers_3.8.14-r0_armhf.deb
+-rw-r--r--                97360 cf11b076f6e8b00e99485e3fc217a23b7221a051e89033ae570aeeb048618300 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-pickle_3.8.14-r0_armhf.deb
+-rw-r--r--                  864 20c1018957d98b16792eba753855802341cb1b8c6e6908ce3aa510f4a67d4da5 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-pkgutil_3.8.14-r0_armhf.deb
+-rw-r--r--                19040 adf26d3138c99bb37c7e2de392fa5cad2f47a452e10a61bbbc4bade3c9ba426a ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-plistlib_3.8.14-r0_armhf.deb
+-rw-r--r--                11812 a167eea231f9f6bcfcb789c2e9b353f25b9fb5e6477b99a6bdb7ba5fce17e5c5 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-pprint_3.8.14-r0_armhf.deb
+-rw-r--r--                34496 ddb44d902590c4fd5b90f7fd901e818c3b275aee3a8df21e330806d33b4139b1 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-profile_3.8.14-r0_armhf.deb
+-rw-r--r--                 1196 fe91cf6db6730cd88743dd974f2f3893264500fea21fb6a6bf5477e2f8f82246 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-ptest_3.8.14-r0_armhf.deb
+-rw-r--r--               191412 652beb2dbe3b78c23d7a31a2c48c8458b006ad1dc2193d0e8497a09deaec6796 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-pydoc_3.8.14-r0_armhf.deb
+-rw-r--r--                 4832 548af3d431c282e6c9ca3c20574823cf43610a38f6cd6f6a09248cb899e37191 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-resource_3.8.14-r0_armhf.deb
+-rw-r--r--                18516 8e241e5094b057feb37a2ead0573541fc17e4393ac4bd91205cac181af40a827 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-shell_3.8.14-r0_armhf.deb
+-rw-r--r--                32564 1b1a5b5d1686005976bb2517f423629c6c1b47db9a5fcc54edc852ffe2454d40 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-smtpd_3.8.14-r0_armhf.deb
+-rw-r--r--                26488 16bf001c1f64f48dd732b849851ce7cc3db7c7fb13b121f6dc32ba686d74dad7 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-sqlite3_3.8.14-r0_armhf.deb
+-rw-r--r--              2733460 cd9e4b25ff977249ccc47e0342abda8895ea74f2cc80f87cad809b24190cd961 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-src_3.8.14-r0_armhf.deb
+-rw-r--r--                 6980 e7f0124a40ea75dee49840fa9d7186e2505d604c67449f4f33fb0fb378405898 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-stringold_3.8.14-r0_armhf.deb
+-rw-r--r--                 3872 ba86a08f494b235b441849d261ac749ce6f78a14e4fe5dc348f937c2fc26776b ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-syslog_3.8.14-r0_armhf.deb
+-rw-r--r--                 5280 647d891afaeb184e4c91a25815da24b6dc0616057bb2996991125febf97b59e2 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-terminal_3.8.14-r0_armhf.deb
+-rw-r--r--              7012352 9fd46597fcf902818f8b93d0880c226db8939385d0d1a0c0e8e94cd82a3ec31a ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-tests_3.8.14-r0_armhf.deb
+-rw-r--r--                17364 ce6e0df78c32ecf401f6d9a315b9849da077c54faf733f58a1419dce8f2900fc ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-threading_3.8.14-r0_armhf.deb
+-rw-r--r--               159164 87f231e33101c359f20f1fbb886abaa0fe1de6e15f79f144905d85328a5ea3fa ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-tkinter_3.8.14-r0_armhf.deb
+-rw-r--r--                36664 1bb791d43c08e9f1491662a87a10f947c0e3b6e4f6b60417cbe97ec470810b67 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-typing_3.8.14-r0_armhf.deb
+-rw-r--r--               106896 56e46659728c654dea1a310b3ec0bf5ce61400c77c1c4984a88f1e1201e834b5 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-unittest_3.8.14-r0_armhf.deb
+-rw-r--r--                 8532 cba212341e29d354ff99b121b2bcea11493d46dcfe176f0c584622b45887752a ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-unixadmin_3.8.14-r0_armhf.deb
+-rw-r--r--                15780 80ac67411f4b63e30fb6f53a9dbc3eb8db71e21ddfe0541b96d6d70241b3cb11 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-venv_3.8.14-r0_armhf.deb
+-rw-r--r--               203488 934a4a14bbf002cbaadf866b05bc9c0402e726056698fa8be81ce9a2b14fc950 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-xml_3.8.14-r0_armhf.deb
+-rw-r--r--                42164 cd09cebbf9467d95474d2b9e4bd3c9b3edab98c245420e786738ec3aaa4d0a75 ./deploy-debs/cortexa7t2hf-neon-vfpv4/python3-xmlrpc_3.8.14-r0_armhf.deb

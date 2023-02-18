@@ -1,0 +1,16 @@
+PN: python3
+PV: 3.8.14
+PR: r0
+PKGV: 3.8.14
+PKGR: r0
+LICENSE: PSF-2.0 & BSD-0-Clause
+DESCRIPTION: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+SUMMARY_python3-netserver: Python Internet Protocol servers
+RDEPENDS_python3-netserver: python3-compression python3-core python3-crypt python3-datetime python3-email python3-html python3-io python3-math python3-mime python3-netclient python3-stringold
+SECTION: devel/python
+PKG_python3-netserver: python3-netserver
+FILES_python3-netserver:  /usr/lib/python3.8/cgi.py /usr/lib/python3.8/socketserver.py /usr/lib/python3.8/__pycache__/cgi.*.pyc /usr/lib/python3.8/__pycache__/socketserver.*.pyc
+FILES_INFO: {"/usr/lib/python3.8/__pycache__/cgi.cpython-38.opt-1.pyc": 26544, "/usr/lib/python3.8/__pycache__/cgi.cpython-38.opt-2.pyc": 18118, "/usr/lib/python3.8/__pycache__/cgi.cpython-38.pyc": 26544, "/usr/lib/python3.8/__pycache__/socketserver.cpython-38.opt-1.pyc": 25361, "/usr/lib/python3.8/__pycache__/socketserver.cpython-38.opt-2.pyc": 14645, "/usr/lib/python3.8/__pycache__/socketserver.cpython-38.pyc": 25361, "/usr/lib/python3.8/cgi.py": 33445, "/usr/lib/python3.8/socketserver.py": 27296}
+FILERDEPENDSFLIST_python3-netserver: /usr/lib/python3.8/cgi.py
+FILERDEPENDS_/usr/lib/python3.8/cgi.py_python3-netserver:  /usr/bin/env
+PKGSIZE_python3-netserver: 197314

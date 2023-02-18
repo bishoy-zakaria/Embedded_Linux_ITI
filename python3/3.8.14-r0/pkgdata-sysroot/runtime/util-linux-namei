@@ -1,0 +1,16 @@
+PN: util-linux
+PV: 2.35.1
+PR: r0
+PKGV: 2.35.1
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD-3-Clause & BSD-4-Clause
+DESCRIPTION_util-linux-namei: util-linux namei
+SUMMARY_util-linux-namei: util-linux namei
+RDEPENDS_util-linux-namei: glibc (>= 2.31+git0+d4b7559457)
+SECTION: base
+PKG_util-linux-namei: util-linux-namei
+FILES_util-linux-namei: /usr/bin/namei
+FILES_INFO: {"/usr/bin/namei": 21948}
+FILERDEPENDSFLIST_util-linux-namei: /usr/bin/namei
+FILERDEPENDS_/usr/bin/namei_util-linux-namei:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.4) libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_util-linux-namei: 21948

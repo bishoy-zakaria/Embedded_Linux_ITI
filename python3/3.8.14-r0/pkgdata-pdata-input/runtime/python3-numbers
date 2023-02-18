@@ -1,0 +1,17 @@
+PN: python3
+PV: 3.8.14
+PR: r0
+PKGV: 3.8.14
+PKGR: r0
+LICENSE: PSF-2.0 & BSD-0-Clause
+DESCRIPTION: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+SUMMARY_python3-numbers: Python number APIs
+RDEPENDS_python3-numbers: python3-core glibc (>= 2.31+git0+d4b7559457)
+SECTION: devel/python
+PKG_python3-numbers: python3-numbers
+FILES_python3-numbers:  /usr/lib/python3.8/_pydecimal.py /usr/lib/python3.8/contextvars.py /usr/lib/python3.8/decimal.py /usr/lib/python3.8/fractions.py /usr/lib/python3.8/lib-dynload/_contextvars.*.so /usr/lib/python3.8/lib-dynload/_decimal.*.so /usr/lib/python3.8/numbers.py /usr/lib/python3.8/__pycache__/_pydecimal.*.pyc /usr/lib/python3.8/__pycache__/contextvars.*.pyc /usr/lib/python3.8/__pycache__/decimal.*.pyc /usr/lib/python3.8/__pycache__/fractions.*.pyc /usr/lib/python3.8/__pycache__/numbers.*.pyc
+FILES_INFO: {"/usr/lib/python3.8/__pycache__/_pydecimal.cpython-38.opt-1.pyc": 160735, "/usr/lib/python3.8/__pycache__/_pydecimal.cpython-38.opt-2.pyc": 79118, "/usr/lib/python3.8/__pycache__/_pydecimal.cpython-38.pyc": 160735, "/usr/lib/python3.8/__pycache__/contextvars.cpython-38.opt-1.pyc": 243, "/usr/lib/python3.8/__pycache__/contextvars.cpython-38.opt-2.pyc": 243, "/usr/lib/python3.8/__pycache__/contextvars.cpython-38.pyc": 243, "/usr/lib/python3.8/__pycache__/decimal.cpython-38.opt-1.pyc": 359, "/usr/lib/python3.8/__pycache__/decimal.cpython-38.opt-2.pyc": 359, "/usr/lib/python3.8/__pycache__/decimal.cpython-38.pyc": 359, "/usr/lib/python3.8/__pycache__/fractions.cpython-38.opt-1.pyc": 18739, "/usr/lib/python3.8/__pycache__/fractions.cpython-38.opt-2.pyc": 11355, "/usr/lib/python3.8/__pycache__/fractions.cpython-38.pyc": 18739, "/usr/lib/python3.8/__pycache__/numbers.cpython-38.opt-1.pyc": 12202, "/usr/lib/python3.8/__pycache__/numbers.cpython-38.opt-2.pyc": 8339, "/usr/lib/python3.8/__pycache__/numbers.cpython-38.pyc": 12202, "/usr/lib/python3.8/_pydecimal.py": 228666, "/usr/lib/python3.8/contextvars.py": 129, "/usr/lib/python3.8/decimal.py": 320, "/usr/lib/python3.8/fractions.py": 24329, "/usr/lib/python3.8/lib-dynload/_contextvars.cpython-38-arm-linux-gnueabi.so": 5368, "/usr/lib/python3.8/lib-dynload/_decimal.cpython-38-arm-linux-gnueabi.so": 186224, "/usr/lib/python3.8/numbers.py": 10244}
+FILERDEPENDSFLIST_python3-numbers: /usr/lib/python3.8/lib-dynload/@underscore@contextvars.cpython-38-arm-linux-gnueabi.so /usr/lib/python3.8/lib-dynload/@underscore@decimal.cpython-38-arm-linux-gnueabi.so
+FILERDEPENDS_/usr/lib/python3.8/lib-dynload/@underscore@contextvars.cpython-38-arm-linux-gnueabi.so_python3-numbers:  rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python3.8/lib-dynload/@underscore@decimal.cpython-38-arm-linux-gnueabi.so_python3-numbers:  libm.so.6(GLIBC_2.4) ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libm.so.6 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_python3-numbers: 939250

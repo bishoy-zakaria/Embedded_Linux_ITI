@@ -1,0 +1,11 @@
+OEOuthashBasic
+5
+SSTATE_PKGSPEC=sstate:python3::3.8.14:r0::3:
+task=populate_lic
+drwxrwxr-x                                                                                       .
+drwxrwxr-x                                                                                       ./license-destdir
+drwxrwxr-x                                                                                       ./license-destdir/python3
+-rw-r--r--                13931 d2728825439f630063a562afc055cf0aae28e011c0976e82efb4057df006c1f3 ./license-destdir/python3/LICENSE
+-rw-rw-r--                  640 747344bee90d307397ccaaeb91d8d907dcba20159ee80f3906ffa14a7366882f ./license-destdir/python3/generic_BSD-0-Clause
+-rw-rw-r--                 2392 c9662943cf6c15f1098001f97e77fa63755d8d5d32f201de4abf7406fe062fba ./license-destdir/python3/generic_PSF-2.0
+-rw-rw-r--                   50 381fb624c300057b57997f4342115d0df7b3fb88a932d2e492ed7502fb7ae209 ./license-destdir/python3/recipeinfo

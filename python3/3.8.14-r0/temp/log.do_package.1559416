@@ -1,0 +1,617 @@
+DEBUG: Executing python function sstate_task_prefunc
+DEBUG: Python function sstate_task_prefunc finished
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/patch/patch_2.7.6.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-connectivity/openssl/openssl_1.1.1s.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-core/readline/readline_8.0.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/gcc/gcc-runtime_9.5.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-support/sqlite/sqlite3_3.31.1.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-core/glibc/glibc_2.31.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.2.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/dwarfsrcfiles/dwarfsrcfiles.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/rpm/rpm_4.14.2.1.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/pseudo/pseudo_git.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/autoconf-archive/autoconf-archive_2019.01.06.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-core/util-linux/util-linux_2.35.1.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/gcc/gcc-cross_9.5.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/pkgconfig/pkgconfig_git.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-extended/xz/xz_5.2.4.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/automake/automake_1.16.1.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/autoconf/autoconf_2.69.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-extended/xz/xz_5.2.4.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-core/libxcrypt/libxcrypt_4.4.15.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3_3.8.14.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-support/gdbm/gdbm_1.18.1.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-extended/bzip2/bzip2_1.0.8.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/libtool/libtool-cross_2.4.6.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-support/libffi/libffi_3.3.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-extended/bzip2/bzip2_1.0.8.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/libtool/libtool-native_2.4.6.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-extended/libtirpc/libtirpc_1.2.6.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['dwarfsrcfiles-native', 'rpm-native', 'elfutils-native', 'file-native', 'db-native', 'libarchive-native', 'popt-native', 'dbus-native', 'perl-native', 'e2fsprogs-native', 'lzo-native', 'expat-native']
+NOTE: Skipping as already exists in sysroot: ['patch-native', 'openssl', 'readline', 'gcc-runtime', 'sqlite3', 'glibc', 'opkg-utils', 'gnu-config-native', 'pseudo-native', 'autoconf-archive', 'util-linux', 'libnsl2', 'gcc-cross-arm', 'zlib', 'pkgconfig-native', 'xz', 'automake-native', 'autoconf-native', 'xz-native', 'libxcrypt', 'python3-native', 'gdbm', 'bzip2', 'libtool-cross', 'libffi', 'bzip2-native', 'libtool-native', 'quilt-native', 'libtirpc', 'attr-native', 'ncurses', 'linux-libc-headers', 'libgcc', 'gettext-minimal-native', 'openssl-native', 'libcap-ng', 'bash-completion', 'texinfo-dummy-native', 'zlib-native', 'libmpc-native', 'binutils-cross-arm', 'mpfr-native', 'gmp-native', 'flex-native', 'm4-native', 'libnsl2-native', 'util-linux-native', 'libffi-native', 'readline-native', 'libtirpc-native', 'sqlite3-native', 'gdbm-native', 'ncurses-native', 'libcap-ng-native', 'libpcre2-native']
+DEBUG: sed -e 's:^[^/]*/:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native/:g' /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/rpm-native/fixmepath /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/elfutils-native/fixmepath /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/dbus-native/fixmepath /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/perl-native/fixmepath /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/e2fsprogs-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/bishoy/Desktop/sources/poky/build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/bishoy/Desktop/sources/poky/build/tmp/pkgdata/raspberrypi3:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/temp/fifo.1559416:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_package
+DEBUG: Executing python function package_convert_pr_autoinc
+DEBUG: Python function package_convert_pr_autoinc finished
+DEBUG: Executing python function package_prepare_pkgdata
+NOTE: Installed into pkgdata-sysroot: ['xz', 'util-linux', 'gdbm', 'sqlite3', 'opkg-utils', 'libtirpc', 'libxcrypt', 'libffi', 'openssl', 'autoconf-archive', 'zlib', 'glibc', 'gcc-runtime', 'libnsl2', 'readline', 'bzip2', 'ncurses', 'bash-completion', 'libcap-ng', 'linux-libc-headers', 'libgcc']
+DEBUG: Python function package_prepare_pkgdata finished
+DEBUG: Executing python function perform_packagecopy
+DEBUG: Python function perform_packagecopy finished
+DEBUG: Executing python function apply_update_alternative_renames
+DEBUG: Python function apply_update_alternative_renames finished
+DEBUG: Executing shell function py_package_preprocess
+/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/image
+DEBUG: Shell function py_package_preprocess finished
+DEBUG: Executing python function split_and_strip_files
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/zlib.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/xxlimited.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/termios.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/unicodedata.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/syslog.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/spwd.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/select.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/resource.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/readline.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/pyexpat.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/ossaudiodev.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/parser.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/nis.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/mmap.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/math.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/grp.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/fcntl.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/cmath.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/binascii.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/audioop.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/array.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_xxsubinterpreters.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_xxtestfuzz.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_testinternalcapi.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_uuid.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_testmultiphase.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_testimportmultiple.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_testbuffer.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_testcapi.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_struct.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_statistics.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_ssl.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_sha512.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_socket.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_sqlite3.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_sha3.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_sha256.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_sha1.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_random.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_queue.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_posixsubprocess.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_pickle.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_posixshmem.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_multiprocessing.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_opcode.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_md5.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_lzma.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_lsprof.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_multibytecodec.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_json.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_hashlib.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_heapq.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_gdbm.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_elementtree.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_decimal.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_datetime.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_dbm.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_curses_panel.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_curses.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_ctypes.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_ctypes_test.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_csv.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_crypt.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_contextvars.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_codecs_tw.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_codecs_kr.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_codecs_jp.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_codecs_iso2022.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_codecs_cn.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_codecs_hk.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_bz2.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_bisect.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_blake2.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/python3.8/lib-dynload/_asyncio.cpython-38-arm-linux-gnueabi.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/libpython3.so']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '--strip-unneeded', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/lib/libpython3.8.so.1.0']
+DEBUG: runstrip: ['arm-poky-linux-gnueabi-strip', '--remove-section=.comment', '--remove-section=.note', '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package/usr/bin/python3.8']
+DEBUG: Python function split_and_strip_files finished
+DEBUG: Executing python function fixup_perms
+DEBUG: Python function fixup_perms finished
+DEBUG: Executing python function populate_packages_updatealternatives
+NOTE: adding update-alternatives calls to postinst/prerm for python3-core
+NOTE: 	update-alternatives --install /usr/bin/python python /usr/bin/python3 80
+	update-alternatives --install /usr/bin/python-config python_config /usr/bin/python3-config 80
+
+NOTE: 	update-alternatives --remove  python /usr/bin/python3
+	update-alternatives --remove  python_config /usr/bin/python3-config
+
+NOTE: adding update-alternatives calls to postinst/prerm for python3-dev
+NOTE: 	update-alternatives --install /usr/bin/python3.8-config python3-config /usr/bin/python3.8-config-lib 80
+
+NOTE: 	update-alternatives --remove  python3-config /usr/bin/python3.8-config-lib
+
+DEBUG: Python function populate_packages_updatealternatives finished
+DEBUG: Executing python function package_do_split_locales
+DEBUG: No locale files in this package
+DEBUG: Python function package_do_split_locales finished
+DEBUG: Executing python function populate_packages
+DEBUG: Python function populate_packages finished
+DEBUG: Executing python function package_fixsymlinks
+DEBUG: python3-dev contains dangling link /usr/bin/python3.8-config
+NOTE: python3-dev contains dangling symlink to /usr/bin/python3.8-config
+DEBUG: python3-dev contains dangling link /usr/lib/libpython3.8.so.1.0
+DEBUG: target found in libpython3
+DEBUG: Python function package_fixsymlinks finished
+DEBUG: Executing python function package_name_hook
+DEBUG: Executing python function debian_package_name_hook
+DEBUG: LIBNAMES: pkg python3-xmlrpc libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-xml libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-venv libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-unixadmin libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-unittest libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-typing libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-tkinter libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-threading libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-tests libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-terminal libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-syslog libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-stringold libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-staticdev libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-src libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-sqlite3 libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-smtpd libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-shell libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-resource libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-pydoc libs 0 bins 1 sonames []
+DEBUG: LIBNAMES: pkg python3-ptest libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-profile libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-pprint libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-plistlib libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-pkgutil libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-pickle libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-numbers libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-netserver libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-netclient libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-multiprocessing libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-modules libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-mmap libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-misc libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-mime libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-math libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-man libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-mailbox libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-logging libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-locale libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-json libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-io libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-image libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-idle libs 0 bins 1 sonames []
+DEBUG: LIBNAMES: pkg python3-html libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-gdbm libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-fcntl libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-email libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-doctest libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-doc libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-distutils-windows libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-distutils libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-difflib libs 0 bins 0 sonames []
+arm-poky-linux-gnueabi-objdump: '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-dev/usr/lib/libpython3.8.so': No such file
+DEBUG: LIBNAMES: pkg python3-dev libs 1 bins 1 sonames ['libpython3.so']
+DEBUG: LIBNAMES: pkg python3-debugger libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-dbg libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-db libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-datetime libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-curses libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-ctypes libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-crypt libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-core libs 0 bins 1 sonames []
+DEBUG: LIBNAMES: pkg python3-compression libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-compile libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-codecs libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-audio libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-asyncio libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg python3-2to3 libs 0 bins 1 sonames []
+DEBUG: LIBNAMES: pkg python3 libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg libpython3-staticdev libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg libpython3 libs 1 bins 0 sonames ['libpython3.8.so.1.0']
+NOTE: debian: renaming libpython3 to libpython3.8-1.0
+NOTE: debian: renaming libpython3-staticdev to libpython3.8-staticdev
+DEBUG: Python function debian_package_name_hook finished
+DEBUG: Python function package_name_hook finished
+DEBUG: Executing python function package_do_filedeps
+DEBUG: Python function package_do_filedeps finished
+DEBUG: Executing python function package_do_shlibs
+DEBUG: Reading shlib providers in /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/pkgdata-sysroot/shlibs2
+DEBUG: calculating shlib provides for python3-src
+DEBUG: LIBNAMES: pkg python3-src sonames set()
+DEBUG: calculating shlib provides for python3-dbg
+DEBUG: LIBNAMES: pkg python3-dbg sonames set()
+DEBUG: calculating shlib provides for python3-tests
+DEBUG: LIBNAMES: pkg python3-tests sonames set()
+DEBUG: calculating shlib provides for python3-2to3
+DEBUG: LIBNAMES: pkg python3-2to3 sonames set()
+DEBUG: calculating shlib provides for python3-asyncio
+DEBUG: LIBNAMES: pkg python3-asyncio sonames set()
+DEBUG: calculating shlib provides for python3-audio
+DEBUG: LIBNAMES: pkg python3-audio sonames set()
+DEBUG: calculating shlib provides for python3-codecs
+DEBUG: LIBNAMES: pkg python3-codecs sonames set()
+DEBUG: calculating shlib provides for python3-compile
+DEBUG: LIBNAMES: pkg python3-compile sonames set()
+DEBUG: calculating shlib provides for python3-compression
+DEBUG: LIBNAMES: pkg python3-compression sonames set()
+DEBUG: calculating shlib provides for python3-core
+DEBUG: LIBNAMES: pkg python3-core sonames set()
+DEBUG: calculating shlib provides for python3-crypt
+DEBUG: LIBNAMES: pkg python3-crypt sonames set()
+DEBUG: calculating shlib provides for python3-ctypes
+DEBUG: LIBNAMES: pkg python3-ctypes sonames set()
+DEBUG: calculating shlib provides for python3-curses
+DEBUG: LIBNAMES: pkg python3-curses sonames set()
+DEBUG: calculating shlib provides for python3-datetime
+DEBUG: LIBNAMES: pkg python3-datetime sonames set()
+DEBUG: calculating shlib provides for python3-db
+DEBUG: LIBNAMES: pkg python3-db sonames set()
+DEBUG: calculating shlib provides for python3-debugger
+DEBUG: LIBNAMES: pkg python3-debugger sonames set()
+DEBUG: calculating shlib provides for python3-difflib
+DEBUG: LIBNAMES: pkg python3-difflib sonames set()
+DEBUG: calculating shlib provides for python3-distutils-windows
+DEBUG: LIBNAMES: pkg python3-distutils-windows sonames set()
+DEBUG: calculating shlib provides for python3-distutils
+DEBUG: LIBNAMES: pkg python3-distutils sonames set()
+DEBUG: calculating shlib provides for python3-doctest
+DEBUG: LIBNAMES: pkg python3-doctest sonames set()
+DEBUG: calculating shlib provides for python3-email
+DEBUG: LIBNAMES: pkg python3-email sonames set()
+DEBUG: calculating shlib provides for python3-fcntl
+DEBUG: LIBNAMES: pkg python3-fcntl sonames set()
+DEBUG: calculating shlib provides for python3-gdbm
+DEBUG: LIBNAMES: pkg python3-gdbm sonames set()
+DEBUG: calculating shlib provides for python3-html
+DEBUG: LIBNAMES: pkg python3-html sonames set()
+DEBUG: calculating shlib provides for python3-idle
+DEBUG: LIBNAMES: pkg python3-idle sonames set()
+DEBUG: calculating shlib provides for python3-image
+DEBUG: LIBNAMES: pkg python3-image sonames set()
+DEBUG: calculating shlib provides for python3-io
+DEBUG: LIBNAMES: pkg python3-io sonames set()
+DEBUG: calculating shlib provides for python3-json
+DEBUG: LIBNAMES: pkg python3-json sonames set()
+DEBUG: calculating shlib provides for python3-logging
+DEBUG: LIBNAMES: pkg python3-logging sonames set()
+DEBUG: calculating shlib provides for python3-mailbox
+DEBUG: LIBNAMES: pkg python3-mailbox sonames set()
+DEBUG: calculating shlib provides for python3-math
+DEBUG: LIBNAMES: pkg python3-math sonames set()
+DEBUG: calculating shlib provides for python3-mime
+DEBUG: LIBNAMES: pkg python3-mime sonames set()
+DEBUG: calculating shlib provides for python3-mmap
+DEBUG: LIBNAMES: pkg python3-mmap sonames set()
+DEBUG: calculating shlib provides for python3-modules
+DEBUG: LIBNAMES: pkg python3-modules sonames set()
+DEBUG: calculating shlib provides for python3-multiprocessing
+DEBUG: LIBNAMES: pkg python3-multiprocessing sonames set()
+DEBUG: calculating shlib provides for python3-netclient
+DEBUG: LIBNAMES: pkg python3-netclient sonames set()
+DEBUG: calculating shlib provides for python3-netserver
+DEBUG: LIBNAMES: pkg python3-netserver sonames set()
+DEBUG: calculating shlib provides for python3-numbers
+DEBUG: LIBNAMES: pkg python3-numbers sonames set()
+DEBUG: calculating shlib provides for python3-pickle
+DEBUG: LIBNAMES: pkg python3-pickle sonames set()
+DEBUG: calculating shlib provides for python3-pkgutil
+DEBUG: LIBNAMES: pkg python3-pkgutil sonames set()
+DEBUG: calculating shlib provides for python3-plistlib
+DEBUG: LIBNAMES: pkg python3-plistlib sonames set()
+DEBUG: calculating shlib provides for python3-pprint
+DEBUG: LIBNAMES: pkg python3-pprint sonames set()
+DEBUG: calculating shlib provides for python3-profile
+DEBUG: LIBNAMES: pkg python3-profile sonames set()
+DEBUG: calculating shlib provides for python3-pydoc
+DEBUG: LIBNAMES: pkg python3-pydoc sonames set()
+DEBUG: calculating shlib provides for python3-resource
+DEBUG: LIBNAMES: pkg python3-resource sonames set()
+DEBUG: calculating shlib provides for python3-shell
+DEBUG: LIBNAMES: pkg python3-shell sonames set()
+DEBUG: calculating shlib provides for python3-smtpd
+DEBUG: LIBNAMES: pkg python3-smtpd sonames set()
+DEBUG: calculating shlib provides for python3-sqlite3
+DEBUG: LIBNAMES: pkg python3-sqlite3 sonames set()
+DEBUG: calculating shlib provides for python3-stringold
+DEBUG: LIBNAMES: pkg python3-stringold sonames set()
+DEBUG: calculating shlib provides for python3-syslog
+DEBUG: LIBNAMES: pkg python3-syslog sonames set()
+DEBUG: calculating shlib provides for python3-terminal
+DEBUG: LIBNAMES: pkg python3-terminal sonames set()
+DEBUG: calculating shlib provides for python3-threading
+DEBUG: LIBNAMES: pkg python3-threading sonames set()
+DEBUG: calculating shlib provides for python3-tkinter
+DEBUG: LIBNAMES: pkg python3-tkinter sonames set()
+DEBUG: calculating shlib provides for python3-typing
+DEBUG: LIBNAMES: pkg python3-typing sonames set()
+DEBUG: calculating shlib provides for python3-unittest
+DEBUG: LIBNAMES: pkg python3-unittest sonames set()
+DEBUG: calculating shlib provides for python3-unixadmin
+DEBUG: LIBNAMES: pkg python3-unixadmin sonames set()
+DEBUG: calculating shlib provides for python3-venv
+DEBUG: LIBNAMES: pkg python3-venv sonames set()
+DEBUG: calculating shlib provides for python3-xml
+DEBUG: LIBNAMES: pkg python3-xml sonames set()
+DEBUG: calculating shlib provides for python3-xmlrpc
+DEBUG: LIBNAMES: pkg python3-xmlrpc sonames set()
+DEBUG: calculating shlib provides for libpython3
+DEBUG: registering libpython3-3.8.14 as shlib provider for libpython3.8.so.1.0
+DEBUG: adding ldconfig call to postinst for libpython3
+DEBUG: LIBNAMES: pkg libpython3 sonames {('libpython3.8.so.1.0', '/usr/lib', '3.8.14')}
+DEBUG: calculating shlib provides for libpython3-staticdev
+DEBUG: LIBNAMES: pkg libpython3-staticdev sonames set()
+DEBUG: calculating shlib provides for python3-ptest
+DEBUG: LIBNAMES: pkg python3-ptest sonames set()
+DEBUG: calculating shlib provides for python3-staticdev
+DEBUG: LIBNAMES: pkg python3-staticdev sonames set()
+DEBUG: calculating shlib provides for python3-dev
+DEBUG: registering python3-dev-3.8.14 as shlib provider for libpython3.so
+DEBUG: adding ldconfig call to postinst for python3-dev
+DEBUG: LIBNAMES: pkg python3-dev sonames {('libpython3.so', '/usr/lib', '3.8.14')}
+DEBUG: calculating shlib provides for python3-doc
+DEBUG: LIBNAMES: pkg python3-doc sonames set()
+DEBUG: calculating shlib provides for python3-locale
+DEBUG: LIBNAMES: pkg python3-locale sonames set()
+DEBUG: calculating shlib provides for python3
+DEBUG: LIBNAMES: pkg python3 sonames set()
+DEBUG: calculating shlib provides for python3-misc
+DEBUG: LIBNAMES: pkg python3-misc sonames set()
+DEBUG: calculating shlib provides for python3-man
+DEBUG: LIBNAMES: pkg python3-man sonames set()
+DEBUG: calculating shlib requirements for python3-src
+DEBUG: calculating shlib requirements for python3-dbg
+DEBUG: calculating shlib requirements for python3-tests
+DEBUG: calculating shlib requirements for python3-2to3
+DEBUG: calculating shlib requirements for python3-asyncio
+DEBUG: python3-asyncio: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-asyncio/usr/lib/python3.8/lib-dynload/_asyncio.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-asyncio: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-asyncio/usr/lib/python3.8/lib-dynload/_asyncio.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-audio
+DEBUG: python3-audio: Dependency libm.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-audio/usr/lib/python3.8/lib-dynload/audioop.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-audio: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-audio/usr/lib/python3.8/lib-dynload/ossaudiodev.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-audio: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-audio/usr/lib/python3.8/lib-dynload/audioop.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-audio: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-audio/usr/lib/python3.8/lib-dynload/ossaudiodev.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-audio: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-audio/usr/lib/python3.8/lib-dynload/audioop.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-codecs
+DEBUG: python3-codecs: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-codecs/usr/lib/python3.8/lib-dynload/_multibytecodec.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-codecs: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-codecs/usr/lib/python3.8/lib-dynload/_multibytecodec.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-compile
+DEBUG: calculating shlib requirements for python3-compression
+DEBUG: calculating shlib requirements for python3-core
+DEBUG: python3-core: Dependency libz.so.1 requires package zlib (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/binascii.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/unicodedata.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/zlib.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_opcode.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libpython3.8.so.1.0 requires package libpython3 (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/bin/python3.8)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/binascii.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_csv.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_posixsubprocess.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/select.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_bz2.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/grp.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libz.so.1 requires package zlib (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/zlib.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/readline.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/parser.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libm.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/math.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_lzma.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/array.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/unicodedata.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/grp.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/math.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/zlib.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_bisect.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_posixsubprocess.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency liblzma.so.5 requires package liblzma (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_lzma.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_lzma.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/select.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_bz2.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/readline.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/parser.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_struct.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_opcode.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_csv.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/math.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/binascii.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/bin/python3.8)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/array.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libreadline.so.8 requires package readline (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/readline.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libbz2.so.1 requires package libbz2 (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_bz2.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_struct.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-core: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-core/usr/lib/python3.8/lib-dynload/_bisect.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-crypt
+DEBUG: python3-crypt: Dependency libcrypt.so.2 requires package libxcrypt (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_crypt.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_md5.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_sha3.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_sha512.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_crypt.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_sha512.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_blake2.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_md5.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_sha1.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency libcrypto.so.1.1 requires package libcrypto (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_hashlib.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_blake2.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_sha256.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_sha1.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_crypt.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_sha3.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_hashlib.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_sha256.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-crypt: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-crypt/usr/lib/python3.8/lib-dynload/_hashlib.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-ctypes
+DEBUG: python3-ctypes: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-ctypes/usr/lib/python3.8/lib-dynload/_ctypes.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-ctypes: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-ctypes/usr/lib/python3.8/lib-dynload/_ctypes.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-ctypes: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-ctypes/usr/lib/python3.8/lib-dynload/_ctypes_test.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-ctypes: Dependency libm.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-ctypes/usr/lib/python3.8/lib-dynload/_ctypes_test.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-ctypes: Dependency libffi.so.7 requires package libffi (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-ctypes/usr/lib/python3.8/lib-dynload/_ctypes.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-ctypes: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-ctypes/usr/lib/python3.8/lib-dynload/_ctypes_test.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-ctypes: Dependency libdl.so.2 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-ctypes/usr/lib/python3.8/lib-dynload/_ctypes.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-curses
+DEBUG: python3-curses: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-curses/usr/lib/python3.8/lib-dynload/_curses.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-curses: Dependency libpanelw.so.5 requires package ncurses-libpanelw (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-curses/usr/lib/python3.8/lib-dynload/_curses_panel.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-curses: Dependency libtinfo.so.5 requires package ncurses-libtinfo (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-curses/usr/lib/python3.8/lib-dynload/_curses.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-curses: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-curses/usr/lib/python3.8/lib-dynload/_curses.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-curses: Dependency libncursesw.so.5 requires package ncurses-libncursesw (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-curses/usr/lib/python3.8/lib-dynload/_curses.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-datetime
+DEBUG: python3-datetime: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-datetime/usr/lib/python3.8/lib-dynload/_datetime.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-datetime: Dependency libm.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-datetime/usr/lib/python3.8/lib-dynload/_datetime.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-datetime: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-datetime/usr/lib/python3.8/lib-dynload/_datetime.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-db
+DEBUG: python3-db: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-db/usr/lib/python3.8/lib-dynload/_dbm.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-db: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-db/usr/lib/python3.8/lib-dynload/_dbm.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-db: Dependency libgdbm_compat.so.4 requires package gdbm-compat (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-db/usr/lib/python3.8/lib-dynload/_dbm.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-debugger
+DEBUG: calculating shlib requirements for python3-difflib
+DEBUG: calculating shlib requirements for python3-distutils-windows
+DEBUG: calculating shlib requirements for python3-distutils
+DEBUG: calculating shlib requirements for python3-doctest
+DEBUG: calculating shlib requirements for python3-email
+DEBUG: calculating shlib requirements for python3-fcntl
+DEBUG: python3-fcntl: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-fcntl/usr/lib/python3.8/lib-dynload/fcntl.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-fcntl: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-fcntl/usr/lib/python3.8/lib-dynload/fcntl.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-gdbm
+DEBUG: python3-gdbm: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-gdbm/usr/lib/python3.8/lib-dynload/_gdbm.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-gdbm: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-gdbm/usr/lib/python3.8/lib-dynload/_gdbm.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-gdbm: Dependency libgdbm.so.6 requires package gdbm (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-gdbm/usr/lib/python3.8/lib-dynload/_gdbm.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-html
+DEBUG: calculating shlib requirements for python3-idle
+DEBUG: calculating shlib requirements for python3-image
+DEBUG: calculating shlib requirements for python3-io
+DEBUG: python3-io: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-io/usr/lib/python3.8/lib-dynload/_ssl.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-io: Dependency libssl.so.1.1 requires package libssl (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-io/usr/lib/python3.8/lib-dynload/_ssl.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-io: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-io/usr/lib/python3.8/lib-dynload/_socket.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-io: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-io/usr/lib/python3.8/lib-dynload/termios.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-io: Dependency libcrypto.so.1.1 requires package libcrypto (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-io/usr/lib/python3.8/lib-dynload/_ssl.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-io: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-io/usr/lib/python3.8/lib-dynload/termios.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-io: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-io/usr/lib/python3.8/lib-dynload/_socket.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-io: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-io/usr/lib/python3.8/lib-dynload/_ssl.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-json
+DEBUG: python3-json: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-json/usr/lib/python3.8/lib-dynload/_json.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-json: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-json/usr/lib/python3.8/lib-dynload/_json.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-logging
+DEBUG: calculating shlib requirements for python3-mailbox
+DEBUG: calculating shlib requirements for python3-math
+DEBUG: python3-math: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-math/usr/lib/python3.8/lib-dynload/cmath.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-math: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-math/usr/lib/python3.8/lib-dynload/_random.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-math: Dependency libm.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-math/usr/lib/python3.8/lib-dynload/cmath.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-math: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-math/usr/lib/python3.8/lib-dynload/cmath.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-math: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-math/usr/lib/python3.8/lib-dynload/_random.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-mime
+DEBUG: calculating shlib requirements for python3-mmap
+DEBUG: python3-mmap: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-mmap/usr/lib/python3.8/lib-dynload/mmap.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-mmap: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-mmap/usr/lib/python3.8/lib-dynload/mmap.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-modules
+DEBUG: calculating shlib requirements for python3-multiprocessing
+DEBUG: python3-multiprocessing: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-multiprocessing/usr/lib/python3.8/lib-dynload/_multiprocessing.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-multiprocessing: Dependency libpthread.so.0 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-multiprocessing/usr/lib/python3.8/lib-dynload/_multiprocessing.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-multiprocessing: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-multiprocessing/usr/lib/python3.8/lib-dynload/_multiprocessing.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-netclient
+DEBUG: python3-netclient: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-netclient/usr/lib/python3.8/lib-dynload/_uuid.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-netclient: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-netclient/usr/lib/python3.8/lib-dynload/_uuid.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-netclient: Dependency libuuid.so.1 requires package util-linux-libuuid (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-netclient/usr/lib/python3.8/lib-dynload/_uuid.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-netserver
+DEBUG: calculating shlib requirements for python3-numbers
+DEBUG: python3-numbers: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-numbers/usr/lib/python3.8/lib-dynload/_decimal.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-numbers: Dependency libm.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-numbers/usr/lib/python3.8/lib-dynload/_decimal.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-numbers: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-numbers/usr/lib/python3.8/lib-dynload/_decimal.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-pickle
+DEBUG: python3-pickle: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-pickle/usr/lib/python3.8/lib-dynload/_pickle.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-pickle: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-pickle/usr/lib/python3.8/lib-dynload/_pickle.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-pkgutil
+DEBUG: calculating shlib requirements for python3-plistlib
+DEBUG: calculating shlib requirements for python3-pprint
+DEBUG: calculating shlib requirements for python3-profile
+DEBUG: python3-profile: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-profile/usr/lib/python3.8/lib-dynload/_lsprof.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-profile: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-profile/usr/lib/python3.8/lib-dynload/_lsprof.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-pydoc
+DEBUG: calculating shlib requirements for python3-resource
+DEBUG: python3-resource: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-resource/usr/lib/python3.8/lib-dynload/resource.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-resource: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-resource/usr/lib/python3.8/lib-dynload/resource.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-shell
+DEBUG: calculating shlib requirements for python3-smtpd
+DEBUG: calculating shlib requirements for python3-sqlite3
+DEBUG: python3-sqlite3: Dependency libsqlite3.so.0 requires package libsqlite3 (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-sqlite3/usr/lib/python3.8/lib-dynload/_sqlite3.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-sqlite3: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-sqlite3/usr/lib/python3.8/lib-dynload/_sqlite3.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-sqlite3: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-sqlite3/usr/lib/python3.8/lib-dynload/_sqlite3.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-stringold
+DEBUG: calculating shlib requirements for python3-syslog
+DEBUG: python3-syslog: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-syslog/usr/lib/python3.8/lib-dynload/syslog.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-syslog: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-syslog/usr/lib/python3.8/lib-dynload/syslog.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-terminal
+DEBUG: calculating shlib requirements for python3-threading
+DEBUG: python3-threading: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-threading/usr/lib/python3.8/lib-dynload/_queue.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-threading: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-threading/usr/lib/python3.8/lib-dynload/_queue.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-tkinter
+DEBUG: calculating shlib requirements for python3-typing
+DEBUG: calculating shlib requirements for python3-unittest
+DEBUG: calculating shlib requirements for python3-unixadmin
+DEBUG: python3-unixadmin: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-unixadmin/usr/lib/python3.8/lib-dynload/nis.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-unixadmin: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-unixadmin/usr/lib/python3.8/lib-dynload/nis.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-unixadmin: Dependency libtirpc.so.3 requires package libtirpc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-unixadmin/usr/lib/python3.8/lib-dynload/nis.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-unixadmin: Dependency libnsl.so.2 requires package libnsl2 (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-unixadmin/usr/lib/python3.8/lib-dynload/nis.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-venv
+DEBUG: calculating shlib requirements for python3-xml
+DEBUG: python3-xml: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-xml/usr/lib/python3.8/lib-dynload/_elementtree.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-xml: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-xml/usr/lib/python3.8/lib-dynload/pyexpat.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-xml: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-xml/usr/lib/python3.8/lib-dynload/_elementtree.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-xml: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-xml/usr/lib/python3.8/lib-dynload/pyexpat.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-xmlrpc
+DEBUG: calculating shlib requirements for libpython3
+DEBUG: libpython3: Dependency libpthread.so.0 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/libpython3/usr/lib/libpython3.8.so.1.0)
+DEBUG: libpython3: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/libpython3/usr/lib/libpython3.8.so.1.0)
+DEBUG: libpython3: Dependency libutil.so.1 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/libpython3/usr/lib/libpython3.8.so.1.0)
+DEBUG: libpython3: Dependency libdl.so.2 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/libpython3/usr/lib/libpython3.8.so.1.0)
+DEBUG: libpython3: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/libpython3/usr/lib/libpython3.8.so.1.0)
+DEBUG: libpython3: Dependency libm.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/libpython3/usr/lib/libpython3.8.so.1.0)
+DEBUG: calculating shlib requirements for libpython3-staticdev
+DEBUG: calculating shlib requirements for python3-ptest
+DEBUG: calculating shlib requirements for python3-staticdev
+DEBUG: calculating shlib requirements for python3-dev
+DEBUG: python3-dev: Dependency libpython3.8.so.1.0 requires package libpython3 (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-dev/usr/lib/libpython3.so)
+DEBUG: python3-dev: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-dev/usr/lib/libpython3.so)
+DEBUG: calculating shlib requirements for python3-doc
+DEBUG: calculating shlib requirements for python3-locale
+DEBUG: calculating shlib requirements for python3
+DEBUG: calculating shlib requirements for python3-misc
+DEBUG: python3-misc: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/xxlimited.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_xxtestfuzz.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_testbuffer.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_testbuffer.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_codecs_cn.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_testmultiphase.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_codecs_cn.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_codecs_hk.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_codecs_tw.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_posixshmem.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_codecs_tw.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_xxsubinterpreters.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_codecs_kr.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_testmultiphase.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_codecs_kr.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_testcapi.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_posixshmem.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency librt.so.1 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_posixshmem.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/xxlimited.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_xxtestfuzz.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/spwd.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_codecs_jp.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_codecs_iso2022.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/spwd.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_xxsubinterpreters.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_codecs_iso2022.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_codecs_jp.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency ld-linux-armhf.so.3 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_testcapi.cpython-38-arm-linux-gnueabi.so)
+DEBUG: python3-misc: Dependency libc.so.6 requires package glibc (used by files: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/packages-split/python3-misc/usr/lib/python3.8/lib-dynload/_codecs_hk.cpython-38-arm-linux-gnueabi.so)
+DEBUG: calculating shlib requirements for python3-man
+DEBUG: Python function package_do_shlibs finished
+DEBUG: Executing python function package_do_pkgconfig
+DEBUG: Python function package_do_pkgconfig finished
+DEBUG: Executing python function read_shlibdeps
+DEBUG: Python function read_shlibdeps finished
+DEBUG: Executing python function package_depchains
+DEBUG: Python function package_depchains finished
+DEBUG: Executing python function emit_pkgdata
+DEBUG: Python function emit_pkgdata finished
+DEBUG: Python function do_package finished
+DEBUG: Executing python function sstate_task_postfunc
+NOTE: Using umask 0o002 (not 22) for sstate packaging
+DEBUG: Executing python function sstate_hardcode_path
+NOTE: Removing hardcoded paths from sstate package: 'find /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/sstate-build-package/ \( -name "*.la" -o -name "*-config" -o -name "*_config" -o -name "postinst-*" -o -name "Makefile" -o -name "_sysconfigdata.py" \) -type f | xargs grep -l -e '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot' -e '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native' -e '/home/bishoy/Desktop/sources/poky/build/tmp/hosttools' | tee /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/sstate-build-package/fixmepath | xargs --no-run-if-empty sed -i -e 's:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native:FIXMESTAGINGDIRHOST:g' -e 's:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot:FIXMESTAGINGDIRTARGET:g' -e 's:/home/bishoy/Desktop/sources/poky/build/tmp/hosttools:FIXME_HOSTTOOLS_DIR:g''
+DEBUG: Python function sstate_hardcode_path finished
+DEBUG: Executing python function sstate_report_unihash
+DEBUG: Reported task c1b2e55ea51c0662cb1f551bf063ee2a01d28eac25163aaaceaad6ea535cbe58 as unihash c1b2e55ea51c0662cb1f551bf063ee2a01d28eac25163aaaceaad6ea535cbe58 to unix:///home/bishoy/Desktop/sources/poky/build/hashserve.sock
+DEBUG: Python function sstate_report_unihash finished
+DEBUG: Executing shell function sstate_create_package
+DEBUG: Shell function sstate_create_package finished
+DEBUG: Executing python function sstate_hardcode_path_unpack
+DEBUG: Python function sstate_hardcode_path_unpack finished
+DEBUG: Executing python function uninative_changeinterp
+DEBUG: Python function uninative_changeinterp finished
+DEBUG: Python function sstate_task_postfunc finished

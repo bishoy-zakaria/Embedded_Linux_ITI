@@ -1,0 +1,442 @@
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'bit-32', 'arm-common', 'arm-32', 'common-linux', 'common-glibc', 'arm-linux', 'arm-linux-gnueabi', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/bishoy/Desktop/sources/poky/meta/recipes-core/base-passwd/base-passwd_3.5.29.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-extended/xz/xz_5.2.4.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/autoconf/autoconf_2.69.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-core/glibc/glibc_2.31.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-extended/xz/xz_5.2.4.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-support/curl/curl_7.69.1.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-extended/shadow/shadow_4.8.1.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/gcc/gcc-runtime_9.5.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/patch/patch_2.7.6.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/libtool/libtool-cross_2.4.6.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-support/db/db_5.3.28.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/automake/automake_1.16.1.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-extended/shadow/shadow_4.8.1.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/pseudo/pseudo_git.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-core/gettext/gettext_0.20.1.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-core/base-files/base-files_3.0.14.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/libtool/libtool-native_2.4.6.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/gcc/gcc-cross_9.5.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: ['base-passwd', 'xz-native', 'gnu-config-native', 'autoconf-native', 'glibc', 'xz', 'curl', 'shadow', 'gcc-runtime', 'zlib', 'patch-native', 'libtool-cross', 'db', 'automake-native', 'shadow-native', 'pseudo-native', 'shadow-sysroot', 'gettext-native', 'quilt-native', 'base-files', 'libtool-native', 'gcc-cross-arm', 'gettext-minimal-native', 'm4-native', 'texinfo-dummy-native', 'linux-libc-headers', 'opkg-utils', 'libidn2', 'gnutls', 'attr', 'libxcrypt', 'libgcc', 'attr-native', 'binutils-cross-arm', 'pkgconfig-native', 'flex-native', 'gmp-native', 'mpfr-native', 'zlib-native', 'libmpc-native', 'libunistring', 'gmp', 'nettle']
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing shell function do_install
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/bin
++ install -m 0755 bin/apt-key /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/bin/
++ install -m 0755 bin/apt-cdrom /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/bin/
++ install -m 0755 bin/apt-get /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/bin/
++ install -m 0755 bin/apt-config /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/bin/
++ install -m 0755 bin/apt-cache /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/bin/
++ install -m 0755 bin/apt-sortpkgs /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/bin/
++ install -m 0755 bin/apt-extracttemplates /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/bin/
++ oe_libinstall -so -C bin libapt-pkg /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib
++ dir=
++ libtool=
++ silent=
++ require_static=
++ require_shared=
++ staging_install=
++ [ 5 -gt 0 ]
++ require_shared=1
++ shift
++ [ 4 -gt 0 ]
++ shift
++ dir=bin
++ shift
++ [ 2 -gt 0 ]
++ break
++ libname=libapt-pkg
++ shift
++ destpath=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib
++ [ -z /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib ]
++ echo /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ egrep ^/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot/usr/lib/
++ [ -z bin ]
++ dotlai=libapt-pkg.lai
++ cd bin
++ find . -name libapt-pkg.lai
++ wc -l
++ number_of_files=0
++ [ 0 -gt 1 ]
++ cd bin
++ find . -name libapt-pkg.lai
++ sed s/^\.//;s/\/libapt-pkg.lai$//;q
++ dir=bin
++ pwd
++ olddir=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
++ __runcmd cd bin
++ [ -z  ]
++ echo oe_libinstall: cd bin
+oe_libinstall: cd bin
++ cd bin
++ lafile=libapt-pkg.la
++ [ ! -f libapt-pkg.la ]
++ echo libapt-pkg
++ sed s/-[0-9.]*$//
++ libname1=libapt-pkg
++ lafile1=libapt-pkg.la
++ [ -f libapt-pkg.la ]
++ [ -f libapt-pkg.la ]
++ library_names=libapt-pkg.so* libapt-pkg.dll.a libapt-pkg.*.dylib
++ __runcmd install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ [ -z  ]
++ echo oe_libinstall: install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
+oe_libinstall: install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ dota=libapt-pkg.a
++ [ -f libapt-pkg.a -o -n  ]
++ [ -f libapt-pkg.lai -a -n  ]
++ eval echo libapt-pkg.so
++ echo libapt-pkg.so
++ files=libapt-pkg.so
++ [ ! -e libapt-pkg.so ]
++ [ -L libapt-pkg.so ]
++ __runcmd cp -P libapt-pkg.so /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ [ -z  ]
++ echo oe_libinstall: cp -P libapt-pkg.so /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
+oe_libinstall: cp -P libapt-pkg.so /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ cp -P libapt-pkg.so /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ eval echo libapt-pkg.so.5.0
++ echo libapt-pkg.so.5.0
++ files=libapt-pkg.so.5.0
++ [ ! -e libapt-pkg.so.5.0 ]
++ [ -L libapt-pkg.so.5.0 ]
++ __runcmd cp -P libapt-pkg.so.5.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ [ -z  ]
++ echo oe_libinstall: cp -P libapt-pkg.so.5.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
+oe_libinstall: cp -P libapt-pkg.so.5.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ cp -P libapt-pkg.so.5.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ eval echo libapt-pkg.so.5.0.0
++ echo libapt-pkg.so.5.0.0
++ files=libapt-pkg.so.5.0.0
++ [ ! -e libapt-pkg.so.5.0.0 ]
++ [ -L libapt-pkg.so.5.0.0 ]
++ [ ! -L libapt-pkg.so.5.0.0 ]
++ libfile=libapt-pkg.so.5.0.0
++ rm -f /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-pkg.so.5.0.0
++ __runcmd install -m 0755 libapt-pkg.so.5.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ [ -z  ]
++ echo oe_libinstall: install -m 0755 libapt-pkg.so.5.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
+oe_libinstall: install -m 0755 libapt-pkg.so.5.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ install -m 0755 libapt-pkg.so.5.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ eval echo libapt-pkg.dll.a
++ echo libapt-pkg.dll.a
++ files=libapt-pkg.dll.a
++ [ ! -e libapt-pkg.dll.a ]
++ [ -n  ]
++ eval echo libapt-pkg.*.dylib
++ echo libapt-pkg.*.dylib
++ files=libapt-pkg.*.dylib
++ [ ! -e libapt-pkg.*.dylib ]
++ [ -n  ]
++ [ -z libapt-pkg.so.5.0.0 ]
++ [ -z  ]
++ basename libapt-pkg.so.5.0.0
++ baselibfile=libapt-pkg.so.5.0.0
++ echo libapt-pkg.so.5.0.0
++ grep -qE ^lib.*\.so\.[0-9.]*$
++ arm-poky-linux-gnueabi-readelf -d libapt-pkg.so.5.0.0
++ grep Library soname:
++ sed -e s/.*\[\(.*\)\].*/\1/
++ sonamelink=libapt-pkg.so.5.0
++ echo libapt-pkg.so.5.0.0
++ sed -e s/\.so\..*/.so/
++ solink=libapt-pkg.so
++ [ -n libapt-pkg.so.5.0 -a xlibapt-pkg.so.5.0.0 != xlibapt-pkg.so.5.0 ]
++ __runcmd ln -sf libapt-pkg.so.5.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-pkg.so.5.0
++ [ -z  ]
++ echo oe_libinstall: ln -sf libapt-pkg.so.5.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-pkg.so.5.0
+oe_libinstall: ln -sf libapt-pkg.so.5.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-pkg.so.5.0
++ ln -sf libapt-pkg.so.5.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-pkg.so.5.0
++ __runcmd ln -sf libapt-pkg.so.5.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-pkg.so
++ [ -z  ]
++ echo oe_libinstall: ln -sf libapt-pkg.so.5.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-pkg.so
+oe_libinstall: ln -sf libapt-pkg.so.5.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-pkg.so
++ ln -sf libapt-pkg.so.5.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-pkg.so
++ __runcmd cd /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
++ [ -z  ]
++ echo oe_libinstall: cd /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
+oe_libinstall: cd /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
++ cd /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
++ oe_libinstall -so -C bin libapt-inst /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib
++ dir=
++ libtool=
++ silent=
++ require_static=
++ require_shared=
++ staging_install=
++ [ 5 -gt 0 ]
++ require_shared=1
++ shift
++ [ 4 -gt 0 ]
++ shift
++ dir=bin
++ shift
++ [ 2 -gt 0 ]
++ break
++ libname=libapt-inst
++ shift
++ destpath=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib
++ [ -z /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib ]
++ echo /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ egrep ^/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot/usr/lib/
++ [ -z bin ]
++ dotlai=libapt-inst.lai
++ cd bin
++ find . -name libapt-inst.lai
++ wc -l
++ number_of_files=0
++ [ 0 -gt 1 ]
++ cd bin
++ find . -name libapt-inst.lai
++ sed s/^\.//;s/\/libapt-inst.lai$//;q
++ dir=bin
++ pwd
++ olddir=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
++ __runcmd cd bin
++ [ -z  ]
++ echo oe_libinstall: cd bin
+oe_libinstall: cd bin
++ cd bin
++ lafile=libapt-inst.la
++ [ ! -f libapt-inst.la ]
++ echo libapt-inst
++ sed s/-[0-9.]*$//
++ libname1=libapt-inst
++ lafile1=libapt-inst.la
++ [ -f libapt-inst.la ]
++ [ -f libapt-inst.la ]
++ library_names=libapt-inst.so* libapt-inst.dll.a libapt-inst.*.dylib
++ __runcmd install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ [ -z  ]
++ echo oe_libinstall: install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
+oe_libinstall: install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ dota=libapt-inst.a
++ [ -f libapt-inst.a -o -n  ]
++ [ -f libapt-inst.lai -a -n  ]
++ eval echo libapt-inst.so
++ echo libapt-inst.so
++ files=libapt-inst.so
++ [ ! -e libapt-inst.so ]
++ [ -L libapt-inst.so ]
++ __runcmd cp -P libapt-inst.so /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ [ -z  ]
++ echo oe_libinstall: cp -P libapt-inst.so /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
+oe_libinstall: cp -P libapt-inst.so /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ cp -P libapt-inst.so /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ eval echo libapt-inst.so.2.0
++ echo libapt-inst.so.2.0
++ files=libapt-inst.so.2.0
++ [ ! -e libapt-inst.so.2.0 ]
++ [ -L libapt-inst.so.2.0 ]
++ __runcmd cp -P libapt-inst.so.2.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ [ -z  ]
++ echo oe_libinstall: cp -P libapt-inst.so.2.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
+oe_libinstall: cp -P libapt-inst.so.2.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ cp -P libapt-inst.so.2.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ eval echo libapt-inst.so.2.0.0
++ echo libapt-inst.so.2.0.0
++ files=libapt-inst.so.2.0.0
++ [ ! -e libapt-inst.so.2.0.0 ]
++ [ -L libapt-inst.so.2.0.0 ]
++ [ ! -L libapt-inst.so.2.0.0 ]
++ libfile=libapt-inst.so.2.0.0
++ rm -f /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-inst.so.2.0.0
++ __runcmd install -m 0755 libapt-inst.so.2.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ [ -z  ]
++ echo oe_libinstall: install -m 0755 libapt-inst.so.2.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
+oe_libinstall: install -m 0755 libapt-inst.so.2.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ install -m 0755 libapt-inst.so.2.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ eval echo libapt-inst.dll.a
++ echo libapt-inst.dll.a
++ files=libapt-inst.dll.a
++ [ ! -e libapt-inst.dll.a ]
++ [ -n  ]
++ eval echo libapt-inst.*.dylib
++ echo libapt-inst.*.dylib
++ files=libapt-inst.*.dylib
++ [ ! -e libapt-inst.*.dylib ]
++ [ -n  ]
++ [ -z libapt-inst.so.2.0.0 ]
++ [ -z  ]
++ basename libapt-inst.so.2.0.0
++ baselibfile=libapt-inst.so.2.0.0
++ echo libapt-inst.so.2.0.0
++ grep -qE ^lib.*\.so\.[0-9.]*$
++ arm-poky-linux-gnueabi-readelf -d libapt-inst.so.2.0.0
++ grep Library soname:
++ sed -e s/.*\[\(.*\)\].*/\1/
++ sonamelink=libapt-inst.so.2.0
++ echo libapt-inst.so.2.0.0
++ sed -e s/\.so\..*/.so/
++ solink=libapt-inst.so
++ [ -n libapt-inst.so.2.0 -a xlibapt-inst.so.2.0.0 != xlibapt-inst.so.2.0 ]
++ __runcmd ln -sf libapt-inst.so.2.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-inst.so.2.0
++ [ -z  ]
++ echo oe_libinstall: ln -sf libapt-inst.so.2.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-inst.so.2.0
+oe_libinstall: ln -sf libapt-inst.so.2.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-inst.so.2.0
++ ln -sf libapt-inst.so.2.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-inst.so.2.0
++ __runcmd ln -sf libapt-inst.so.2.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-inst.so
++ [ -z  ]
++ echo oe_libinstall: ln -sf libapt-inst.so.2.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-inst.so
+oe_libinstall: ln -sf libapt-inst.so.2.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-inst.so
++ ln -sf libapt-inst.so.2.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/libapt-inst.so
++ __runcmd cd /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
++ [ -z  ]
++ echo oe_libinstall: cd /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
+oe_libinstall: cd /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
++ cd /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/apt/methods
++ install -m 0755 bin/methods/bzip2 bin/methods/cdrom bin/methods/copy bin/methods/file bin/methods/ftp bin/methods/gpgv bin/methods/gzip bin/methods/http bin/methods/https bin/methods/lzma bin/methods/mirror bin/methods/rred bin/methods/rsh bin/methods/ssh bin/methods/store bin/methods/xz /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/apt/methods/
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/dpkg/methods/apt
++ install -m 0644 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/dselect/desc.apt /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/dpkg/methods/apt/
++ install -m 0644 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/dselect/names /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/dpkg/methods/apt/
++ install -m 0755 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/dselect/install /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/dpkg/methods/apt/
++ install -m 0755 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/dselect/setup /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/dpkg/methods/apt/
++ install -m 0755 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/dselect/update /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/dpkg/methods/apt/
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/etc/apt
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/etc/apt/apt.conf.d
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/etc/apt/sources.list.d
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/etc/apt/preferences.d
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/var/lib/apt/lists/partial
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/var/cache/apt/archives/partial
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/share/doc/apt/examples
++ install -m 0644 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/doc/examples/apt-ftparchive.conf /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/doc/examples/apt-https-method-example.conf /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/doc/examples/apt.conf /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/doc/examples/configure-index /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/doc/examples/ftp-archive.conf /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/doc/examples/preferences /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/share/doc/apt/examples/
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/include/apt-pkg/
++ install -m 0644 include/apt-pkg/acquire-item.h include/apt-pkg/acquire-method.h include/apt-pkg/acquire-worker.h include/apt-pkg/acquire.h include/apt-pkg/algorithms.h include/apt-pkg/aptconfiguration.h include/apt-pkg/arfile.h include/apt-pkg/cachefile.h include/apt-pkg/cachefilter.h include/apt-pkg/cacheiterators.h include/apt-pkg/cacheset.h include/apt-pkg/cdrom.h include/apt-pkg/cdromutl.h include/apt-pkg/clean.h include/apt-pkg/cmndline.h include/apt-pkg/configuration.h include/apt-pkg/crc-16.h include/apt-pkg/debfile.h include/apt-pkg/debindexfile.h include/apt-pkg/deblistparser.h include/apt-pkg/debmetaindex.h include/apt-pkg/debrecords.h include/apt-pkg/debsrcrecords.h include/apt-pkg/debsystem.h include/apt-pkg/debversion.h include/apt-pkg/depcache.h include/apt-pkg/dirstream.h include/apt-pkg/dpkgpm.h include/apt-pkg/edsp.h include/apt-pkg/edspindexfile.h include/apt-pkg/edsplistparser.h include/apt-pkg/edspsystem.h include/apt-pkg/error.h include/apt-pkg/extract.h include/apt-pkg/extracttar.h include/apt-pkg/filelist.h include/apt-pkg/fileutl.h include/apt-pkg/gpgv.h include/apt-pkg/hashes.h include/apt-pkg/hashsum_template.h include/apt-pkg/indexcopy.h include/apt-pkg/indexfile.h include/apt-pkg/init.h include/apt-pkg/install-progress.h include/apt-pkg/macros.h include/apt-pkg/md5.h include/apt-pkg/metaindex.h include/apt-pkg/mmap.h include/apt-pkg/netrc.h include/apt-pkg/orderlist.h include/apt-pkg/packagemanager.h include/apt-pkg/pkgcache.h include/apt-pkg/pkgcachegen.h include/apt-pkg/pkgrecords.h include/apt-pkg/pkgsystem.h include/apt-pkg/policy.h include/apt-pkg/prettyprinters.h include/apt-pkg/progress.h include/apt-pkg/proxy.h include/apt-pkg/sha1.h include/apt-pkg/sha2.h include/apt-pkg/sha256.h include/apt-pkg/sha2_internal.h include/apt-pkg/sourcelist.h include/apt-pkg/sptr.h include/apt-pkg/srcrecords.h include/apt-pkg/srvrec.h include/apt-pkg/statechanges.h include/apt-pkg/string_view.h include/apt-pkg/strutl.h include/apt-pkg/tagfile.h include/apt-pkg/update.h include/apt-pkg/upgrade.h include/apt-pkg/version.h include/apt-pkg/versionmatch.h include/apt-pkg/weakptr.h /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/include/apt-pkg/
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/lib/systemd/system/
++ install -m 0755 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/debian/apt.systemd.daily /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/apt/
++ install -m 0644 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/debian/apt-daily.service /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/lib/systemd/system/
++ sed -i s#/usr/lib/apt/#/usr/lib/apt/#g /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/lib/systemd/system/apt-daily.service
++ install -m 0644 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/debian/apt-daily.timer /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/lib/systemd/system/
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/etc/cron.daily/
++ install -m 0755 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/debian/apt.apt-compat.cron.daily /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/etc/cron.daily/
++ sed -i s#/usr/lib/apt/#/usr/lib/apt/#g /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/etc/cron.daily/apt.apt-compat.cron.daily
++ APT_CONF=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/etc/apt/apt.conf
++ echo APT::Architecture "armhf";
++ oe_libinstall -so -C bin libapt-private /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ dir=
++ libtool=
++ silent=
++ require_static=
++ require_shared=
++ staging_install=
++ [ 5 -gt 0 ]
++ require_shared=1
++ shift
++ [ 4 -gt 0 ]
++ shift
++ dir=bin
++ shift
++ [ 2 -gt 0 ]
++ break
++ libname=libapt-private
++ shift
++ destpath=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/
++ [ -z /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib/ ]
++ echo /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
++ egrep ^/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot/usr/lib/
++ [ -z bin ]
++ dotlai=libapt-private.lai
++ cd bin
++ find . -name libapt-private.lai
++ wc -l
++ number_of_files=0
++ [ 0 -gt 1 ]
++ cd bin
++ find . -name libapt-private.lai
++ sed s/^\.//;s/\/libapt-private.lai$//;q
++ dir=bin
++ pwd
++ olddir=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
++ __runcmd cd bin
++ [ -z  ]
++ echo oe_libinstall: cd bin
+oe_libinstall: cd bin
++ cd bin
++ lafile=libapt-private.la
++ [ ! -f libapt-private.la ]
++ echo libapt-private
++ sed s/-[0-9.]*$//
++ libname1=libapt-private
++ lafile1=libapt-private.la
++ [ -f libapt-private.la ]
++ [ -f libapt-private.la ]
++ library_names=libapt-private.so* libapt-private.dll.a libapt-private.*.dylib
++ __runcmd install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
++ [ -z  ]
++ echo oe_libinstall: install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
+oe_libinstall: install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
++ install -d /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
++ dota=libapt-private.a
++ [ -f libapt-private.a -o -n  ]
++ [ -f libapt-private.lai -a -n  ]
++ eval echo libapt-private.so
++ echo libapt-private.so
++ files=libapt-private.so
++ [ ! -e libapt-private.so ]
++ [ -L libapt-private.so ]
++ __runcmd cp -P libapt-private.so /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
++ [ -z  ]
++ echo oe_libinstall: cp -P libapt-private.so /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
+oe_libinstall: cp -P libapt-private.so /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
++ cp -P libapt-private.so /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
++ eval echo libapt-private.so.0.0
++ echo libapt-private.so.0.0
++ files=libapt-private.so.0.0
++ [ ! -e libapt-private.so.0.0 ]
++ [ -L libapt-private.so.0.0 ]
++ __runcmd cp -P libapt-private.so.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
++ [ -z  ]
++ echo oe_libinstall: cp -P libapt-private.so.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
+oe_libinstall: cp -P libapt-private.so.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
++ cp -P libapt-private.so.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
++ eval echo libapt-private.so.0.0.0
++ echo libapt-private.so.0.0.0
++ files=libapt-private.so.0.0.0
++ [ ! -e libapt-private.so.0.0.0 ]
++ [ -L libapt-private.so.0.0.0 ]
++ [ ! -L libapt-private.so.0.0.0 ]
++ libfile=libapt-private.so.0.0.0
++ rm -f /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//libapt-private.so.0.0.0
++ __runcmd install -m 0755 libapt-private.so.0.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
++ [ -z  ]
++ echo oe_libinstall: install -m 0755 libapt-private.so.0.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
+oe_libinstall: install -m 0755 libapt-private.so.0.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
++ install -m 0755 libapt-private.so.0.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//
++ eval echo libapt-private.dll.a
++ echo libapt-private.dll.a
++ files=libapt-private.dll.a
++ [ ! -e libapt-private.dll.a ]
++ [ -n  ]
++ eval echo libapt-private.*.dylib
++ echo libapt-private.*.dylib
++ files=libapt-private.*.dylib
++ [ ! -e libapt-private.*.dylib ]
++ [ -n  ]
++ [ -z libapt-private.so.0.0.0 ]
++ [ -z  ]
++ basename libapt-private.so.0.0.0
++ baselibfile=libapt-private.so.0.0.0
++ echo libapt-private.so.0.0.0
++ grep -qE ^lib.*\.so\.[0-9.]*$
++ arm-poky-linux-gnueabi-readelf -d libapt-private.so.0.0.0
++ grep Library soname:
++ sed -e s/.*\[\(.*\)\].*/\1/
++ sonamelink=libapt-private.so.0.0
++ echo libapt-private.so.0.0.0
++ sed -e s/\.so\..*/.so/
++ solink=libapt-private.so
++ [ -n libapt-private.so.0.0 -a xlibapt-private.so.0.0.0 != xlibapt-private.so.0.0 ]
++ __runcmd ln -sf libapt-private.so.0.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//libapt-private.so.0.0
++ [ -z  ]
++ echo oe_libinstall: ln -sf libapt-private.so.0.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//libapt-private.so.0.0
+oe_libinstall: ln -sf libapt-private.so.0.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//libapt-private.so.0.0
++ ln -sf libapt-private.so.0.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//libapt-private.so.0.0
++ __runcmd ln -sf libapt-private.so.0.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//libapt-private.so
++ [ -z  ]
++ echo oe_libinstall: ln -sf libapt-private.so.0.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//libapt-private.so
+oe_libinstall: ln -sf libapt-private.so.0.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//libapt-private.so
++ ln -sf libapt-private.so.0.0.0 /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/image/usr/lib//libapt-private.so
++ __runcmd cd /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
++ [ -z  ]
++ echo oe_libinstall: cd /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
+oe_libinstall: cd /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
++ cd /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build
++ ret=0
++ trap  0
++ exit 0
+DEBUG: Shell function do_install finished
+DEBUG: Executing shell function remove_libtool_la
+DEBUG: Shell function remove_libtool_la finished
+DEBUG: Executing python function rm_sysvinit_initddir
+DEBUG: Python function rm_sysvinit_initddir finished
+DEBUG: Executing python function rm_systemd_unitdir
+DEBUG: Python function rm_systemd_unitdir finished

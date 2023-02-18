@@ -1,0 +1,12 @@
+PN: python3
+PV: 3.8.14
+PR: r0
+PKGV: 3.8.14
+PKGR: r0
+LICENSE: PSF-2.0 & BSD-0-Clause
+DESCRIPTION: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+SUMMARY: The Python Programming Language
+SECTION: devel/python
+PKG_python3: python3
+FILES_INFO: {}
+PKGSIZE_python3: 0

@@ -1,0 +1,21 @@
+PN: curl
+PV: 7.69.1
+PR: r0
+PKGV: 7.69.1
+PKGR: r0
+LICENSE: MIT
+DESCRIPTION: It uses URL syntax to transfer data to and from servers. curl is a widely used because of its ability to be flexible and complete complex tasks. For example, you can use curl for things like user authentication, HTTP post, SSL connections, proxy support, FTP uploads, and more!
+SUMMARY: Command line tool and library for client-side URL transfers
+RDEPENDS_libcurl: glibc (>= 2.31+git0+d4b7559457) gnutls (>= 3.6.14) libidn2 (>= 2.3.0) nettle (>= 3.5.1) zlib (>= 1.2.11)
+RPROVIDES_libcurl:  libcurl (=7.69.1)
+RRECOMMENDS_libcurl:  ca-certificates
+SECTION: console/network
+PKG_libcurl: libcurl4
+FILES_libcurl: /usr/lib/lib*.so.*
+FILES_INFO: {"/usr/lib/libcurl.so.4": 16, "/usr/lib/libcurl.so.4.6.0": 247240}
+pkg_postinst_libcurl: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libcurl: /usr/lib/libcurl.so.4.6.0
+FILERPROVIDES_/usr/lib/libcurl.so.4.6.0_libcurl:  libcurl.so.4
+FILERDEPENDSFLIST_libcurl: /usr/lib/libcurl.so.4.6.0
+FILERDEPENDS_/usr/lib/libcurl.so.4.6.0_libcurl:  ld-linux-armhf.so.3(GLIBC_2.4) libidn2.so.0(IDN2_0.0.0) libpthread.so.0(GLIBC_2.4) libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_2.28) libc.so.6(GLIBC_2.16) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libgnutls.so.30(GNUTLS_3_4) libnettle.so.7(NETTLE_7) libidn2.so.0 libnettle.so.7 libgnutls.so.30 libz.so.1 libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_libcurl: 247256

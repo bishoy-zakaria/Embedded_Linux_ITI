@@ -1,0 +1,1620 @@
+DEBUG: Executing python function sstate_task_prefunc
+DEBUG: Python function sstate_task_prefunc finished
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/pseudo/pseudo_git.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.2.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/rpm/rpm_4.14.2.1.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['opkg-utils-native']
+NOTE: Skipping as already exists in sysroot: ['pseudo-native', 'rpm-native', 'file-native', 'gettext-minimal-native', 'db-native', 'bzip2-native', 'libarchive-native', 'xz-native', 'automake-native', 'pkgconfig-native', 'autoconf-native', 'python3-native', 'gnu-config-native', 'popt-native', 'dbus-native', 'openssl-native', 'perl-native', 'libtool-native', 'quilt-native', 'elfutils-native', 'patch-native', 'zlib-native', 'e2fsprogs-native', 'lzo-native', 'texinfo-dummy-native', 'm4-native', 'libnsl2-native', 'util-linux-native', 'libffi-native', 'readline-native', 'libtirpc-native', 'sqlite3-native', 'gdbm-native', 'expat-native', 'attr-native', 'ncurses-native', 'libcap-ng-native', 'libpcre2-native']
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_package_write_rpm
+DEBUG: Executing python function read_subpackage_metadata
+DEBUG: Python function read_subpackage_metadata finished
+DEBUG: Executing python function do_package_rpm
+DEBUG: Executing python function write_specfile
+NOTE: Creating RPM package for python3-src
+NOTE: libgdbm-dbg rprovides gdbm-dbg, not replacing the latter
+NOTE: libc6-dbg rprovides glibc-dbg, not replacing the latter
+NOTE: libnsl-dbg rprovides libnsl2-dbg, not replacing the latter
+NOTE: libcrypt-dbg rprovides libxcrypt-dbg, not replacing the latter
+NOTE: libreadline-dbg rprovides readline-dbg, not replacing the latter
+NOTE: libz-dbg rprovides zlib-dbg, not replacing the latter
+NOTE: Creating RPM package for python3-dbg
+NOTE: Creating RPM package for python3-tests
+NOTE: Creating RPM package for python3-2to3
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-asyncio
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-audio
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-codecs
+NOTE: Creating RPM package for python3-compile
+NOTE: Creating RPM package for python3-compression
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: libbz2 -> libbz2-1
+NOTE: package name mapping done: liblzma -> liblzma5
+NOTE: package name mapping done: libpython3 -> libpython3.8-1.0
+NOTE: package name mapping done: readline -> libreadline8
+NOTE: package name mapping done: zlib -> libz1
+NOTE: Creating RPM package for python3-core
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: libcrypto -> libcrypto1.1
+NOTE: package name mapping done: libxcrypt -> libcrypt2
+NOTE: Creating RPM package for python3-crypt
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: libffi -> libffi7
+NOTE: Creating RPM package for python3-ctypes
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: ncurses-libncursesw -> libncursesw5
+NOTE: package name mapping done: ncurses-libpanelw -> libpanelw5
+NOTE: package name mapping done: ncurses-libtinfo -> libtinfo5
+NOTE: Creating RPM package for python3-curses
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-datetime
+NOTE: package name mapping done: gdbm-compat -> libgdbm-compat4
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-db
+NOTE: Creating RPM package for python3-debugger
+NOTE: Creating RPM package for python3-difflib
+NOTE: Not creating empty RPM package for python3-distutils-windows
+NOTE: Creating RPM package for python3-distutils
+NOTE: Creating RPM package for python3-doctest
+NOTE: Creating RPM package for python3-email
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-fcntl
+NOTE: package name mapping done: gdbm -> libgdbm6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-gdbm
+NOTE: Creating RPM package for python3-html
+NOTE: Creating RPM package for python3-idle
+NOTE: Creating RPM package for python3-image
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: libcrypto -> libcrypto1.1
+NOTE: package name mapping done: libssl -> libssl1.1
+NOTE: Creating RPM package for python3-io
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-json
+NOTE: Creating RPM package for python3-logging
+NOTE: Creating RPM package for python3-mailbox
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-math
+NOTE: Creating RPM package for python3-mime
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-mmap
+NOTE: Creating empty RPM package for python3-modules
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-multiprocessing
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: util-linux-libuuid -> libuuid1
+NOTE: Creating RPM package for python3-netclient
+NOTE: Creating RPM package for python3-netserver
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-numbers
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-pickle
+NOTE: Creating empty RPM package for python3-pkgutil
+NOTE: Creating RPM package for python3-plistlib
+NOTE: Creating RPM package for python3-pprint
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-profile
+NOTE: Creating RPM package for python3-pydoc
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-resource
+NOTE: Creating RPM package for python3-shell
+NOTE: Creating RPM package for python3-smtpd
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: libsqlite3 -> libsqlite3-0
+NOTE: Creating RPM package for python3-sqlite3
+NOTE: Creating RPM package for python3-stringold
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-syslog
+NOTE: Creating RPM package for python3-terminal
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-threading
+NOTE: Creating RPM package for python3-tkinter
+NOTE: Creating RPM package for python3-typing
+NOTE: Creating RPM package for python3-unittest
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: libtirpc -> libtirpc3
+NOTE: Creating RPM package for python3-unixadmin
+NOTE: Creating RPM package for python3-venv
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-xml
+NOTE: Creating RPM package for python3-xmlrpc
+NOTE: package name mapping done: glibc -> libc6
+NOTE: libgcc1 rprovides libgcc, not replacing the latter
+NOTE: Creating RPM package for libpython3.8-1.0
+NOTE: Creating RPM package for libpython3.8-staticdev
+NOTE: libgcc1 rprovides libgcc, not replacing the latter
+NOTE: tzdata-europe rprovides tzdata-europe, not replacing the latter
+NOTE: Creating RPM package for python3-ptest
+NOTE: Not creating empty RPM package for python3-staticdev
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: libpython3 -> libpython3.8-1.0
+NOTE: libgdbm-dev rprovides gdbm-dev, not replacing the latter
+NOTE: libc6-dev rprovides glibc-dev, not replacing the latter
+NOTE: libgcc-s-dev rprovides libgcc-dev, not replacing the latter
+NOTE: libnsl-dev rprovides libnsl2-dev, not replacing the latter
+NOTE: libcrypt-dev rprovides libxcrypt-dev, not replacing the latter
+NOTE: libreadline-dev rprovides readline-dev, not replacing the latter
+NOTE: libz-dev rprovides zlib-dev, not replacing the latter
+NOTE: Creating RPM package for python3-dev
+NOTE: Creating RPM package for python3-doc
+NOTE: Not creating empty RPM package for python3-locale
+NOTE: Not creating empty RPM package for python3
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Creating RPM package for python3-misc
+NOTE: Not creating empty RPM package for python3-man
+DEBUG: Python function write_specfile finished
+DEBUG: PKGWRITEDIR: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4
+DEBUG: Executing shell function BUILDSPEC
+Building target platforms: cortexa7t2hf_neon_vfpv4-poky-linux
+Building for target cortexa7t2hf_neon_vfpv4-poky-linux
+Processing files: python3-src-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-src = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-dbg-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-dbg = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: gdbm-compat-dbg gdbm-dbg glibc-dbg libbz2-dbg libcrypto-dbg libffi-dbg liblzma-dbg libnsl2-dbg libpython3-dbg libsqlite3-dbg libssl-dbg libtirpc-dbg libxcrypt-dbg ncurses-libncursesw-dbg ncurses-libpanelw-dbg ncurses-libtinfo-dbg readline-dbg util-linux-libuuid-dbg zlib-dbg
+Processing files: python3-tests-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-tests = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-2to3-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-2to3 = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-asyncio-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-asyncio = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-audio-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-audio = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-codecs-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-codecs = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-compile-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-compile = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-compression-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-compression = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-core-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: /usr/bin/python python3-core = 3.8.14-r0
+Requires(interp): /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh /bin/sh /usr/bin/env /usr/bin/python3.8 ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libbz2-1 >= 1.0.8 libbz2.so.1 libc.so.6 libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.9) libc6 >= 2.31+git0+d4b7559457 liblzma.so.5 liblzma.so.5(XZ_5.0) liblzma5 >= 5.2.4 libm.so.6 libm.so.6(GLIBC_2.29) libm.so.6(GLIBC_2.4) libpython3.8-1.0 >= 3.8.14 libpython3.8.so.1.0 libreadline.so.8 libreadline8 >= 8.0 libz.so.1 libz.so.1(ZLIB_1.2.0) libz1 >= 1.2.11 rtld(GNU_HASH) update-alternatives-opkg
+Requires(preun): /bin/sh /bin/sh /usr/bin/env /usr/bin/python3.8 ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libbz2-1 >= 1.0.8 libbz2.so.1 libc.so.6 libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.9) libc6 >= 2.31+git0+d4b7559457 liblzma.so.5 liblzma.so.5(XZ_5.0) liblzma5 >= 5.2.4 libm.so.6 libm.so.6(GLIBC_2.29) libm.so.6(GLIBC_2.4) libpython3.8-1.0 >= 3.8.14 libpython3.8.so.1.0 libreadline.so.8 libreadline8 >= 8.0 libz.so.1 libz.so.1(ZLIB_1.2.0) libz1 >= 1.2.11 rtld(GNU_HASH) update-alternatives-opkg
+Processing files: python3-crypt-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-crypt = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: ca-certificates openssl
+Processing files: python3-ctypes-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-ctypes = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-curses-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-curses = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-datetime-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-datetime = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-db-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-db = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-debugger-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-debugger = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-difflib-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-difflib = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-distutils-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-distutils = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-doctest-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-doctest = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-email-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-email = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-fcntl-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-fcntl = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-gdbm-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-gdbm = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-html-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-html = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-idle-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-idle = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-image-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-image = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-io-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-io = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-json-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-json = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-logging-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-logging = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-mailbox-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-mailbox = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-math-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-math = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-mime-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-mime = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-mmap-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-mmap = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-modules-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+Processing files: python3-multiprocessing-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-multiprocessing = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-netclient-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-netclient = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-netserver-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-netserver = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-numbers-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-numbers = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-pickle-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-pickle = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-pkgutil-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+Processing files: python3-plistlib-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-plistlib = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-pprint-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-pprint = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-profile-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-profile = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-pydoc-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-pydoc = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-resource-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-resource = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-shell-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-shell = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-smtpd-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-smtpd = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-sqlite3-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-sqlite3 = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-stringold-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-stringold = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-syslog-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-syslog = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-terminal-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-terminal = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-threading-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-threading = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-tkinter-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-tkinter = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-typing-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-typing = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-unittest-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-unittest = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-unixadmin-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-unixadmin = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-venv-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-pyvenv python3-venv = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-xml-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-xml = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-xmlrpc-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-xmlrpc = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: libpython3.8-1.0-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: libpython3 = 3.8.14 libpython3.8-1.0 = 3.8.14-r0 libpython3.8.so.1.0
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.25) libc.so.6(GLIBC_2.26) libc.so.6(GLIBC_2.27) libc.so.6(GLIBC_2.28) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.6) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.9) libc6 >= 2.31+git0+d4b7559457 libdl.so.2 libdl.so.2(GLIBC_2.4) libgcc libm.so.6 libm.so.6(GLIBC_2.29) libm.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) libutil.so.1 libutil.so.1(GLIBC_2.4) rtld(GNU_HASH)
+Processing files: libpython3.8-staticdev-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: libpython3-staticdev = 3.8.14 libpython3.8-staticdev = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-ptest-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-ptest = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: ptest-runner
+Processing files: python3-dev-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: /usr/bin/python3.8-config libpython3.so python3-dev = 3.8.14-r0
+Requires(interp): /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh /usr/bin/python3.8 libc.so.6 libc.so.6(GLIBC_2.4) libc6 >= 2.31+git0+d4b7559457 libpython3.8-1.0 >= 3.8.14 libpython3.8.so.1.0 python3-core python3-distutils rtld(GNU_HASH) update-alternatives-opkg
+Requires(preun): /bin/sh /usr/bin/python3.8 libc.so.6 libc.so.6(GLIBC_2.4) libc6 >= 2.31+git0+d4b7559457 libpython3.8-1.0 >= 3.8.14 libpython3.8.so.1.0 python3-core python3-distutils rtld(GNU_HASH) update-alternatives-opkg
+Recommends: autoconf-archive-dev bash-dev bzip2-dev coreutils-dev gdbm-compat-dev gdbm-dev glibc-dev ldconfig-dev libbz2-dev libcrypto-dev libffi-dev libgcc-dev liblzma-dev libnsl2-dev libpython3-dev libsqlite3-dev libssl-dev libtirpc-dev libxcrypt-dev locale-base-tr-tr.iso-8859-9-dev ncurses-libncursesw-dev ncurses-libpanelw-dev ncurses-libtinfo-dev openssl-dev python3-2to3-dev python3-asyncio-dev python3-audio-dev python3-codecs-dev python3-compile-dev python3-compression-dev python3-core-dev python3-crypt-dev python3-ctypes-dev python3-curses-dev python3-datetime-dev python3-db-dev python3-debugger-dev python3-difflib-dev python3-distutils-dev python3-doctest-dev python3-email-dev python3-fcntl-dev python3-html-dev python3-idle-dev python3-image-dev python3-io-dev python3-json-dev python3-logging-dev python3-mailbox-dev python3-math-dev python3-mime-dev python3-misc-dev python3-mmap-dev python3-modules-dev python3-multiprocessing-dev python3-netclient-dev python3-netserver-dev python3-numbers-dev python3-pickle-dev python3-pkgutil-dev python3-plistlib-dev python3-pprint-dev python3-profile-dev python3-pydoc-dev python3-resource-dev python3-shell-dev python3-smtpd-dev python3-sqlite3-dev python3-stringold-dev python3-syslog-dev python3-terminal-dev python3-tests-dev python3-threading-dev python3-tkinter-dev python3-typing-dev python3-unittest-dev python3-unixadmin-dev python3-venv-dev python3-xml-dev python3-xmlrpc-dev readline-dev sed-dev sqlite3-dev tzdata-europe-dev unzip-dev update-alternatives-opkg-dev util-linux-dev util-linux-libuuid-dev xz-dev zlib-dev
+Processing files: python3-doc-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-doc = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: python3-misc-3.8.14-r0.cortexa7t2hf_neon_vfpv4
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Provides: python3-misc = 3.8.14-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native/usr/bin/../../usr/lib/rpm/check-files /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/package
+Finished binary package job, result 0, filename (null)
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-compile-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-compile-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-codecs-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-codecs-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-audio-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-audio-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-crypt-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-crypt-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-ctypes-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-ctypes-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-compression-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-compression-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-curses-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-curses-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-db-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-db-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-2to3-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-2to3-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-datetime-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-datetime-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename (null)
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-debugger-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-debugger-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-difflib-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-difflib-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-doctest-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-doctest-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-fcntl-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-fcntl-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-gdbm-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-gdbm-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-html-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-html-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-asyncio-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-asyncio-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-image-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-image-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-email-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-email-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-json-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-json-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-logging-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-logging-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-mailbox-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-mailbox-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-math-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-math-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-mime-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-mime-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-mmap-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-mmap-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-modules-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-modules-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-io-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-io-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-multiprocessing-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-multiprocessing-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-netserver-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-netserver-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-numbers-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-numbers-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-idle-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-idle-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-pkgutil-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-pkgutil-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-plistlib-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-plistlib-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-pprint-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-pprint-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-netclient-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-netclient-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-profile-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-profile-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-resource-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-resource-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-pickle-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-pickle-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-shell-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-shell-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-sqlite3-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-sqlite3-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-stringold-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-stringold-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-syslog-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-syslog-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-terminal-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-terminal-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-smtpd-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-smtpd-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-threading-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-threading-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-distutils-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-distutils-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-typing-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-typing-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-unixadmin-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-unixadmin-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-venv-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-venv-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-unittest-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-unittest-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-xmlrpc-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-xmlrpc-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-tkinter-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-tkinter-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-xml-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-xml-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-ptest-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-ptest-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename (null)
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-pydoc-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-pydoc-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-doc-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-doc-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename (null)
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-dev-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-dev-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename (null)
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/libpython3.8-1.0-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/libpython3.8-1.0-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-core-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-core-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-misc-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-misc-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-tests-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-tests-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-src-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-src-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-dbg-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-dbg-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Wrote: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/libpython3.8-staticdev-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+Finished binary package job, result 0, filename /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms/cortexa7t2hf_neon_vfpv4/libpython3.8-staticdev-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+DEBUG: Shell function BUILDSPEC finished
+DEBUG: Python function do_package_rpm finished
+DEBUG: Python function do_package_write_rpm finished
+DEBUG: Executing python function sstate_task_postfunc
+NOTE: Using umask 0o002 (not 22) for sstate packaging
+DEBUG: Preparing tree /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms for packaging at /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/sstate-build-package_write_rpm/deploy-rpms
+DEBUG: Executing python function sstate_hardcode_path
+NOTE: Removing hardcoded paths from sstate package: 'find /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/sstate-build-package_write_rpm/ \( -name "*.la" -o -name "*-config" -o -name "*_config" -o -name "postinst-*" -o -name "Makefile" -o -name "_sysconfigdata.py" \) -type f | xargs grep -l -e '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot' -e '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native' -e '/home/bishoy/Desktop/sources/poky/build/tmp/hosttools' | tee /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/sstate-build-package_write_rpm/fixmepath | xargs --no-run-if-empty sed -i -e 's:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native:FIXMESTAGINGDIRHOST:g' -e 's:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot:FIXMESTAGINGDIRTARGET:g' -e 's:/home/bishoy/Desktop/sources/poky/build/tmp/hosttools:FIXME_HOSTTOOLS_DIR:g''
+DEBUG: Python function sstate_hardcode_path finished
+DEBUG: Executing python function sstate_report_unihash
+DEBUG: Reported task 15d429083d9219ab2cd50703778cf9c1661ee8158b911c722774cce2234e3121 as unihash 15d429083d9219ab2cd50703778cf9c1661ee8158b911c722774cce2234e3121 to unix:///home/bishoy/Desktop/sources/poky/build/hashserve.sock
+DEBUG: Python function sstate_report_unihash finished
+DEBUG: Executing shell function sstate_create_package
+DEBUG: Shell function sstate_create_package finished
+DEBUG: Executing python function sstate_hardcode_path_unpack
+DEBUG: Python function sstate_hardcode_path_unpack finished
+DEBUG: Executing python function uninative_changeinterp
+DEBUG: Python function uninative_changeinterp finished
+DEBUG: Staging files from /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-rpms to /home/bishoy/Desktop/sources/poky/build/tmp/deploy/rpm
+DEBUG: Python function sstate_task_postfunc finished

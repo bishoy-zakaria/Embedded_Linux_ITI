@@ -1,0 +1,20 @@
+PN: gdbm
+PV: 1.18.1
+PR: r0
+PKGV: 1.18.1
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION: Library of database functions that use extensible hashing and work similar to the standard UNIX dbm. These routines are provided to a programmer needing to create and manipulate a hashed database.
+SUMMARY: Key/value database library with extensible hashing
+RDEPENDS_gdbm: glibc (>= 2.31+git0+d4b7559457)
+RPROVIDES_gdbm:  gdbm (=1.18.1)
+SECTION: libs
+PKG_gdbm: libgdbm6
+FILES_gdbm: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.*             /etc /com /var             /bin/* /sbin/*             /lib/*.so.*             /lib/udev /usr/lib/udev             /lib/udev /usr/lib/udev             /usr/share/gdbm /usr/lib/gdbm/*             /usr/share/pixmaps /usr/share/applications             /usr/share/idl /usr/share/omf /usr/share/sounds             /usr/lib/bonobo/servers
+FILES_INFO: {"/usr/lib/libgdbm.so.6": 16, "/usr/lib/libgdbm.so.6.0.0": 38304}
+pkg_postinst_gdbm: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_gdbm: /usr/lib/libgdbm.so.6.0.0
+FILERPROVIDES_/usr/lib/libgdbm.so.6.0.0_gdbm:  libgdbm.so.6
+FILERDEPENDSFLIST_gdbm: /usr/lib/libgdbm.so.6.0.0
+FILERDEPENDS_/usr/lib/libgdbm.so.6.0.0_gdbm:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.28) libc.so.6(GLIBC_2.4) libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_gdbm: 38320

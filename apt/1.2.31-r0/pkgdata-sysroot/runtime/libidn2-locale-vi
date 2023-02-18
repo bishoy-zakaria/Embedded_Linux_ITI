@@ -1,0 +1,15 @@
+PN: libidn2
+PV: 2.3.0
+PR: r0
+PKGV: 2.3.0
+PKGR: r0
+LICENSE: (GPLv2+ | LGPLv3) & GPLv3+
+DESCRIPTION_libidn2-locale-vi: Implementation of the Stringprep, Punycode and IDNA specifications defined by the IETF Internationalized Domain Names (IDN) working group.  This package contains language translation files for the vi locale.
+SUMMARY_libidn2-locale-vi: Internationalized Domain Name support library - vi translations
+RPROVIDES_libidn2-locale-vi: libidn2-locale vi-translation
+RRECOMMENDS_libidn2-locale-vi: virtual-locale-vi
+SECTION: libs
+PKG_libidn2-locale-vi: libidn2-locale-vi
+FILES_libidn2-locale-vi: /usr/share/locale/vi
+FILES_INFO: {"/usr/share/locale/vi/LC_MESSAGES/libidn2.mo": 1090}
+PKGSIZE_libidn2-locale-vi: 1090

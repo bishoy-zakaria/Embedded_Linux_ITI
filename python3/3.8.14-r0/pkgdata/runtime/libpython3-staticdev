@@ -1,0 +1,14 @@
+PN: python3
+PV: 3.8.14
+PR: r0
+PKGV: 3.8.14
+PKGR: r0@EXTENDPRAUTO@
+LICENSE: PSF-2.0 & BSD-0-Clause
+DESCRIPTION: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+SUMMARY: The Python Programming Language
+RPROVIDES_libpython3-staticdev:  libpython3-staticdev (=3.8.14)
+SECTION: devel/python
+PKG_libpython3-staticdev: libpython3.8-staticdev
+FILES_libpython3-staticdev:  /usr/lib/python3.8/config-3.8-*/libpython3.8.a
+FILES_INFO: {"/usr/lib/python3.8/config-3.8-arm-linux-gnueabi/libpython3.8.a": 18817126}
+PKGSIZE_libpython3-staticdev: 18817126

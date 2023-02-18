@@ -1,0 +1,14 @@
+PN: python3
+PV: 3.8.14
+PR: r0
+PKGV: 3.8.14
+PKGR: r0
+LICENSE: PSF-2.0 & BSD-0-Clause
+DESCRIPTION: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+SUMMARY_python3-html: Python HTML processing support
+RDEPENDS_python3-html: python3-core
+SECTION: devel/python
+PKG_python3-html: python3-html
+FILES_python3-html:  /usr/lib/python3.8/formatter.py /usr/lib/python3.8/html /usr/lib/python3.8/__pycache__/formatter.*.pyc
+FILES_INFO: {"/usr/lib/python3.8/__pycache__/formatter.cpython-38.opt-1.pyc": 17545, "/usr/lib/python3.8/__pycache__/formatter.cpython-38.opt-2.pyc": 15105, "/usr/lib/python3.8/__pycache__/formatter.cpython-38.pyc": 17545, "/usr/lib/python3.8/formatter.py": 15143, "/usr/lib/python3.8/html/__init__.py": 4756, "/usr/lib/python3.8/html/__pycache__/__init__.cpython-38.opt-1.pyc": 3618, "/usr/lib/python3.8/html/__pycache__/__init__.cpython-38.opt-2.pyc": 2959, "/usr/lib/python3.8/html/__pycache__/__init__.cpython-38.pyc": 3618, "/usr/lib/python3.8/html/__pycache__/entities.cpython-38.opt-1.pyc": 50529, "/usr/lib/python3.8/html/__pycache__/entities.cpython-38.opt-2.pyc": 50477, "/usr/lib/python3.8/html/__pycache__/entities.cpython-38.pyc": 50529, "/usr/lib/python3.8/html/__pycache__/parser.cpython-38.opt-1.pyc": 10778, "/usr/lib/python3.8/html/__pycache__/parser.cpython-38.opt-2.pyc": 9417, "/usr/lib/python3.8/html/__pycache__/parser.cpython-38.pyc": 11198, "/usr/lib/python3.8/html/entities.py": 75315, "/usr/lib/python3.8/html/parser.py": 17721}
+PKGSIZE_python3-html: 356253

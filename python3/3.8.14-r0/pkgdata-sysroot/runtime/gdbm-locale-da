@@ -1,0 +1,15 @@
+PN: gdbm
+PV: 1.18.1
+PR: r0
+PKGV: 1.18.1
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_gdbm-locale-da: Library of database functions that use extensible hashing and work similar to the standard UNIX dbm. These routines are provided to a programmer needing to create and manipulate a hashed database.  This package contains language translation files for the da locale.
+SUMMARY_gdbm-locale-da: Key/value database library with extensible hashing - da translations
+RPROVIDES_gdbm-locale-da: gdbm-locale da-translation gdbm-locale-da (=1.18.1)
+RRECOMMENDS_gdbm-locale-da: virtual-locale-da
+SECTION: libs
+PKG_gdbm-locale-da: libgdbm-locale-da
+FILES_gdbm-locale-da: /usr/share/locale/da
+FILES_INFO: {"/usr/share/locale/da/LC_MESSAGES/gdbm.mo": 14387}
+PKGSIZE_gdbm-locale-da: 14387

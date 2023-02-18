@@ -1,0 +1,13 @@
+PN: gcc-runtime
+PV: 9.5.0
+PR: r0
+PKGV: 9.5.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.
+SUMMARY_libgomp-staticdev: GNU OpenMP parallel programming library - static development files
+SECTION: devel
+PKG_libgomp-staticdev: libgomp-staticdev
+FILES_libgomp-staticdev: /usr/lib/libgomp*.a
+FILES_INFO: {"/usr/lib/libgomp.a": 1752064}
+PKGSIZE_libgomp-staticdev: 1752064

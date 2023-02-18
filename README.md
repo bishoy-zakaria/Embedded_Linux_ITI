@@ -105,3 +105,33 @@ lsblk
 ```
  sudo dd if=core-image-minimal-raspberrypi3.rpi-sdimg of=/dev/sdb
 ```
+#Build depian package manager for rasberrypi  
+ 
+ > ## Add these lines to local.conf  
+```
+PACKAGE_CLASSES = "package_deb"
+PACKAGE_FEED_URIS = "http://some_domain_or_ip:5678"
+EXTRA_IMAGE_FEATURES += " package-management "
+```
+
+ > ## Build the image again using bitbake 
+  ```
+ bitbake core-image-base
+ ```
+ 
+ > ## extract the image again to the SD-card
+ After the build of the project finish successfully you will find your image in path "/home/bishoy/Desktop/sources/poky/build/tmp/deploy/images/raspberrypi3/"  
+ to extract it to your SD card you simply can use "dd" comand but firstly you must get your sd-card id carfully and this is important to not remove another partion or disk
+ 
+```
+cd /home/bishoy/Desktop/sources/poky/build/tmp/deploy/images/raspberrypi3/
+```
+ 
+to know your sd-card id you can use command
+```
+lsblk
+```
+ 
+```
+ sudo dd if=core-image-minimal-raspberrypi3.rpi-sdimg of=/dev/sdb
+```

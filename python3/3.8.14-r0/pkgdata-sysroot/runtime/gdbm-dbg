@@ -1,0 +1,16 @@
+PN: gdbm
+PV: 1.18.1
+PR: r0
+PKGV: 1.18.1
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_gdbm-dbg: Library of database functions that use extensible hashing and work similar to the standard UNIX dbm. These routines are provided to a programmer needing to create and manipulate a hashed database.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_gdbm-dbg: Key/value database library with extensible hashing - Debugging files
+RPROVIDES_gdbm-dbg:  gdbm-dbg (=1.18.1)
+RRECOMMENDS_gdbm-dbg: gdbm-compat-dbg glibc-dbg
+SECTION_gdbm-dbg: devel
+PKG_gdbm-dbg: libgdbm-dbg
+ALLOW_EMPTY_gdbm-dbg: 1
+FILES_gdbm-dbg: /usr/lib/debug /usr/lib/debug-static /usr/src/debug
+FILES_INFO: {"/usr/bin/.debug/gdbm_dump": 53520, "/usr/bin/.debug/gdbm_load": 58592, "/usr/bin/.debug/gdbmtool": 270024, "/usr/lib/.debug/libgdbm.so.6.0.0": 269304, "/usr/lib/.debug/libgdbm_compat.so.4.0.0": 70940, "/usr/lib/gdbm/ptest/tests/.debug/closerr": 12440, "/usr/lib/gdbm/ptest/tests/.debug/d_creat_ce": 14360, "/usr/lib/gdbm/ptest/tests/.debug/dtdel": 14132, "/usr/lib/gdbm/ptest/tests/.debug/dtdump": 13884, "/usr/lib/gdbm/ptest/tests/.debug/dtfetch": 14960, "/usr/lib/gdbm/ptest/tests/.debug/dtload": 17016, "/usr/lib/gdbm/ptest/tests/.debug/fdop": 9660, "/usr/lib/gdbm/ptest/tests/.debug/g_open_ce": 13184, "/usr/lib/gdbm/ptest/tests/.debug/g_reorg_ce": 13596, "/usr/lib/gdbm/ptest/tests/.debug/gtdel": 14772, "/usr/lib/gdbm/ptest/tests/.debug/gtdump": 15500, "/usr/lib/gdbm/ptest/tests/.debug/gtfetch": 16428, "/usr/lib/gdbm/ptest/tests/.debug/gtload": 22420, "/usr/lib/gdbm/ptest/tests/.debug/gtopt": 30192, "/usr/lib/gdbm/ptest/tests/.debug/gtrecover": 16488, "/usr/lib/gdbm/ptest/tests/.debug/gtver": 13488, "/usr/lib/gdbm/ptest/tests/.debug/num2word": 25404}
+PKGSIZE_gdbm-dbg: 1000304

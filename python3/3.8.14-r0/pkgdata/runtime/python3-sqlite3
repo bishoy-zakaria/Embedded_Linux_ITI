@@ -1,0 +1,16 @@
+PN: python3
+PV: 3.8.14
+PR: r0
+PKGV: 3.8.14
+PKGR: r0@EXTENDPRAUTO@
+LICENSE: PSF-2.0 & BSD-0-Clause
+DESCRIPTION: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+SUMMARY_python3-sqlite3: Python Sqlite3 database support
+RDEPENDS_python3-sqlite3: python3-core python3-datetime glibc (>= 2.31+git0+d4b7559457) libsqlite3 (>= 3.31.1)
+SECTION: devel/python
+PKG_python3-sqlite3: python3-sqlite3
+FILES_python3-sqlite3:  /usr/lib/python3.8/lib-dynload/_sqlite3.*.so /usr/lib/python3.8/sqlite3
+FILES_INFO: {"/usr/lib/python3.8/lib-dynload/_sqlite3.cpython-38-arm-linux-gnueabi.so": 53520, "/usr/lib/python3.8/sqlite3/__init__.py": 1018, "/usr/lib/python3.8/sqlite3/__pycache__/__init__.cpython-38.opt-1.pyc": 160, "/usr/lib/python3.8/sqlite3/__pycache__/__init__.cpython-38.opt-2.pyc": 160, "/usr/lib/python3.8/sqlite3/__pycache__/__init__.cpython-38.pyc": 160, "/usr/lib/python3.8/sqlite3/__pycache__/dbapi2.cpython-38.opt-1.pyc": 2504, "/usr/lib/python3.8/sqlite3/__pycache__/dbapi2.cpython-38.opt-2.pyc": 2504, "/usr/lib/python3.8/sqlite3/__pycache__/dbapi2.cpython-38.pyc": 2504, "/usr/lib/python3.8/sqlite3/__pycache__/dump.cpython-38.opt-1.pyc": 1929, "/usr/lib/python3.8/sqlite3/__pycache__/dump.cpython-38.opt-2.pyc": 1621, "/usr/lib/python3.8/sqlite3/__pycache__/dump.cpython-38.pyc": 1929, "/usr/lib/python3.8/sqlite3/dbapi2.py": 2687, "/usr/lib/python3.8/sqlite3/dump.py": 2825}
+FILERDEPENDSFLIST_python3-sqlite3: /usr/lib/python3.8/lib-dynload/@underscore@sqlite3.cpython-38-arm-linux-gnueabi.so
+FILERDEPENDS_/usr/lib/python3.8/lib-dynload/@underscore@sqlite3.cpython-38-arm-linux-gnueabi.so_python3-sqlite3:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libsqlite3.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_python3-sqlite3: 73521

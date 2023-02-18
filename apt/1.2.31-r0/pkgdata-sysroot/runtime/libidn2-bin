@@ -1,0 +1,16 @@
+PN: libidn2
+PV: 2.3.0
+PR: r0
+PKGV: 2.3.0
+PKGR: r0
+LICENSE_libidn2-bin: GPLv3+
+DESCRIPTION: Implementation of the Stringprep, Punycode and IDNA specifications defined by the IETF Internationalized Domain Names (IDN) working group.
+SUMMARY: Internationalized Domain Name support library
+RDEPENDS_libidn2-bin: glibc (>= 2.31+git0+d4b7559457) libidn2 (>= 2.3.0) libunistring (>= 0.9.10)
+SECTION: libs
+PKG_libidn2-bin: libidn2-bin
+FILES_libidn2-bin: /usr/bin/* /usr/sbin/*
+FILES_INFO: {"/usr/bin/idn2": 50852}
+FILERDEPENDSFLIST_libidn2-bin: /usr/bin/idn2
+FILERDEPENDS_/usr/bin/idn2_libidn2-bin:  libidn2.so.0(IDN2_0.0.0) ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libidn2.so.0 libunistring.so.2 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_libidn2-bin: 50852

@@ -1,0 +1,20 @@
+PN: util-linux
+PV: 2.35.1
+PR: r0
+PKGV: 2.35.1
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD-3-Clause & BSD-4-Clause
+DESCRIPTION_util-linux-mesg: util-linux mesg
+SUMMARY_util-linux-mesg: util-linux mesg
+RDEPENDS_util-linux-mesg: update-alternatives-opkg glibc (>= 2.31+git0+d4b7559457)
+SECTION: base
+PKG_util-linux-mesg: util-linux-mesg
+FILES_util-linux-mesg: /usr/bin/mesg.util-linux
+FILES_INFO: {"/usr/bin/mesg.util-linux": 9664}
+pkg_postinst_util-linux-mesg: #!/bin/sh\nset -e\n\tupdate-alternatives --install /usr/bin/mesg mesg /usr/bin/mesg.util-linux 80\n
+pkg_prerm_util-linux-mesg: #!/bin/sh\nset -e\n\tupdate-alternatives --remove  mesg /usr/bin/mesg.util-linux\n
+FILERPROVIDESFLIST_util-linux-mesg:  /usr/bin/mesg.util-linux
+FILERPROVIDES_/usr/bin/mesg.util-linux_util-linux-mesg:  /usr/bin/mesg
+FILERDEPENDSFLIST_util-linux-mesg: /usr/bin/mesg.util-linux
+FILERDEPENDS_/usr/bin/mesg.util-linux_util-linux-mesg:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_util-linux-mesg: 9664

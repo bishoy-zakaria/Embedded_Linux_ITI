@@ -1,0 +1,7 @@
+OEOuthashBasic
+5
+SSTATE_PKGSPEC=sstate:apt:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:1.2.31:r0:cortexa7t2hf-neon-vfpv4:3:
+task=deploy_source_date_epoch
+drwxrwxr-x                                                                                       .
+drwxrwxr-x                                                                                       ./deploy-source-date-epoch
+-rw-r--r--                   10 31a8045657d8cfd3862485c9fb0444c2e26cf79a5e5a2dfafee809e8b28d9a60 ./deploy-source-date-epoch/__source_date_epoch.txt

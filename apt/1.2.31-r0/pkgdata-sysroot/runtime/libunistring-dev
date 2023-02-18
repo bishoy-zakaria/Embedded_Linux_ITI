@@ -1,0 +1,16 @@
+PN: libunistring
+PV: 0.9.10
+PR: r0
+PKGV: 0.9.10
+PKGR: r0
+LICENSE: LGPLv3+ | GPLv2
+DESCRIPTION_libunistring-dev: Text files are nowadays usually encoded in Unicode, and may consist of very different scripts from Latin letters to Chinese Hanzi with many kinds of special characters accents, right-to-left writing marks, hyphens, Roman numbers, and much more. But the POSIX platform APIs for text do not contain adequate functions for dealing with particular properties of many Unicode characters. In fact, the POSIX APIs for text have several assumptions at their base which don't hold for Unicode text.  This library provides functions for manipulating Unicode strings and for manipulating C strings according to the Unicode standard.  This package contains documentation.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_libunistring-dev: Library for manipulating C and Unicode strings - Development files
+RDEPENDS_libunistring-dev: libunistring (= 0.9.10-r0)
+RRECOMMENDS_libunistring-dev: glibc-dev
+SECTION_libunistring-dev: devel
+PKG_libunistring-dev: libunistring-dev
+ALLOW_EMPTY_libunistring-dev: 1
+FILES_libunistring-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la                 /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig                 /usr/share/aclocal /lib/*.o                 /usr/lib/libunistring/*.la /lib/*.la                 /usr/lib/cmake /usr/share/cmake
+FILES_INFO: {"/usr/include/unicase.h": 20564, "/usr/include/uniconv.h": 7732, "/usr/include/unictype.h": 45036, "/usr/include/unigbrk.h": 4867, "/usr/include/unilbrk.h": 4338, "/usr/include/uniname.h": 1834, "/usr/include/uninorm.h": 10965, "/usr/include/unistdio.h": 9732, "/usr/include/unistr.h": 23008, "/usr/include/unistring/cdefs.h": 2748, "/usr/include/unistring/iconveh.h": 1467, "/usr/include/unistring/inline.h": 2421, "/usr/include/unistring/localcharset.h": 1564, "/usr/include/unistring/stdbool.h": 4308, "/usr/include/unistring/stdint.h": 4667, "/usr/include/unistring/version.h": 1300, "/usr/include/unistring/woe32dll.h": 1148, "/usr/include/unitypes.h": 1962, "/usr/include/uniwbrk.h": 3007, "/usr/include/uniwidth.h": 2432, "/usr/lib/libunistring.so": 21}
+PKGSIZE_libunistring-dev: 155121

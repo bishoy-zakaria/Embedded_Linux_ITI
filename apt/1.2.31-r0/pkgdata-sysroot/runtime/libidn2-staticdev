@@ -1,0 +1,14 @@
+PN: libidn2
+PV: 2.3.0
+PR: r0
+PKGV: 2.3.0
+PKGR: r0
+LICENSE: (GPLv2+ | LGPLv3) & GPLv3+
+DESCRIPTION_libidn2-staticdev: Implementation of the Stringprep, Punycode and IDNA specifications defined by the IETF Internationalized Domain Names (IDN) working group.  This package contains static libraries for software development.
+SUMMARY_libidn2-staticdev: Internationalized Domain Name support library - Development files (Static Libraries)
+RDEPENDS_libidn2-staticdev: libidn2-dev (= 2.3.0-r0)
+SECTION_libidn2-staticdev: devel
+PKG_libidn2-staticdev: libidn2-staticdev
+FILES_libidn2-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/libidn2/*.a
+FILES_INFO: {}
+PKGSIZE_libidn2-staticdev: 0

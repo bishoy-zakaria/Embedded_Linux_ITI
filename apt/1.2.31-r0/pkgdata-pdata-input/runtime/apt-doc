@@ -1,0 +1,13 @@
+PN: apt
+PV: 1.2.31
+PR: r0
+PKGV: 1.2.31
+PKGR: r0
+LICENSE: GPLv2.0+
+DESCRIPTION_apt-doc: Provides command-line tools for searching and managing as well as querying information about packages as a low-level access to all features of the libapt-pkg library.  This package contains documentation.
+SUMMARY_apt-doc: Advanced front-end for dpkg - Documentation files
+SECTION_apt-doc: doc
+PKG_apt-doc: apt-doc
+FILES_apt-doc: /usr/share/man/man8/apt-cache.8 \t      /usr/share/man/man8/apt-cdrom.8 \t      /usr/share/man/man8/apt-config.8 \t      /usr/share/man/man8/apt-get.8 \t      /usr/share/man/man8/apt.8 \t      /usr/share/man/man5/apt.conf.5 \t      /usr/share/man/man5/apt_preferences.5 \t      /usr/share/man/man5/sources.list.5 /usr/share/man/man8/apt-key.8 \t\t   /usr/share/doc/apt
+FILES_INFO: {"/usr/share/doc/apt/examples/apt-ftparchive.conf": 1411, "/usr/share/doc/apt/examples/apt-https-method-example.conf": 8486, "/usr/share/doc/apt/examples/apt.conf": 496, "/usr/share/doc/apt/examples/configure-index": 13052, "/usr/share/doc/apt/examples/ftp-archive.conf": 2217, "/usr/share/doc/apt/examples/preferences": 166}
+PKGSIZE_apt-doc: 25828

@@ -1,0 +1,23 @@
+PN: readline
+PV: 8.0
+PR: r0
+PKGV: 8.0
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION: The GNU Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in. Both Emacs and vi editing modes are available. The Readline library includes  additional functions to maintain a list of previously-entered command lines, to recall and perhaps reedit those   lines, and perform csh-like history expansion on previous commands.
+SUMMARY: Library for editing typed command lines
+RDEPENDS_readline: glibc (>= 2.31+git0+d4b7559457) ncurses-libtinfo (>= 6.2)
+RPROVIDES_readline:  readline (=8.0)
+SECTION: libs
+PKG_readline: libreadline8
+FILES_readline: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.*             /etc /com /var             /bin/* /sbin/*             /lib/*.so.*             /lib/udev /usr/lib/udev             /lib/udev /usr/lib/udev             /usr/share/readline /usr/lib/readline/*             /usr/share/pixmaps /usr/share/applications             /usr/share/idl /usr/share/omf /usr/share/sounds             /usr/lib/bonobo/servers
+CONFFILES_readline:  /etc/inputrc
+FILES_INFO: {"/etc/inputrc": 1633, "/usr/lib/libhistory.so.8": 17, "/usr/lib/libhistory.so.8.0": 25864, "/usr/lib/libreadline.so.8": 18, "/usr/lib/libreadline.so.8.0": 196436}
+pkg_postinst_readline: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_readline: /usr/lib/libhistory.so.8.0 /usr/lib/libreadline.so.8.0
+FILERPROVIDES_/usr/lib/libhistory.so.8.0_readline:  libhistory.so.8
+FILERPROVIDES_/usr/lib/libreadline.so.8.0_readline:  libreadline.so.8
+FILERDEPENDSFLIST_readline: /usr/lib/libhistory.so.8.0 /usr/lib/libreadline.so.8.0
+FILERDEPENDS_/usr/lib/libhistory.so.8.0_readline:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.28) libc.so.6(GLIBC_2.4) libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libreadline.so.8.0_readline:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.28) libc.so.6(GLIBC_2.11) libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_2.4) libtinfo.so.5 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_readline: 223968

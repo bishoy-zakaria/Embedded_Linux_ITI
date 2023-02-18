@@ -1,0 +1,16 @@
+PN: util-linux
+PV: 2.35.1
+PR: r0
+PKGV: 2.35.1
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD-3-Clause & BSD-4-Clause
+DESCRIPTION_util-linux-lsns: util-linux lsns
+SUMMARY_util-linux-lsns: util-linux lsns
+RDEPENDS_util-linux-lsns: glibc (>= 2.31+git0+d4b7559457) util-linux-libmount (>= 2.35.1) util-linux-libsmartcols (>= 2.35.1)
+SECTION: base
+PKG_util-linux-lsns: util-linux-lsns
+FILES_util-linux-lsns: /usr/bin/lsns
+FILES_INFO: {"/usr/bin/lsns": 30144}
+FILERDEPENDSFLIST_util-linux-lsns: /usr/bin/lsns
+FILERDEPENDS_/usr/bin/lsns_util-linux-lsns:  ld-linux-armhf.so.3(GLIBC_2.4) libmount.so.1(MOUNT_2.19) libsmartcols.so.1(SMARTCOLS_2.29) libsmartcols.so.1(SMARTCOLS_2.27) libsmartcols.so.1(SMARTCOLS_2.25) libsmartcols.so.1(SMARTCOLS_2.33) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.4) libsmartcols.so.1 libmount.so.1 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_util-linux-lsns: 30144

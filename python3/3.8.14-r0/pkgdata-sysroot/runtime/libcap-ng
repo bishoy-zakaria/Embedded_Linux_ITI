@@ -1,0 +1,20 @@
+PN: libcap-ng
+PV: 0.7.10
+PR: r0
+PKGV: 0.7.10
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2.1+
+DESCRIPTION: The libcap-ng library is intended to make programming with POSIX capabilities much easier than the traditional libcap library.
+SUMMARY: An alternate posix capabilities library
+RDEPENDS_libcap-ng: glibc (>= 2.31+git0+d4b7559457)
+RPROVIDES_libcap-ng:  libcap-ng (=0.7.10)
+SECTION: base
+PKG_libcap-ng: libcap-ng0
+FILES_libcap-ng: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.*             /etc /com /var             /bin/* /sbin/*             /lib/*.so.*             /lib/udev /usr/lib/udev             /lib/udev /usr/lib/udev             /usr/share/libcap-ng /usr/lib/libcap-ng/*             /usr/share/pixmaps /usr/share/applications             /usr/share/idl /usr/share/omf /usr/share/sounds             /usr/lib/bonobo/servers
+FILES_INFO: {"/lib/libcap-ng.so.0": 18, "/lib/libcap-ng.so.0.0.0": 13608}
+pkg_postinst_libcap-ng: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libcap-ng: /lib/libcap-ng.so.0.0.0
+FILERPROVIDES_/lib/libcap-ng.so.0.0.0_libcap-ng:  libcap-ng.so.0
+FILERDEPENDSFLIST_libcap-ng: /lib/libcap-ng.so.0.0.0
+FILERDEPENDS_/lib/libcap-ng.so.0.0.0_libcap-ng:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.4) libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_libcap-ng: 13626

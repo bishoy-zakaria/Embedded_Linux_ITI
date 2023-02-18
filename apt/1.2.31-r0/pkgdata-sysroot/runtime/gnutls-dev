@@ -1,0 +1,19 @@
+PN: gnutls
+PV: 3.6.14
+PR: r0
+PKGV: 3.6.14
+PKGR: r0
+LICENSE: GPLv3+ & LGPLv2.1+
+DESCRIPTION_gnutls-dev: a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_gnutls-dev: GNU Transport Layer Security Library - Development files
+RDEPENDS_gnutls-dev: gnutls (= 3.6.14-r0) gnutls (>= 3.6.14) gnutls-openssl gnutls-xx glibc (>= 2.31+git0+d4b7559457)
+RPROVIDES_gnutls-dev:  gnutls-dev (=3.6.14)
+RRECOMMENDS_gnutls-dev: gmp-dev libidn2-dev libunistring-dev nettle-dev glibc-dev gnutls-openssl-dev gnutls-xx-dev libgcc-dev libstdc++-dev
+SECTION_gnutls-dev: devel
+PKG_gnutls-dev: libgnutls-dev
+ALLOW_EMPTY_gnutls-dev: 1
+FILES_gnutls-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la                 /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig                 /usr/share/aclocal /lib/*.o                 /usr/lib/gnutls/*.la /lib/*.la                 /usr/lib/cmake /usr/share/cmake /usr/bin/gnutls-cli-debug
+FILES_INFO: {"/usr/bin/gnutls-cli-debug": 134884, "/usr/include/gnutls/abstract.h": 26552, "/usr/include/gnutls/compat.h": 9466, "/usr/include/gnutls/crypto.h": 11404, "/usr/include/gnutls/dtls.h": 2795, "/usr/include/gnutls/gnutls.h": 136225, "/usr/include/gnutls/gnutlsxx.h": 12361, "/usr/include/gnutls/ocsp.h": 10397, "/usr/include/gnutls/openpgp.h": 15020, "/usr/include/gnutls/openssl.h": 9335, "/usr/include/gnutls/pkcs11.h": 20799, "/usr/include/gnutls/pkcs12.h": 5264, "/usr/include/gnutls/pkcs7.h": 5522, "/usr/include/gnutls/self-test.h": 1304, "/usr/include/gnutls/socket.h": 1454, "/usr/include/gnutls/system-keys.h": 1892, "/usr/include/gnutls/tpm.h": 2308, "/usr/include/gnutls/urls.h": 2485, "/usr/include/gnutls/x509-ext.h": 7844, "/usr/include/gnutls/x509.h": 63522, "/usr/lib/libgnutls-openssl.so": 27, "/usr/lib/libgnutls.so": 20, "/usr/lib/libgnutlsxx.so": 21, "/usr/lib/pkgconfig/gnutls.pc": 745}
+FILERDEPENDSFLIST_gnutls-dev: /usr/bin/gnutls-cli-debug
+FILERDEPENDS_/usr/bin/gnutls-cli-debug_gnutls-dev:  ld-linux-armhf.so.3(GLIBC_2.4) libgnutls.so.30(GNUTLS_3_6_3) libgnutls.so.30(GNUTLS_3_6_4) libgnutls.so.30(GNUTLS_PRIVATE_3_4) libgnutls.so.30(GNUTLS_3_6_0) libgnutls.so.30(GNUTLS_3_6_5) libgnutls.so.30(GNUTLS_3_6_6) libgnutls.so.30(GNUTLS_3_4) libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.4) libgnutls.so.30 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_gnutls-dev: 481646

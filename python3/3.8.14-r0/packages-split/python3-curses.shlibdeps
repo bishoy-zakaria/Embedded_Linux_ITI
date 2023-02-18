@@ -1,0 +1,4 @@
+glibc (>= 2.31+git0+d4b7559457)
+ncurses-libncursesw (>= 6.2)
+ncurses-libpanelw (>= 6.2)
+ncurses-libtinfo (>= 6.2)

@@ -1,0 +1,15 @@
+PN: gnutls
+PV: 3.6.14
+PR: r0
+PKGV: 3.6.14
+PKGR: r0
+LICENSE: GPLv3+ & LGPLv2.1+
+DESCRIPTION_gnutls-staticdev: a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them.  This package contains static libraries for software development.
+SUMMARY_gnutls-staticdev: GNU Transport Layer Security Library - Development files (Static Libraries)
+RDEPENDS_gnutls-staticdev: gnutls-dev (= 3.6.14-r0)
+RPROVIDES_gnutls-staticdev:  gnutls-staticdev (=3.6.14)
+SECTION_gnutls-staticdev: devel
+PKG_gnutls-staticdev: libgnutls-staticdev
+FILES_gnutls-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/gnutls/*.a
+FILES_INFO: {}
+PKGSIZE_gnutls-staticdev: 0

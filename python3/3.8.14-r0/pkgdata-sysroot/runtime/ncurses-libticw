@@ -1,0 +1,20 @@
+PN: ncurses
+PV: 6.2
+PR: r0
+PKGV: 6.2
+PKGR: r0
+LICENSE: MIT
+DESCRIPTION_ncurses-libticw: ncurses ticw library
+SUMMARY_ncurses-libticw: ncurses ticw library
+RDEPENDS_ncurses-libticw: glibc (>= 2.31+git0+d4b7559457) ncurses-libtinfo (>= 6.2)
+RPROVIDES_ncurses-libticw:  ncurses-libticw (=6.2)
+SECTION: libs
+PKG_ncurses-libticw: libticw5
+FILES_ncurses-libticw: /usr/lib/libticw.so.5 /usr/lib/libticw.so.5.9
+FILES_INFO: {"/usr/lib/libticw.so.5": 14, "/usr/lib/libticw.so.5.9": 42276}
+pkg_postinst_ncurses-libticw: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_ncurses-libticw: /usr/lib/libticw.so.5.9
+FILERPROVIDES_/usr/lib/libticw.so.5.9_ncurses-libticw:  libticw.so.5
+FILERDEPENDSFLIST_ncurses-libticw: /usr/lib/libticw.so.5.9
+FILERDEPENDS_/usr/lib/libticw.so.5.9_ncurses-libticw:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.4) libtinfo.so.5 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_ncurses-libticw: 42290

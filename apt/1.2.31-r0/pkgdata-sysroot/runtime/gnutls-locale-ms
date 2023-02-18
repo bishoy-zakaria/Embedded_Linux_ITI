@@ -1,0 +1,15 @@
+PN: gnutls
+PV: 3.6.14
+PR: r0
+PKGV: 3.6.14
+PKGR: r0
+LICENSE: GPLv3+ & LGPLv2.1+
+DESCRIPTION_gnutls-locale-ms: a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them.  This package contains language translation files for the ms locale.
+SUMMARY_gnutls-locale-ms: GNU Transport Layer Security Library - ms translations
+RPROVIDES_gnutls-locale-ms: gnutls-locale ms-translation gnutls-locale-ms (=3.6.14)
+RRECOMMENDS_gnutls-locale-ms: virtual-locale-ms
+SECTION: base
+PKG_gnutls-locale-ms: libgnutls-locale-ms
+FILES_gnutls-locale-ms: /usr/share/locale/ms
+FILES_INFO: {"/usr/share/locale/ms/LC_MESSAGES/gnutls.mo": 16309}
+PKGSIZE_gnutls-locale-ms: 16309

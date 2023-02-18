@@ -1,0 +1,5 @@
+OEOuthashBasic
+5
+SSTATE_PKGSPEC=sstate:apt:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:1.2.31:r0:cortexa7t2hf-neon-vfpv4:3:
+task=package_qa
+drwxrwxr-x                                                                                       .

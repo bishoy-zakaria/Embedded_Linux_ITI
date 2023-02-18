@@ -1,0 +1,16 @@
+PN: util-linux
+PV: 2.35.1
+PR: r0
+PKGV: 2.35.1
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD-3-Clause & BSD-4-Clause
+DESCRIPTION_util-linux-partx: util-linux partx
+SUMMARY_util-linux-partx: util-linux partx
+RDEPENDS_util-linux-partx: glibc (>= 2.31+git0+d4b7559457) util-linux-libblkid (>= 2.35.1) util-linux-libsmartcols (>= 2.35.1)
+SECTION: base
+PKG_util-linux-partx: util-linux-partx
+FILES_util-linux-partx: /usr/sbin/partx
+FILES_INFO: {"/usr/sbin/partx": 75200}
+FILERDEPENDSFLIST_util-linux-partx: /usr/sbin/partx
+FILERDEPENDS_/usr/sbin/partx_util-linux-partx:  ld-linux-armhf.so.3(GLIBC_2.4) libsmartcols.so.1(SMARTCOLS_2.25) libblkid.so.1(BLKID_1.0) libblkid.so.1(BLKID_2.18) libblkid.so.1(BLKID_2.30) libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libblkid.so.1(BLKID_2.25) libc.so.6(GLIBC_2.28) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.4) libblkid.so.1 libsmartcols.so.1 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_util-linux-partx: 75200

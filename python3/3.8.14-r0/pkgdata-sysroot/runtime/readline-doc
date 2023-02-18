@@ -1,0 +1,19 @@
+PN: readline
+PV: 8.0
+PR: r0
+PKGV: 8.0
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_readline-doc: The GNU Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in. Both Emacs and vi editing modes are available. The Readline library includes  additional functions to maintain a list of previously-entered command lines, to recall and perhaps reedit those   lines, and perform csh-like history expansion on previous commands.  This package contains documentation.
+SUMMARY_readline-doc: Library for editing typed command lines - Documentation files
+RDEPENDS_readline-doc: update-alternatives-opkg
+RPROVIDES_readline-doc:  readline-doc (=8.0)
+SECTION_readline-doc: doc
+PKG_readline-doc: libreadline-doc
+FILES_readline-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc             /usr/share/gnome/help
+FILES_INFO: {"/usr/share/doc/readline/CHANGES": 71235, "/usr/share/doc/readline/INSTALL": 12304, "/usr/share/doc/readline/README": 8028, "/usr/share/info/history.info": 62892, "/usr/share/info/readline.info": 232581, "/usr/share/info/rluserman.info": 88497, "/usr/share/man/man3/history.3.readline": 22723, "/usr/share/man/man3/readline.3": 49075}
+pkg_postinst_readline-doc: #!/bin/sh\nset -e\n\tupdate-alternatives --install /usr/share/man/man3/history.3 history.3 /usr/share/man/man3/history.3.readline 100\n
+pkg_prerm_readline-doc: #!/bin/sh\nset -e\n\tupdate-alternatives --remove  history.3 /usr/share/man/man3/history.3.readline\n
+FILERPROVIDESFLIST_readline-doc:  /usr/share/man/man3/history.3.readline
+FILERPROVIDES_/usr/share/man/man3/history.3.readline_readline-doc:  /usr/share/man/man3/history.3
+PKGSIZE_readline-doc: 547335

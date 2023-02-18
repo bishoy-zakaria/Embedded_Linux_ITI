@@ -1,0 +1,16 @@
+PN: python3
+PV: 3.8.14
+PR: r0
+PKGV: 3.8.14
+PKGR: r0@EXTENDPRAUTO@
+LICENSE: PSF-2.0 & BSD-0-Clause
+DESCRIPTION: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+SUMMARY_python3-json: Python JSON support
+RDEPENDS_python3-json: python3-core glibc (>= 2.31+git0+d4b7559457)
+SECTION: devel/python
+PKG_python3-json: python3-json
+FILES_python3-json:  /usr/lib/python3.8/json /usr/lib/python3.8/lib-dynload/_json.*.so
+FILES_INFO: {"/usr/lib/python3.8/json/__init__.py": 14345, "/usr/lib/python3.8/json/__pycache__/__init__.cpython-38.opt-1.pyc": 12608, "/usr/lib/python3.8/json/__pycache__/__init__.cpython-38.opt-2.pyc": 3231, "/usr/lib/python3.8/json/__pycache__/__init__.cpython-38.pyc": 12608, "/usr/lib/python3.8/json/__pycache__/decoder.cpython-38.opt-1.pyc": 9844, "/usr/lib/python3.8/json/__pycache__/decoder.cpython-38.opt-2.pyc": 5855, "/usr/lib/python3.8/json/__pycache__/decoder.cpython-38.pyc": 9844, "/usr/lib/python3.8/json/__pycache__/encoder.cpython-38.opt-1.pyc": 11171, "/usr/lib/python3.8/json/__pycache__/encoder.cpython-38.opt-2.pyc": 6820, "/usr/lib/python3.8/json/__pycache__/encoder.cpython-38.pyc": 11171, "/usr/lib/python3.8/json/__pycache__/scanner.cpython-38.opt-1.pyc": 1951, "/usr/lib/python3.8/json/__pycache__/scanner.cpython-38.opt-2.pyc": 1915, "/usr/lib/python3.8/json/__pycache__/scanner.cpython-38.pyc": 1951, "/usr/lib/python3.8/json/__pycache__/tool.cpython-38.opt-1.pyc": 1896, "/usr/lib/python3.8/json/__pycache__/tool.cpython-38.opt-2.pyc": 1603, "/usr/lib/python3.8/json/__pycache__/tool.cpython-38.pyc": 1896, "/usr/lib/python3.8/json/decoder.py": 12472, "/usr/lib/python3.8/json/encoder.py": 16072, "/usr/lib/python3.8/json/scanner.py": 2425, "/usr/lib/python3.8/json/tool.py": 2015, "/usr/lib/python3.8/lib-dynload/_json.cpython-38-arm-linux-gnueabi.so": 26788}
+FILERDEPENDSFLIST_python3-json: /usr/lib/python3.8/lib-dynload/@underscore@json.cpython-38-arm-linux-gnueabi.so
+FILERDEPENDS_/usr/lib/python3.8/lib-dynload/@underscore@json.cpython-38-arm-linux-gnueabi.so_python3-json:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_python3-json: 168481

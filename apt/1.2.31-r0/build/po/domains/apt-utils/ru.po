@@ -1,0 +1,3692 @@
+# Russian messages for the apt suite.
+#
+# Vadim Kutchin <amadis@chemi.komisc.ru>, 2002.
+# Ilgiz Kalmetev <ilgiz@bashtelecom.ru>, 2002.
+# Tichomir Koryakov <Tichomir.Koryakov@usu.ru>, 2002.
+# Nikolai Prokoschenko <nikolai@prokoschenko.de>, 2004.
+# Dmitry Astapov <adept@umc.com.ua>, 2004.
+# Dmitry Astapov <adept@despammed.com>, 2004.
+# Yuri Kozlov <kozlov.y@gmail.com>, 2004, 2005, 2006, 2007, 2008.
+# Yuri Kozlov <yuray@komyakino.ru>, 2009, 2010, 2012, 2015, 2016.
+# Lev Lamberov <dogsleg@debian.org>, 2018.
+# Aleksej Shilin <rootlexx@mail.ru>, 2017, 2018, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: apt 1.8.0\n"
+"Report-Msgid-Bugs-To: APT Development Team <deity@lists.debian.org>\n"
+"POT-Creation-Date: 2019-03-12 14:00+0000\n"
+"PO-Revision-Date: 2019-02-10 11:50+0300\n"
+"Last-Translator: Aleksej Shilin <rootlexx@mail.ru>\n"
+"Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: cmdline/apt-extracttemplates.cc
+msgid ""
+"Usage: apt-extracttemplates file1 [file2 ...]\n"
+"\n"
+"apt-extracttemplates is used to extract config and template files\n"
+"from debian packages. It is used mainly by debconf(1) to prompt for\n"
+"configuration questions before installation of packages.\n"
+msgstr ""
+"Использование: apt-extracttemplates файл1 [файл2 …]\n"
+"\n"
+"apt-extracttemplates извлекает из пакетов Debian файлы config\n"
+"и template. В основном она используется debconf(1) для вопросов\n"
+"настройки перед установкой пакетов.\n"
+
+#: cmdline/apt-extracttemplates.cc
+#, c-format
+msgid "Unable to mkstemp %s"
+msgstr "Невозможно выполнить mkstemp %s"
+
+#: cmdline/apt-extracttemplates.cc
+#, c-format
+msgid "Unable to write to %s"
+msgstr "Невозможно записать в %s"
+
+#: cmdline/apt-extracttemplates.cc
+msgid "Cannot get debconf version. Is debconf installed?"
+msgstr "Невозможно определить версию debconf. Он установлен?"
+
+#: cmdline/apt-internal-solver.cc
+msgid ""
+"Usage: apt-internal-solver\n"
+"\n"
+"apt-internal-solver is an interface to use the current internal\n"
+"resolver for the APT family like an external one, for debugging or\n"
+"the like.\n"
+msgstr ""
+"Использование: apt-internal-solver\n"
+"\n"
+"apt-internal-solver — интерфейс для использования внутреннего\n"
+"решателя APT как внешнего. Применяется для отладки.\n"
+
+#: cmdline/apt-sortpkgs.cc
+msgid "Unknown package record!"
+msgstr "Неизвестная запись о пакете!"
+
+#: cmdline/apt-sortpkgs.cc
+msgid ""
+"Usage: apt-sortpkgs [options] file1 [file2 ...]\n"
+"\n"
+"apt-sortpkgs is a simple tool to sort package information files.\n"
+"By default it sorts by binary package information, but the -s option\n"
+"can be used to switch to source package ordering instead.\n"
+msgstr ""
+"Использование: apt-sortpkgs [параметры] файл1 [файл2 …]\n"
+"\n"
+"apt-sortpkgs — простой инструмент для сортировки файлов с информацией\n"
+"о пакетах. По умолчанию он сортирует информацию о двоичных пакетах,\n"
+"но можно указать параметр -s, и будет выполняться сортировка пакетов\n"
+"с исходным кодом.\n"
+
+#: ftparchive/apt-ftparchive.cc
+msgid "Package extension list is too long"
+msgstr "Список расширений пакетов слишком длинный"
+
+#: ftparchive/apt-ftparchive.cc
+#, c-format
+msgid "Error processing directory %s"
+msgstr "Ошибка обработки каталога %s"
+
+#: ftparchive/apt-ftparchive.cc
+msgid "Source extension list is too long"
+msgstr "Список расширений пакетов с исходным кодом слишком длинный"
+
+#: ftparchive/apt-ftparchive.cc
+msgid "Error writing header to contents file"
+msgstr ""
+"Ошибка записи заголовка в полный перечень содержимого пакетов (Contents)"
+
+#: ftparchive/apt-ftparchive.cc
+#, c-format
+msgid "Error processing contents %s"
+msgstr "Ошибка обработки полного перечня содержимого пакетов (Contents) %s"
+
+#: ftparchive/apt-ftparchive.cc
+msgid ""
+"Usage: apt-ftparchive [options] command\n"
+"Commands: packages binarypath [overridefile [pathprefix]]\n"
+"          sources srcpath [overridefile [pathprefix]]\n"
+"          contents path\n"
+"          release path\n"
+"          generate config [groups]\n"
+"          clean config\n"
+"\n"
+"apt-ftparchive generates index files for Debian archives. It supports\n"
+"many styles of generation from fully automated to functional replacements\n"
+"for dpkg-scanpackages and dpkg-scansources\n"
+"\n"
+"apt-ftparchive generates Package files from a tree of .debs. The\n"
+"Package file contains the contents of all the control fields from\n"
+"each package as well as the MD5 hash and filesize. An override file\n"
+"is supported to force the value of Priority and Section.\n"
+"\n"
+"Similarly apt-ftparchive generates Sources files from a tree of .dscs.\n"
+"The --source-override option can be used to specify a src override file\n"
+"\n"
+"The 'packages' and 'sources' command should be run in the root of the\n"
+"tree. BinaryPath should point to the base of the recursive search and \n"
+"override file should contain the override flags. Pathprefix is\n"
+"appended to the filename fields if present. Example usage from the \n"
+"Debian archive:\n"
+"   apt-ftparchive packages dists/potato/main/binary-i386/ > \\\n"
+"               dists/potato/main/binary-i386/Packages\n"
+"\n"
+"Options:\n"
+"  -h    This help text\n"
+"  --md5 Control MD5 generation\n"
+"  -s=?  Source override file\n"
+"  -q    Quiet\n"
+"  -d=?  Select the optional caching database\n"
+"  --no-delink Enable delinking debug mode\n"
+"  --contents  Control contents file generation\n"
+"  -c=?  Read this configuration file\n"
+"  -o=?  Set an arbitrary configuration option"
+msgstr ""
+"Использование: apt-ftparchive [параметры] команда\n"
+"Команды:  packages binarypath [overridefile [pathprefix]]\n"
+"          sources srcpath [overridefile [pathprefix]]\n"
+"          contents path\n"
+"          release path\n"
+"          generate config [groups]\n"
+"          clean config\n"
+"\n"
+"apt-ftparchive создаёт индексные файлы архивов Debian. Он поддерживает\n"
+"множество стилей создания: от полностью автоматического до функциональной\n"
+"замены программ dpkg-scanpackages и dpkg-scansources\n"
+"\n"
+"apt-ftparchive создаёт файлы Package (списки пакетов) для дерева каталогов,\n"
+"содержащих файлы .deb. Файл Package включает в себя управляющие поля "
+"каждого\n"
+"пакета, а также хеш MD5 и размер файла. Значения управляющих полей "
+"«приоритет»\n"
+"(Priority) и «секция» (Section) могут быть изменены с помощью файла "
+"override.\n"
+"\n"
+"Кроме того, apt-ftparchive может создавать файлы Sources из дерева "
+"каталогов,\n"
+"содержащих файлы .dsc. Для указания файла override в этом режиме необходимо\n"
+"использовать параметр --source-override.\n"
+"\n"
+"Команды «packages» и «sources» надо выполнять, находясь в корневом каталоге\n"
+"дерева, которое вы хотите обработать. BinaryPath должен указывать на место,\n"
+"с которого начинается рекурсивный обход, а файл переназначений (override)\n"
+"должен содержать записи о переназначениях управляющих полей. Если был "
+"указан\n"
+"Pathprefix, то его значение добавляется к управляющим полям, содержащим\n"
+"имена файлов. Пример использования для архива Debian:\n"
+"   apt-ftparchive packages dists/potato/main/binary-i386/ > \\\n"
+"               dists/potato/main/binary-i386/Packages\n"
+"\n"
+"Параметры:\n"
+"  -h    этот текст\n"
+"  --md5 управление созданием MD5-хешей\n"
+"  -s=?  указать файл переназначений (override) для файла Sources\n"
+"  -q    не выводить сообщения в процессе работы\n"
+"  -d=?  указать кэширующую базу данных (необязательно)\n"
+"  --no-delink включить режим отладки процесса DeLink\n"
+"  --contents  управление созданием полного перечня содержимого пакетов\n"
+"              (файла Contents)\n"
+"  -c=?  использовать указанный файл настройки\n"
+"  -o=?  задать значение произвольному параметру настройки"
+
+#: ftparchive/apt-ftparchive.cc
+msgid "No selections matched"
+msgstr "Совпадений не обнаружено"
+
+#: ftparchive/apt-ftparchive.cc
+#, c-format
+msgid "Some files are missing in the package file group `%s'"
+msgstr "В группе пакетов «%s» отсутствуют некоторые файлы"
+
+#: ftparchive/cachedb.cc
+#, c-format
+msgid "DB was corrupted, file renamed to %s.old"
+msgstr "База данных повреждена, файл переименован в %s.old"
+
+#: ftparchive/cachedb.cc
+#, c-format
+msgid "DB is old, attempting to upgrade %s"
+msgstr "База данных устарела, попытка обновить %s"
+
+#: ftparchive/cachedb.cc
+msgid ""
+"DB format is invalid. If you upgraded from an older version of apt, please "
+"remove and re-create the database."
+msgstr ""
+"Некорректный формат базы данных. Если вы обновляли версию apt, то удалите и "
+"создайте базу данных заново."
+
+#: ftparchive/cachedb.cc
+#, c-format
+msgid "Unable to open DB file %s: %s"
+msgstr "Невозможно открыть файл базы данных %s: %s"
+
+#: ftparchive/cachedb.cc
+#, c-format
+msgid "Failed to stat %s"
+msgstr "Не удалось получить атрибуты %s"
+
+#: ftparchive/cachedb.cc
+msgid "Failed to read .dsc"
+msgstr "Не удалось прочесть .dsc"
+
+#: ftparchive/cachedb.cc
+msgid "Archive has no control record"
+msgstr "В архиве нет поля control"
+
+#: ftparchive/cachedb.cc
+msgid "Unable to get a cursor"
+msgstr "Невозможно получить курсор"
+
+#: ftparchive/contents.cc
+msgid "realloc - Failed to allocate memory"
+msgstr "realloc — не удалось выделить память"
+
+#: ftparchive/multicompress.cc
+#, c-format
+msgid "Unknown compression algorithm '%s'"
+msgstr "Неизвестный алгоритм сжатия «%s»"
+
+#: ftparchive/multicompress.cc
+#, c-format
+msgid "Compressed output %s needs a compression set"
+msgstr ""
+"Для получения сжатого вывода %s необходимо указать набор алгоритмов сжатия"
+
+#: ftparchive/multicompress.cc
+msgid "Failed to create IPC pipe to subprocess"
+msgstr "Не удалось создать IPC-канал для порождённого процесса"
+
+#: ftparchive/multicompress.cc
+msgid "Failed to fork"
+msgstr "Не удалось запустить порождённый процесс"
+
+#: ftparchive/multicompress.cc
+msgid "Compress child"
+msgstr "Процесс-потомок, производящий сжатие"
+
+#: ftparchive/multicompress.cc
+#, c-format
+msgid "Internal error, failed to create %s"
+msgstr "Внутренняя ошибка: не удалось создать %s"
+
+#: ftparchive/multicompress.cc
+msgid "IO to subprocess/file failed"
+msgstr "Ошибка ввода/вывода в подпроцесс/файл"
+
+#: ftparchive/multicompress.cc
+msgid "Failed to read while computing MD5"
+msgstr "Ошибка чтения во время вычисления MD5"
+
+#: ftparchive/multicompress.cc
+#, c-format
+msgid "Failed to rename %s to %s"
+msgstr "Не удалось переименовать %s в %s"
+
+#: ftparchive/override.cc
+#, c-format
+msgid "Unable to open %s"
+msgstr "Невозможно открыть %s"
+
+#. skip spaces
+#. find end of word
+#: ftparchive/override.cc
+#, c-format
+msgid "Malformed override %s line %llu (%s)"
+msgstr "Неправильная запись о переназначении (override) %s в строке %llu (%s)"
+
+#: ftparchive/override.cc
+#, c-format
+msgid "Failed to read the override file %s"
+msgstr "Не удалось прочесть файл переназначений (override) %s"
+
+#: ftparchive/override.cc
+#, c-format
+msgid "Malformed override %s line %llu #1"
+msgstr "Неправильная запись о переназначении (override) %s в строке %llu #1"
+
+#: ftparchive/override.cc
+#, c-format
+msgid "Malformed override %s line %llu #2"
+msgstr "Неправильная запись о переназначении (override) %s в строке %llu #2"
+
+#: ftparchive/override.cc
+#, c-format
+msgid "Malformed override %s line %llu #3"
+msgstr "Неправильная запись о переназначении (override) %s в строке %llu #3"
+
+#: ftparchive/writer.cc
+#, c-format
+msgid "W: Unable to read directory %s\n"
+msgstr "W: Невозможно прочитать каталог %s\n"
+
+#: ftparchive/writer.cc
+#, c-format
+msgid "W: Unable to stat %s\n"
+msgstr "W: Невозможно прочитать атрибуты %s\n"
+
+#: ftparchive/writer.cc
+msgid "E: "
+msgstr "E: "
+
+#: ftparchive/writer.cc
+msgid "W: "
+msgstr "W: "
+
+#: ftparchive/writer.cc
+msgid "E: Errors apply to file "
+msgstr "E: Ошибки относятся к файлу "
+
+#: ftparchive/writer.cc
+#, c-format
+msgid "Failed to resolve %s"
+msgstr "Не удалось привести %s к каноническому виду"
+
+#: ftparchive/writer.cc
+msgid "Tree walking failed"
+msgstr "Не удалось совершить обход дерева"
+
+#: ftparchive/writer.cc
+#, c-format
+msgid "Failed to open %s"
+msgstr "Не удалось открыть %s"
+
+#: ftparchive/writer.cc
+#, c-format
+msgid " DeLink %s [%s]\n"
+msgstr " DeLink %s [%s]\n"
+
+#: ftparchive/writer.cc
+#, c-format
+msgid "Failed to readlink %s"
+msgstr "Не удалось прочесть значение символьной ссылки %s"
+
+#: ftparchive/writer.cc
+#, c-format
+msgid "*** Failed to link %s to %s"
+msgstr "*** Не удалось создать ссылку %2$s на %1$s"
+
+#: ftparchive/writer.cc
+#, c-format
+msgid " DeLink limit of %sB hit.\n"
+msgstr " Превышено ограничение в %sB для DeLink.\n"
+
+#: ftparchive/writer.cc
+msgid "Archive had no package field"
+msgstr "В архиве нет поля package"
+
+#: ftparchive/writer.cc
+#, c-format
+msgid "  %s has no override entry\n"
+msgstr "  Нет записи о переназначении (override) для %s\n"
+
+#: ftparchive/writer.cc
+#, c-format
+msgid "  %s maintainer is %s not %s\n"
+msgstr "  Пакет %s сопровождает %s, а не %s\n"
+
+#: ftparchive/writer.cc
+#, c-format
+msgid "  %s has no source override entry\n"
+msgstr ""
+"  Нет записи о переназначении пакетов с исходным кодом (source override) для "
+"%s\n"
+
+#: ftparchive/writer.cc
+#, c-format
+msgid "  %s has no binary override entry either\n"
+msgstr ""
+"  Также нет записи о переназначении двоичных пакетов (binary override) для "
+"%s\n"
+
+#, c-format
+#~ msgid "Hit:%lu %s"
+#~ msgstr "Сущ:%lu %s"
+
+#, c-format
+#~ msgid "Get:%lu %s"
+#~ msgstr "Пол:%lu %s"
+
+#, c-format
+#~ msgid "Ign:%lu %s"
+#~ msgstr "Игн:%lu %s"
+
+#, c-format
+#~ msgid "Err:%lu %s"
+#~ msgstr "Ошб:%lu %s"
+
+#, c-format
+#~ msgid "Fetched %sB in %s (%sB/s)\n"
+#~ msgstr "Получено %sB за %s (%sB/s)\n"
+
+#~ msgid " [Working]"
+#~ msgstr " [Обработка]"
+
+#, c-format
+#~ msgid ""
+#~ "Media change: please insert the disc labeled\n"
+#~ " '%s'\n"
+#~ "in the drive '%s' and press [Enter]\n"
+#~ msgstr ""
+#~ "Смена носителя: вставьте диск с меткой\n"
+#~ " «%s»\n"
+#~ "в устройство «%s» и нажмите [Enter]\n"
+
+#~ msgid "Correcting dependencies..."
+#~ msgstr "Исправление зависимостей…"
+
+#~ msgid " failed."
+#~ msgstr " не удалось."
+
+#~ msgid "Unable to correct dependencies"
+#~ msgstr "Невозможно исправить зависимости"
+
+#~ msgid "Unable to minimize the upgrade set"
+#~ msgstr "Невозможно минимизировать набор обновлений"
+
+#~ msgid " Done"
+#~ msgstr " Готово"
+
+#~ msgid "You might want to run 'apt-get -f install' to correct these."
+#~ msgstr ""
+#~ "Возможно, для исправления этих ошибок вы захотите воспользоваться «apt-"
+#~ "get -f install»."
+
+#~ msgid "Unmet dependencies. Try using -f."
+#~ msgstr "Неудовлетворённые зависимости. Попытайтесь использовать -f."
+
+#~ msgid "Sorting"
+#~ msgstr "Сортировка"
+
+#, c-format
+#~ msgid "Note, selecting '%s' for task '%s'\n"
+#~ msgstr "Заметьте, выбирается «%s» для задачи «%s»\n"
+
+#, c-format
+#~ msgid "Note, selecting '%s' for glob '%s'\n"
+#~ msgstr "Заметьте, выбирается «%s» для шаблона «%s»\n"
+
+#, c-format
+#~ msgid "Note, selecting '%s' for regex '%s'\n"
+#~ msgstr "Заметьте, выбирается «%s» для регулярного выражения «%s»\n"
+
+#, c-format
+#~ msgid "Package %s is a virtual package provided by:\n"
+#~ msgstr "Пакет %s — виртуальный, его функции предоставляются пакетами:\n"
+
+#~ msgid " [Installed]"
+#~ msgstr " [Установлен]"
+
+#~ msgid " [Not candidate version]"
+#~ msgstr " [Не версия-кандидат]"
+
+#~ msgid "You should explicitly select one to install."
+#~ msgstr "Вы должны явно указать, какой именно вы хотите установить."
+
+#, c-format
+#~ msgid ""
+#~ "Package %s is not available, but is referred to by another package.\n"
+#~ "This may mean that the package is missing, has been obsoleted, or\n"
+#~ "is only available from another source\n"
+#~ msgstr ""
+#~ "Пакет %s недоступен, но упомянут в списке зависимостей другого\n"
+#~ "пакета. Это может означать, что пакет отсутствует, устарел или\n"
+#~ "доступен из источников, не упомянутых в sources.list\n"
+
+#~ msgid "However the following packages replace it:"
+#~ msgstr "Однако следующие пакеты могут его заменить:"
+
+#, c-format
+#~ msgid "Package '%s' has no installation candidate"
+#~ msgstr "Для пакета «%s» не найден кандидат на установку"
+
+#, c-format
+#~ msgid "Virtual packages like '%s' can't be removed\n"
+#~ msgstr "Виртуальные пакеты, подобные «%s», не могут быть удалены\n"
+
+#, c-format
+#~ msgid "Package '%s' is not installed, so not removed. Did you mean '%s'?\n"
+#~ msgstr ""
+#~ "Пакет «%s» не установлен, поэтому не может быть удалён. Возможно, имелся "
+#~ "в виду «%s»?\n"
+
+#, c-format
+#~ msgid "Package '%s' is not installed, so not removed\n"
+#~ msgstr "Пакет «%s» не установлен, поэтому не может быть удалён\n"
+
+#, c-format
+#~ msgid "Note, selecting '%s' instead of '%s'\n"
+#~ msgstr "Заметьте, вместо «%2$s» выбирается «%1$s»\n"
+
+#~ msgid "Most used commands:"
+#~ msgstr "Основные команды:"
+
+#, c-format
+#~ msgid "See %s for more information about the available commands."
+#~ msgstr "Дополнительную информацию о доступных командах смотрите в %s."
+
+#~ msgid ""
+#~ "Configuration options and syntax is detailed in apt.conf(5).\n"
+#~ "Information about how to configure sources can be found in sources."
+#~ "list(5).\n"
+#~ "Package and version choices can be expressed via apt_preferences(5).\n"
+#~ "Security details are available in apt-secure(8).\n"
+#~ msgstr ""
+#~ "Параметры настройки и синтаксис описаны в apt.conf(5).\n"
+#~ "Информацию о том, как настроить источники, можно найти в sources."
+#~ "list(5).\n"
+#~ "Выбор пакетов и версий описывается в apt_preferences(5).\n"
+#~ "Информация о безопасности доступна в apt-secure(8).\n"
+
+#~ msgid "This APT has Super Cow Powers."
+#~ msgstr "В APT есть коровья СУПЕРСИЛА."
+
+#~ msgid "This APT helper has Super Meep Powers."
+#~ msgstr "В этой программе есть мышиная СУПЕРСИЛА."
+
+#~ msgid "No packages found"
+#~ msgstr "Не найдено ни одного пакета"
+
+#~ msgid "WARNING: The following packages cannot be authenticated!"
+#~ msgstr "ВНИМАНИЕ: Следующие пакеты невозможно аутентифицировать!"
+
+#~ msgid "Authentication warning overridden.\n"
+#~ msgstr "Предупреждение об аутентификации не принято во внимание.\n"
+
+#~ msgid "Some packages could not be authenticated"
+#~ msgstr "Некоторые пакеты не удалось аутентифицировать"
+
+#~ msgid "Install these packages without verification?"
+#~ msgstr "Установить эти пакеты без проверки?"
+
+#~ msgid ""
+#~ "--force-yes is deprecated, use one of the options starting with --allow "
+#~ "instead."
+#~ msgstr ""
+#~ "--force-yes устарел, вместо него используйте параметры, начинающиеся с --"
+#~ "allow."
+
+#~ msgid ""
+#~ "There were unauthenticated packages and -y was used without --allow-"
+#~ "unauthenticated"
+#~ msgstr ""
+#~ "Обнаружены неаутентифицированные пакеты, и был указан параметр -y без --"
+#~ "allow-unauthenticated"
+
+#, c-format
+#~ msgid "Failed to fetch %s  %s\n"
+#~ msgstr "Не удалось получить %s  %s\n"
+
+#, c-format
+#~ msgid "Couldn't determine free space in %s"
+#~ msgstr "Не удалось определить количество свободного места в %s"
+
+#, c-format
+#~ msgid "You don't have enough free space in %s."
+#~ msgstr "Недостаточно свободного места в %s."
+
+#~ msgid "Unable to lock the download directory"
+#~ msgstr "Невозможно заблокировать каталог загрузки"
+
+#~ msgid ""
+#~ "Some packages could not be installed. This may mean that you have\n"
+#~ "requested an impossible situation or if you are using the unstable\n"
+#~ "distribution that some required packages have not yet been created\n"
+#~ "or been moved out of Incoming."
+#~ msgstr ""
+#~ "Некоторые пакеты не могут быть установлены. Возможно, то, что вы "
+#~ "просите,\n"
+#~ "неосуществимо, или же вы используете нестабильную версию дистрибутива, "
+#~ "где\n"
+#~ "запрошенные вами пакеты ещё не созданы или были удалены из Incoming."
+
+#~ msgid "The following information may help to resolve the situation:"
+#~ msgstr "Следующая информация, возможно, вам поможет:"
+
+#~ msgid "Broken packages"
+#~ msgstr "Сломанные пакеты"
+
+#~ msgid "Internal error, InstallPackages was called with broken packages!"
+#~ msgstr ""
+#~ "Внутренняя ошибка: InstallPackages была вызвана со сломанными пакетами!"
+
+#~ msgid "Packages need to be removed but remove is disabled."
+#~ msgstr "Пакеты необходимо удалить, но удаление запрещено."
+
+#~ msgid ""
+#~ "Essential packages were removed and -y was used without --allow-remove-"
+#~ "essential."
+#~ msgstr ""
+#~ "Удалены пакеты первой необходимости, и был указан параметр -y без --allow-"
+#~ "remove-essential."
+
+#~ msgid "Packages were downgraded and -y was used without --allow-downgrades."
+#~ msgstr ""
+#~ "Пакеты заменены на старые версии, и был указан параметр -y без --allow-"
+#~ "downgrades."
+
+#~ msgid ""
+#~ "Held packages were changed and -y was used without --allow-change-held-"
+#~ "packages."
+#~ msgstr ""
+#~ "Были изменены зафиксированные пакеты, и был указан параметр -y без --"
+#~ "allow-change-held-packages."
+
+#~ msgid "Internal error, Ordering didn't finish"
+#~ msgstr "Внутренняя ошибка: упорядочение пакетов не завершилось"
+
+#~ msgid "How odd... The sizes didn't match, email apt@packages.debian.org"
+#~ msgstr "Странно. Несовпадение размеров, напишите на apt@packages.debian.org"
+
+#, c-format
+#~ msgid "Need to get %sB/%sB of archives.\n"
+#~ msgstr "Необходимо скачать %sB/%sB архивов.\n"
+
+#, c-format
+#~ msgid "Need to get %sB of archives.\n"
+#~ msgstr "Необходимо скачать %sB архивов.\n"
+
+#, c-format
+#~ msgid "After this operation, %sB of additional disk space will be used.\n"
+#~ msgstr ""
+#~ "После данной операции объём занятого дискового пространства возрастёт на "
+#~ "%sB.\n"
+
+#, c-format
+#~ msgid "After this operation, %sB disk space will be freed.\n"
+#~ msgstr ""
+#~ "После данной операции объём занятого дискового пространства уменьшится на "
+#~ "%sB.\n"
+
+#~ msgid "Trivial Only specified but this is not a trivial operation."
+#~ msgstr ""
+#~ "Запрошено выполнение только тривиальных операций, но это не тривиальная "
+#~ "операция."
+
+#~ msgid "Yes, do as I say!"
+#~ msgstr "Да, делать, как я говорю!"
+
+#, c-format
+#~ msgid ""
+#~ "You are about to do something potentially harmful.\n"
+#~ "To continue type in the phrase '%s'\n"
+#~ " ?] "
+#~ msgstr ""
+#~ "То, что вы хотите сделать, может иметь нежелательные последствия.\n"
+#~ "Чтобы продолжить, введите фразу «%s»\n"
+#~ " ?] "
+
+#~ msgid "Abort."
+#~ msgstr "Прервано."
+
+#~ msgid "Do you want to continue?"
+#~ msgstr "Хотите продолжить?"
+
+#~ msgid "Some files failed to download"
+#~ msgstr "Некоторые файлы скачать не удалось"
+
+#~ msgid "Download complete and in download only mode"
+#~ msgstr "Указан режим «только скачивание», и скачивание завершено"
+
+#~ msgid ""
+#~ "Unable to fetch some archives, maybe run apt-get update or try with --fix-"
+#~ "missing?"
+#~ msgstr ""
+#~ "Не удалось получить некоторые архивы; возможно, нужно запустить apt-get "
+#~ "update или попытаться повторить запуск с ключом --fix-missing?"
+
+#~ msgid "--fix-missing and media swapping is not currently supported"
+#~ msgstr "--fix-missing и смена носителя в данный момент не поддерживаются"
+
+#~ msgid "Unable to correct missing packages."
+#~ msgstr "Невозможно исправить отсутствие пакетов."
+
+#~ msgid "Aborting install."
+#~ msgstr "Аварийное завершение установки."
+
+#~ msgid ""
+#~ "The following package disappeared from your system as\n"
+#~ "all files have been overwritten by other packages:"
+#~ msgid_plural ""
+#~ "The following packages disappeared from your system as\n"
+#~ "all files have been overwritten by other packages:"
+#~ msgstr[0] ""
+#~ "Следующий пакет исчез из системы, так как все его файлы\n"
+#~ "были перезаписаны другими пакетами:"
+#~ msgstr[1] ""
+#~ "Следующие пакеты исчезли из системы, так как все их файлы\n"
+#~ "были перезаписаны другими пакетами:"
+#~ msgstr[2] ""
+#~ "Следующие пакеты исчезли из системы, так как все их файлы\n"
+#~ "были перезаписаны другими пакетами:"
+
+#~ msgid "Note: This is done automatically and on purpose by dpkg."
+#~ msgstr "Замечание: это сделано автоматически и специально программой dpkg."
+
+#~ msgid "We are not supposed to delete stuff, can't start AutoRemover"
+#~ msgstr "Не разрешено ничего удалять — невозможно запустить AutoRemover"
+
+#~ msgid ""
+#~ "Hmm, seems like the AutoRemover destroyed something which really\n"
+#~ "shouldn't happen. Please file a bug report against apt."
+#~ msgstr ""
+#~ "Хм, кажется, AutoRemover что-то сломал, чего не должно было\n"
+#~ "случиться. Пожалуйста, отправьте сообщение об ошибке в пакете apt."
+
+#~ msgid "Internal Error, AutoRemover broke stuff"
+#~ msgstr "Внутренняя ошибка: AutoRemover всё поломал"
+
+#~ msgid ""
+#~ "The following package was automatically installed and is no longer "
+#~ "required:"
+#~ msgid_plural ""
+#~ "The following packages were automatically installed and are no longer "
+#~ "required:"
+#~ msgstr[0] ""
+#~ "Следующий пакет устанавливался автоматически и больше не требуется:"
+#~ msgstr[1] ""
+#~ "Следующие пакеты устанавливались автоматически и больше не требуются:"
+#~ msgstr[2] ""
+#~ "Следующие пакеты устанавливались автоматически и больше не требуются:"
+
+#, c-format
+#~ msgid "%lu package was automatically installed and is no longer required.\n"
+#~ msgid_plural ""
+#~ "%lu packages were automatically installed and are no longer required.\n"
+#~ msgstr[0] "%lu пакет был установлен автоматически и больше не требуется.\n"
+#~ msgstr[1] ""
+#~ "%lu пакета было установлено автоматически и больше не требуется.\n"
+#~ msgstr[2] ""
+#~ "%lu пакетов было установлено автоматически и больше не требуется.\n"
+
+#, c-format
+#~ msgid "Use '%s' to remove it."
+#~ msgid_plural "Use '%s' to remove them."
+#~ msgstr[0] "Для его удаления используйте «%s»."
+#~ msgstr[1] "Для их удаления используйте «%s»."
+#~ msgstr[2] "Для их удаления используйте «%s»."
+
+#~ msgid "You might want to run 'apt-get -f install' to correct these:"
+#~ msgstr ""
+#~ "Возможно, для исправления этих ошибок вы захотите воспользоваться «apt-"
+#~ "get -f install»:"
+
+#~ msgid ""
+#~ "Unmet dependencies. Try 'apt-get -f install' with no packages (or specify "
+#~ "a solution)."
+#~ msgstr ""
+#~ "Неудовлетворённые зависимости. Попытайтесь выполнить «apt-get -f "
+#~ "install», не указывая имени пакета, (или найдите другое решение)."
+
+#~ msgid "The following additional packages will be installed:"
+#~ msgstr "Будут установлены следующие дополнительные пакеты:"
+
+#~ msgid "Suggested packages:"
+#~ msgstr "Предлагаемые пакеты:"
+
+#~ msgid "Recommended packages:"
+#~ msgstr "Рекомендуемые пакеты:"
+
+#, c-format
+#~ msgid "Skipping %s, it is already installed and upgrade is not set.\n"
+#~ msgstr ""
+#~ "Пропускается %s: пакет уже установлен, а параметр upgrade не задан.\n"
+
+#, c-format
+#~ msgid "Skipping %s, it is not installed and only upgrades are requested.\n"
+#~ msgstr ""
+#~ "Пропускается %s: пакет не установлен, а запрошено только обновление.\n"
+
+#, c-format
+#~ msgid "Reinstallation of %s is not possible, it cannot be downloaded.\n"
+#~ msgstr "Переустановка %s невозможна: он не может быть загружен.\n"
+
+#, c-format
+#~ msgid "%s is already the newest version (%s).\n"
+#~ msgstr "Уже установлен пакет %s самой новой версии (%s).\n"
+
+#, c-format
+#~ msgid "%s set to manually installed.\n"
+#~ msgstr "%s помечен как установленный вручную.\n"
+
+#, c-format
+#~ msgid "Selected version '%s' (%s) for '%s'\n"
+#~ msgstr "Выбрана версия «%s» (%s) для «%s»\n"
+
+#, c-format
+#~ msgid "Selected version '%s' (%s) for '%s' because of '%s'\n"
+#~ msgstr "Выбрана версия «%s» (%s) для «%s» из-за «%s»\n"
+
+#~ msgid "Listing"
+#~ msgstr "Вывод списка"
+
+#, c-format
+#~ msgid "There is %i additional version. Please use the '-a' switch to see it"
+#~ msgid_plural ""
+#~ "There are %i additional versions. Please use the '-a' switch to see them."
+#~ msgstr[0] "Есть %i дополнительная версия. Используйте «-a» для просмотра."
+#~ msgstr[1] ""
+#~ "Есть %i дополнительные версии. Используйте «-a» для их просмотра."
+#~ msgstr[2] ""
+#~ "Есть %i дополнительных версий. Используйте «-a» для их просмотра."
+
+#~ msgid ""
+#~ "NOTE: This is only a simulation!\n"
+#~ "      apt-get needs root privileges for real execution.\n"
+#~ "      Keep also in mind that locking is deactivated,\n"
+#~ "      so don't depend on the relevance to the real current situation!"
+#~ msgstr ""
+#~ "ЗАМЕЧАНИЕ: Производить только имитация работы!\n"
+#~ "      Для реальной работы apt-get требуются права суперпользователя.\n"
+#~ "      Учтите, что блокировка не используется,\n"
+#~ "      поэтому нет полного соответствия с текущей реальной ситуацией!"
+
+#~ msgid "unknown"
+#~ msgstr "неизвестно"
+
+#, c-format
+#~ msgid "[installed,upgradable to: %s]"
+#~ msgstr "[установлен, может быть обновлён до: %s]"
+
+#~ msgid "[installed,local]"
+#~ msgstr "[установлен, локальный]"
+
+#~ msgid "[installed,auto-removable]"
+#~ msgstr "[установлен, может быть удалён автоматически]"
+
+#~ msgid "[installed,automatic]"
+#~ msgstr "[установлен, автоматически]"
+
+#~ msgid "[installed]"
+#~ msgstr "[установлен]"
+
+#, c-format
+#~ msgid "[upgradable from: %s]"
+#~ msgstr "[может быть обновлён с: %s]"
+
+#~ msgid "[residual-config]"
+#~ msgstr "[остались файлы настроек]"
+
+#, c-format
+#~ msgid "but %s is installed"
+#~ msgstr "но %s уже установлен"
+
+#, c-format
+#~ msgid "but %s is to be installed"
+#~ msgstr "но %s должен быть установлен"
+
+#~ msgid "but it is not installable"
+#~ msgstr "но он не может быть установлен"
+
+#~ msgid "but it is a virtual package"
+#~ msgstr "но это виртуальный пакет"
+
+#~ msgid "but it is not installed"
+#~ msgstr "но он не установлен"
+
+#~ msgid "but it is not going to be installed"
+#~ msgstr "но он не будет установлен"
+
+#~ msgid " or"
+#~ msgstr " или"
+
+#~ msgid "The following packages have unmet dependencies:"
+#~ msgstr "Следующие пакеты имеют неудовлетворённые зависимости:"
+
+#~ msgid "The following NEW packages will be installed:"
+#~ msgstr "Следующие НОВЫЕ пакеты будут установлены:"
+
+#~ msgid "The following packages will be REMOVED:"
+#~ msgstr "Следующие пакеты будут УДАЛЕНЫ:"
+
+#~ msgid "The following packages have been kept back:"
+#~ msgstr "Следующие пакеты будут оставлены в неизменном виде:"
+
+#~ msgid "The following packages will be upgraded:"
+#~ msgstr "Следующие пакеты будут обновлены:"
+
+#~ msgid "The following packages will be DOWNGRADED:"
+#~ msgstr "Следующие пакеты будут заменены на СТАРЫЕ версии:"
+
+#~ msgid "The following held packages will be changed:"
+#~ msgstr "Следующие зафиксированные пакеты будут изменены:"
+
+#, c-format
+#~ msgid "%s (due to %s)"
+#~ msgstr "%s (вследствие %s)"
+
+#~ msgid ""
+#~ "WARNING: The following essential packages will be removed.\n"
+#~ "This should NOT be done unless you know exactly what you are doing!"
+#~ msgstr ""
+#~ "ВНИМАНИЕ: Следующие пакеты первой необходимости будут удалены.\n"
+#~ "НЕ ДЕЛАЙТЕ этого, если вы НЕ представляете себе все возможные последствия!"
+
+#, c-format
+#~ msgid "%lu upgraded, %lu newly installed, "
+#~ msgstr "Обновлено %lu пакетов, установлено %lu новых пакетов, "
+
+#, c-format
+#~ msgid "%lu reinstalled, "
+#~ msgstr "переустановлено %lu пакетов, "
+
+#, c-format
+#~ msgid "%lu downgraded, "
+#~ msgstr "%lu пакетов заменено на старые версии, "
+
+#, c-format
+#~ msgid "%lu to remove and %lu not upgraded.\n"
+#~ msgstr "для удаления отмечено %lu пакетов, и %lu пакетов не обновлено.\n"
+
+#, c-format
+#~ msgid "%lu not fully installed or removed.\n"
+#~ msgstr "Установлено или удалено не до конца %lu пакетов.\n"
+
+#~ msgid "[Y/n]"
+#~ msgstr "[Д/н]"
+
+#~ msgid "[y/N]"
+#~ msgstr "[д/Н]"
+
+#~ msgid "Y"
+#~ msgstr "Д"
+
+#~ msgid "N"
+#~ msgstr "Н"
+
+#, c-format
+#~ msgid "Regex compilation error - %s"
+#~ msgstr "Ошибка компиляции регулярного выражения: %s"
+
+#~ msgid "You must give at least one search pattern"
+#~ msgstr "Вы должны задать не менее одного шаблона поиска"
+
+#~ msgid "Full Text Search"
+#~ msgstr "Полнотекстовый поиск"
+
+#, c-format
+#~ msgid "Package file %s is out of sync."
+#~ msgstr "Список пакетов %s рассинхронизирован."
+
+#, c-format
+#~ msgid "There is %i additional record. Please use the '-a' switch to see it"
+#~ msgid_plural ""
+#~ "There are %i additional records. Please use the '-a' switch to see them."
+#~ msgstr[0] "Есть %i дополнительная запись. Используйте «-a» для просмотра."
+#~ msgstr[1] ""
+#~ "Есть %i дополнительные записи. Используйте «-a» для их просмотра."
+#~ msgstr[2] ""
+#~ "Есть %i дополнительных записей. Используйте «-a» для их просмотра."
+
+#~ msgid "not a real package (virtual)"
+#~ msgstr "не реальный (виртуальный) пакет"
+
+#, c-format
+#~ msgid "Unable to locate package %s"
+#~ msgstr "Невозможно найти пакет %s"
+
+#~ msgid "Package files:"
+#~ msgstr "Списки пакетов:"
+
+#~ msgid "Cache is out of sync, can't x-ref a package file"
+#~ msgstr ""
+#~ "Кэш рассинхронизирован, невозможно обнаружить ссылку на список пакетов"
+
+#~ msgid "Pinned packages:"
+#~ msgstr "Привязанные пакеты:"
+
+#~ msgid "(not found)"
+#~ msgstr "(не найдено)"
+
+#, c-format
+#~ msgid "%s -> %s with priority %d\n"
+#~ msgstr "%s -> %s с приоритетом %d\n"
+
+#~ msgid "  Installed: "
+#~ msgstr "  Установлен: "
+
+#~ msgid "  Candidate: "
+#~ msgstr "  Кандидат: "
+
+#~ msgid "(none)"
+#~ msgstr "(отсутствует)"
+
+#~ msgid "  Package pin: "
+#~ msgstr "  Фиксатор пакета: "
+
+#~ msgid "  Version table:"
+#~ msgstr "  Таблица версий:"
+
+#, c-format
+#~ msgid "Can not find a package for architecture '%s'"
+#~ msgstr "Не удалось найти пакет для архитектуры «%s»"
+
+#, c-format
+#~ msgid "Can not find a package '%s' with version '%s'"
+#~ msgstr "Не удалось найти пакет «%s» версии «%s»"
+
+#, c-format
+#~ msgid "Can not find a package '%s' with release '%s'"
+#~ msgstr "Не удалось найти пакет «%s» в выпуске «%s»"
+
+#, c-format
+#~ msgid "Picking '%s' as source package instead of '%s'\n"
+#~ msgstr "Используется «%s» в качестве исходного пакета вместо «%s»\n"
+
+#, c-format
+#~ msgid "Can not find version '%s' of package '%s'"
+#~ msgstr "Не удалось найти версию «%s» пакета «%s»"
+
+#~ msgid "Must specify at least one package to fetch source for"
+#~ msgstr ""
+#~ "Укажите как минимум один пакет, исходный код которого необходимо получить"
+
+#, c-format
+#~ msgid "Unable to find a source package for %s"
+#~ msgstr "Невозможно найти пакет с исходным кодом для %s"
+
+#, c-format
+#~ msgid ""
+#~ "NOTICE: '%s' packaging is maintained in the '%s' version control system "
+#~ "at:\n"
+#~ "%s\n"
+#~ msgstr ""
+#~ "ВНИМАНИЕ: работа над пакетом «%s» ведётся в системе управления версиями "
+#~ "«%s»:\n"
+#~ "%s\n"
+
+#, c-format
+#~ msgid ""
+#~ "Please use:\n"
+#~ "%s\n"
+#~ "to retrieve the latest (possibly unreleased) updates to the package.\n"
+#~ msgstr ""
+#~ "Используйте:\n"
+#~ "%s\n"
+#~ "для получения последних (возможно, невыпущенных) обновлений пакета.\n"
+
+#, c-format
+#~ msgid "Skipping already downloaded file '%s'\n"
+#~ msgstr "Пропускается уже скачанный файл «%s»\n"
+
+#, c-format
+#~ msgid "Need to get %sB/%sB of source archives.\n"
+#~ msgstr "Необходимо скачать %sB/%sB архивов исходного кода.\n"
+
+#, c-format
+#~ msgid "Need to get %sB of source archives.\n"
+#~ msgstr "Необходимо скачать %sB архивов исходного кода.\n"
+
+#, c-format
+#~ msgid "Fetch source %s\n"
+#~ msgstr "Получение исходного кода %s\n"
+
+#~ msgid "Failed to fetch some archives."
+#~ msgstr "Некоторые архивы не удалось получить."
+
+#, c-format
+#~ msgid "Skipping unpack of already unpacked source in %s\n"
+#~ msgstr "Пропускается распаковка уже распакованного исходного кода в %s\n"
+
+#, c-format
+#~ msgid "Unpack command '%s' failed.\n"
+#~ msgstr "Команда распаковки «%s» завершилась неудачно.\n"
+
+#, c-format
+#~ msgid "Check if the 'dpkg-dev' package is installed.\n"
+#~ msgstr "Проверьте, установлен ли пакет «dpkg-dev».\n"
+
+#, c-format
+#~ msgid "Build command '%s' failed.\n"
+#~ msgstr "Команда сборки «%s» завершилась неудачно.\n"
+
+#, c-format
+#~ msgid "Unable to get build-dependency information for %s"
+#~ msgstr "Невозможно получить информацию о сборочных зависимостях для %s"
+
+#, c-format
+#~ msgid "%s has no build depends.\n"
+#~ msgstr "%s не имеет сборочных зависимостей.\n"
+
+#~ msgid "Must specify at least one package to check builddeps for"
+#~ msgstr ""
+#~ "Для проверки сборочных зависимостей необходимо указать как минимум один "
+#~ "пакет"
+
+#, c-format
+#~ msgid ""
+#~ "No architecture information available for %s. See apt.conf(5) APT::"
+#~ "Architectures for setup"
+#~ msgstr ""
+#~ "Отсутствует информация об архитектуре %s. Для её настройки смотрите apt."
+#~ "conf(5) об APT::Architectures"
+
+#, c-format
+#~ msgid "Note, using directory '%s' to get the build dependencies\n"
+#~ msgstr ""
+#~ "Заметьте, используется каталог «%s» для определения сборочных "
+#~ "зависимостей\n"
+
+#, c-format
+#~ msgid "Note, using file '%s' to get the build dependencies\n"
+#~ msgstr ""
+#~ "Заметьте, используется файл «%s» для определения сборочных зависимостей\n"
+
+#~ msgid "Failed to process build dependencies"
+#~ msgstr "Обработка сборочных зависимостей завершилась неудачно"
+
+#, c-format
+#~ msgid "Failed to parse %s. Edit again? "
+#~ msgstr "Не удалось разобрать содержимое %s. Повторить редактирование? "
+
+#, c-format
+#~ msgid "Your '%s' file changed, please run 'apt-get update'."
+#~ msgstr "Файл «%s» изменён, запустите «apt-get update»."
+
+#, c-format
+#~ msgid "Package %s version %s has an unmet dep:\n"
+#~ msgstr "Пакет %s версии %s имеет неудовлетворённую зависимость:\n"
+
+#~ msgid "The update command takes no arguments"
+#~ msgstr "Команде update не нужны аргументы"
+
+#, c-format
+#~ msgid "%i package can be upgraded. Run 'apt list --upgradable' to see it.\n"
+#~ msgid_plural ""
+#~ "%i packages can be upgraded. Run 'apt list --upgradable' to see them.\n"
+#~ msgstr[0] ""
+#~ "Может быть обновлён %i пакет. Запустите «apt list --upgradable» для "
+#~ "показа.\n"
+#~ msgstr[1] ""
+#~ "Может быть обновлено %i пакета. Запустите «apt list --upgradable» для их "
+#~ "показа.\n"
+#~ msgstr[2] ""
+#~ "Может быть обновлено %i пакетов. Запустите «apt list --upgradable» для их "
+#~ "показа.\n"
+
+#~ msgid "All packages are up to date."
+#~ msgstr "Все пакеты имеют последние версии."
+
+#~ msgid "apt-cache stats does not take any arguments"
+#~ msgstr "Команде apt-cache stats не нужны аргументы"
+
+#~ msgid "Total package names: "
+#~ msgstr "Всего имён пакетов: "
+
+#~ msgid "Total package structures: "
+#~ msgstr "Всего структур пакетов: "
+
+#~ msgid "  Normal packages: "
+#~ msgstr "  Обычных пакетов: "
+
+#~ msgid "  Pure virtual packages: "
+#~ msgstr "  Полностью виртуальных пакетов: "
+
+#~ msgid "  Single virtual packages: "
+#~ msgstr "  Одиночных виртуальных пакетов: "
+
+#~ msgid "  Mixed virtual packages: "
+#~ msgstr "  Смешанных виртуальных пакетов: "
+
+#~ msgid "  Missing: "
+#~ msgstr "  Отсутствует: "
+
+#~ msgid "Total distinct versions: "
+#~ msgstr "Всего уникальных версий: "
+
+#~ msgid "Total distinct descriptions: "
+#~ msgstr "Всего уникальных описаний: "
+
+#~ msgid "Total dependencies: "
+#~ msgstr "Всего зависимостей: "
+
+#~ msgid "Total ver/file relations: "
+#~ msgstr "Всего отношений Версия/Файл: "
+
+#~ msgid "Total Desc/File relations: "
+#~ msgstr "Всего отношений Описание/Файл: "
+
+#~ msgid "Total Provides mappings: "
+#~ msgstr "Всего отношений Предоставляет: "
+
+#~ msgid "Total globbed strings: "
+#~ msgstr "Всего развёрнутых строк: "
+
+#~ msgid "Total slack space: "
+#~ msgstr "Пустого места в кэше: "
+
+#~ msgid "Total space accounted for: "
+#~ msgstr "Всего учтённого места: "
+
+#~ msgid "This command is deprecated. Please use 'apt-mark showauto' instead."
+#~ msgstr "Эта команда устарела. Используйте вместо неё «apt-mark showauto»."
+
+#~ msgid ""
+#~ "Usage: apt-cache [options] command\n"
+#~ "       apt-cache [options] show pkg1 [pkg2 ...]\n"
+#~ "\n"
+#~ "apt-cache queries and displays available information about installed\n"
+#~ "and installable packages. It works exclusively on the data acquired\n"
+#~ "into the local cache via the 'update' command of e.g. apt-get. The\n"
+#~ "displayed information may therefore be outdated if the last update was\n"
+#~ "too long ago, but in exchange apt-cache works independently of the\n"
+#~ "availability of the configured sources (e.g. offline).\n"
+#~ msgstr ""
+#~ "Использование: apt-cache [параметры] команда\n"
+#~ "               apt-cache [параметры] show пакет1 [пакет2 …]\n"
+#~ "\n"
+#~ "apt-cache ищет и отображает имеющуюся информацию об установленных и "
+#~ "доступных\n"
+#~ "для установки пакетах. Она работает исключительно с данными локального "
+#~ "кэша,\n"
+#~ "созданного командой «update», например, программы apt-get. Вследствие "
+#~ "этого\n"
+#~ "отображаемая информация может являться устаревшей, если обновление долго "
+#~ "не\n"
+#~ "выполнялось, но зато apt-cache работает независимо от доступности "
+#~ "настроенных\n"
+#~ "источников (например, без доступа к сети).\n"
+
+#~ msgid "Show source records"
+#~ msgstr "показать информацию о пакете с исходным кодом"
+
+#~ msgid "Search the package list for a regex pattern"
+#~ msgstr "найти пакеты, имя которых удовлетворяет регулярному выражению"
+
+#~ msgid "Show raw dependency information for a package"
+#~ msgstr "показать необработанную информацию о зависимостях пакета"
+
+#~ msgid "Show reverse dependency information for a package"
+#~ msgstr "показать информацию об обратных зависимостях пакета"
+
+#~ msgid "Show a readable record for the package"
+#~ msgstr "показать информацию о пакете в удобочитаемой форме"
+
+#~ msgid "List the names of all packages in the system"
+#~ msgstr "показать имена всех пакетов в системе"
+
+#~ msgid "Show policy settings"
+#~ msgstr "показать текущую политику выбора пакетов"
+
+#~ msgid "Please provide a name for this Disc, such as 'Debian 5.0.3 Disk 1'"
+#~ msgstr "Задайте имя для этого диска, например «Debian 5.0.3 Disk 1»"
+
+#~ msgid "Please insert a Disc in the drive and press [Enter]"
+#~ msgstr "Вставьте диск в устройство и нажмите [Enter]"
+
+#, c-format
+#~ msgid "Failed to mount '%s' to '%s'"
+#~ msgstr "Не удалось примонтировать «%s» к «%s»"
+
+#~ msgid ""
+#~ "No CD-ROM could be auto-detected or found using the default mount point.\n"
+#~ "You may try the --cdrom option to set the CD-ROM mount point.\n"
+#~ "See 'man apt-cdrom' for more information about the CD-ROM auto-detection "
+#~ "and mount point."
+#~ msgstr ""
+#~ "Не удалось автоматически обнаружить CD-ROM, и в точке монтирования по "
+#~ "умолчанию\n"
+#~ "также ничего нет. Вы можете использовать параметр --cdrom, чтобы указать "
+#~ "точку\n"
+#~ "монтирования CD-ROM. Подробнее о точке монтирования и автоматическом\n"
+#~ "обнаружении CD-ROM смотрите в «man apt-cdrom»."
+
+#~ msgid "Repeat this process for the rest of the CDs in your set."
+#~ msgstr "Повторите этот процесс для всех имеющихся CD."
+
+#~ msgid ""
+#~ "Usage: apt-cdrom [options] command\n"
+#~ "\n"
+#~ "apt-cdrom is used to add CDROM's, USB flashdrives and other removable\n"
+#~ "media types as package sources to APT. The mount point and device\n"
+#~ "information is taken from apt.conf(5), udev(7) and fstab(5).\n"
+#~ msgstr ""
+#~ "Использование: apt-cdrom [параметры] команда\n"
+#~ "\n"
+#~ "apt-cdrom используется для добавления CD-ROM, накопителей USB и других\n"
+#~ "сменных носителей в качестве источников пакетов APT. Точка монтирования "
+#~ "и\n"
+#~ "информация об устройстве берутся из apt.conf(5), udev(7) и fstab(5).\n"
+
+#~ msgid "Arguments not in pairs"
+#~ msgstr "Непарные аргументы"
+
+#~ msgid ""
+#~ "Usage: apt-config [options] command\n"
+#~ "\n"
+#~ "apt-config is an interface to the configuration settings used by\n"
+#~ "all APT tools, mainly intended for debugging and shell scripting.\n"
+#~ msgstr ""
+#~ "Использование: apt-config [параметры] команда\n"
+#~ "\n"
+#~ "apt-config — интерфейс к параметрам настройки, используемым\n"
+#~ "всеми инструментами APT, и в основном предназначен для отладки и\n"
+#~ "использования в сценариях оболочки.\n"
+
+#~ msgid "get configuration values via shell evaluation"
+#~ msgstr "получить значения настройки через выполнение кода оболочки"
+
+#~ msgid "show the active configuration setting"
+#~ msgstr "показать действующее значение настройки"
+
+#, c-format
+#~ msgid "Couldn't find package %s"
+#~ msgstr "Не удалось найти пакет %s"
+
+#, c-format
+#~ msgid "%s set to automatically installed.\n"
+#~ msgstr "%s помечен как установленный автоматически.\n"
+
+#~ msgid ""
+#~ "This command is deprecated. Please use 'apt-mark auto' and 'apt-mark "
+#~ "manual' instead."
+#~ msgstr ""
+#~ "Эта команда устарела. Используйте вместо неё «apt-mark auto» и «apt-mark "
+#~ "manual»."
+
+#~ msgid "Internal error, problem resolver broke stuff"
+#~ msgstr "Внутренняя ошибка: решатель проблем всё поломал"
+
+#~ msgid "Supported modules:"
+#~ msgstr "Поддерживаемые модули:"
+
+#~ msgid ""
+#~ "Usage: apt-get [options] command\n"
+#~ "       apt-get [options] install|remove pkg1 [pkg2 ...]\n"
+#~ "       apt-get [options] source pkg1 [pkg2 ...]\n"
+#~ "\n"
+#~ "apt-get is a command line interface for retrieval of packages\n"
+#~ "and information about them from authenticated sources and\n"
+#~ "for installation, upgrade and removal of packages together\n"
+#~ "with their dependencies.\n"
+#~ msgstr ""
+#~ "Использование: apt-get [параметры] команда\n"
+#~ "               apt-get [параметры] install|remove пакет1 [пакет2…]\n"
+#~ "               apt-get [параметры] source пакет1 [пакет2…]\n"
+#~ "\n"
+#~ "apt-get — интерфейс командной строки для получения пакетов и\n"
+#~ "информации о них из доверенных источников, а также установки,\n"
+#~ "обновления и удаления пакетов вместе с их зависимостями.\n"
+
+#~ msgid "Retrieve new lists of packages"
+#~ msgstr "получить новые списки пакетов"
+
+#~ msgid "Perform an upgrade"
+#~ msgstr "выполнить обновление"
+
+#~ msgid "Install new packages (pkg is libc6 not libc6.deb)"
+#~ msgstr ""
+#~ "установить новые пакеты (указывается имя пакета libc6, а не имя файла "
+#~ "libc6.deb)"
+
+#~ msgid "Remove packages"
+#~ msgstr "удалить пакеты"
+
+#~ msgid "Remove packages and config files"
+#~ msgstr "удалить пакеты вместе с их файлами настройки"
+
+#~ msgid "Remove automatically all unused packages"
+#~ msgstr "автоматически удалить все неиспользуемые пакеты"
+
+#~ msgid "Distribution upgrade, see apt-get(8)"
+#~ msgstr "обновить всю систему, подробнее в apt-get(8)"
+
+#~ msgid "Follow dselect selections"
+#~ msgstr "руководствоваться выбором, сделанным в dselect"
+
+#~ msgid "Configure build-dependencies for source packages"
+#~ msgstr "настроить сборочные зависимости для пакета с исходным кодом"
+
+#~ msgid "Erase downloaded archive files"
+#~ msgstr "удалить скачанные файлы архивов"
+
+#~ msgid "Erase old downloaded archive files"
+#~ msgstr "удалить старые скачанные файлы архивов"
+
+#~ msgid "Verify that there are no broken dependencies"
+#~ msgstr "проверить отсутствие нарушенных зависимостей"
+
+#~ msgid "Download source archives"
+#~ msgstr "скачать архивы с исходным кодом"
+
+#~ msgid "Download the binary package into the current directory"
+#~ msgstr "скачать двоичный пакет в текущий каталог"
+
+#~ msgid "Download and display the changelog for the given package"
+#~ msgstr "скачать и показать журнал изменений заданного пакета"
+
+#~ msgid "Need one URL as argument"
+#~ msgstr "В качестве аргумента требуется URL"
+
+#~ msgid "Must specify at least one pair url/filename"
+#~ msgstr "Укажите как минимум одну пару url/имя файла"
+
+#~ msgid "Download Failed"
+#~ msgstr "Ошибка при скачивании"
+
+#, c-format
+#~ msgid "GetSrvRec failed for %s"
+#~ msgstr "Ошибка GetSrvRec для %s"
+
+#~ msgid ""
+#~ "Usage: apt-helper [options] command\n"
+#~ "       apt-helper [options] cat-file file ...\n"
+#~ "       apt-helper [options] download-file uri target-path\n"
+#~ "\n"
+#~ "apt-helper bundles a variety of commands for shell scripts to use\n"
+#~ "e.g. the same proxy configuration or acquire system as APT would.\n"
+#~ msgstr ""
+#~ "Использование: apt-helper [параметры] команда\n"
+#~ "               apt-helper [параметры] cat-file файл …\n"
+#~ "               apt-helper [параметры] download-file uri target-path\n"
+#~ "\n"
+#~ "apt-helper — набор различных команд для сценариев оболочки,\n"
+#~ "которые используют, например, те же настройки прокси и систему\n"
+#~ "получения, что и APT.\n"
+
+#~ msgid "download the given uri to the target-path"
+#~ msgstr "скачать файл по заданному uri в target-path"
+
+#~ msgid "lookup a SRV record (e.g. _http._tcp.ftp.debian.org)"
+#~ msgstr "найти запись типа SRV (например, _http._tcp.ftp.debian.org)"
+
+#~ msgid "concatenate files, with automatic decompression"
+#~ msgstr "объединить файлы, с автоматическим разжатием"
+
+#~ msgid "detect proxy using apt.conf"
+#~ msgstr "определить прокси с помощью apt.conf"
+
+#, c-format
+#~ msgid "%s can not be marked as it is not installed.\n"
+#~ msgstr "%s не может быть помечен, так как он не установлен.\n"
+
+#, c-format
+#~ msgid "%s was already set to manually installed.\n"
+#~ msgstr "%s уже помечен как установленный вручную.\n"
+
+#, c-format
+#~ msgid "%s was already set to automatically installed.\n"
+#~ msgstr "%s уже помечен как установленный автоматически.\n"
+
+#, c-format
+#~ msgid "%s was already set on hold.\n"
+#~ msgstr "%s уже помечен как зафиксированный.\n"
+
+#, c-format
+#~ msgid "%s was already not hold.\n"
+#~ msgstr "%s уже помечен как незафиксированный.\n"
+
+#~ msgid "Executing dpkg failed. Are you root?"
+#~ msgstr ""
+#~ "Выполнение dpkg завершилось с ошибкой. У вас есть права суперпользователя?"
+
+#, c-format
+#~ msgid "%s set on hold.\n"
+#~ msgstr "%s помечен как зафиксированный.\n"
+
+#, c-format
+#~ msgid "Canceled hold on %s.\n"
+#~ msgstr "Отмена фиксации для %s.\n"
+
+#, c-format
+#~ msgid "Selected %s for purge.\n"
+#~ msgstr "Выбран %s для вычистки.\n"
+
+#, c-format
+#~ msgid "Selected %s for removal.\n"
+#~ msgstr "Выбран %s для удаления.\n"
+
+#, c-format
+#~ msgid "Selected %s for installation.\n"
+#~ msgstr "Выбран %s для установки.\n"
+
+#~ msgid ""
+#~ "Usage: apt-mark [options] {auto|manual} pkg1 [pkg2 ...]\n"
+#~ "\n"
+#~ "apt-mark is a simple command line interface for marking packages\n"
+#~ "as manually or automatically installed. It can also be used to\n"
+#~ "manipulate the dpkg(1) selection states of packages, and to list\n"
+#~ "all packages with or without a certain marking.\n"
+#~ msgstr ""
+#~ "Использование: apt-mark [параметры] {auto|manual} пакет1 [пакет2 …]\n"
+#~ "\n"
+#~ "apt-mark — простая программа с интерфейсом командной строки для\n"
+#~ "пометки пакетов как установленных вручную или автоматически. Также\n"
+#~ "может использоваться для изменения состояния выбора пакетов dpkg(1)\n"
+#~ "и показа списка пакетов с определённой меткой или без неё.\n"
+
+#~ msgid "Mark the given packages as automatically installed"
+#~ msgstr "пометить указанные пакеты как установленные автоматически"
+
+#~ msgid "Mark the given packages as manually installed"
+#~ msgstr "пометить указанные пакеты как установленные вручную"
+
+#~ msgid "Mark a package as held back"
+#~ msgstr "пометить пакет как зафиксированный"
+
+#~ msgid "Unset a package set as held back"
+#~ msgstr "снять метку пакета, что он зафиксирован"
+
+#~ msgid "Print the list of automatically installed packages"
+#~ msgstr "вывести список автоматически установленных пакетов"
+
+#~ msgid "Print the list of manually installed packages"
+#~ msgstr "вывести список пакетов, установленных вручную"
+
+#~ msgid "Print the list of package on hold"
+#~ msgstr "вывести список зафиксированных пакетов"
+
+#~ msgid ""
+#~ "Usage: apt [options] command\n"
+#~ "\n"
+#~ "apt is a commandline package manager and provides commands for\n"
+#~ "searching and managing as well as querying information about packages.\n"
+#~ "It provides the same functionality as the specialized APT tools,\n"
+#~ "like apt-get and apt-cache, but enables options more suitable for\n"
+#~ "interactive use by default.\n"
+#~ msgstr ""
+#~ "Использование: apt [параметры] команда\n"
+#~ "\n"
+#~ "apt — менеджер пакетов с интерфейсом командной строки. Он предоставляет\n"
+#~ "команды для поиска и управления, а также запросов информации о пакетах.\n"
+#~ "apt выполняет те же задачи, что и специализированные инструменты APT,\n"
+#~ "например apt-get и apt-cache, но по умолчанию задействует параметры,\n"
+#~ "которые больше подходят для интерактивного использования.\n"
+
+#~ msgid "list packages based on package names"
+#~ msgstr "показать список пакетов на основе указанных имён"
+
+#~ msgid "search in package descriptions"
+#~ msgstr "искать в описаниях пакетов"
+
+#~ msgid "show package details"
+#~ msgstr "показать дополнительные данные о пакете"
+
+#~ msgid "install packages"
+#~ msgstr "установить пакеты"
+
+#~ msgid "remove packages"
+#~ msgstr "удалить пакеты"
+
+#~ msgid "update list of available packages"
+#~ msgstr "обновить список доступных пакетов"
+
+#~ msgid "upgrade the system by installing/upgrading packages"
+#~ msgstr "обновить систему, устанавливая/обновляя пакеты"
+
+#~ msgid "upgrade the system by removing/installing/upgrading packages"
+#~ msgstr "обновить систему, удаляя/устанавливая/обновляя пакеты"
+
+#~ msgid "edit the source information file"
+#~ msgstr "редактировать файл с источниками пакетов"
+
+#, c-format
+#~ msgid "Unable to read the cdrom database %s"
+#~ msgstr "Невозможно прочесть базу данных CD-ROM %s"
+
+#~ msgid ""
+#~ "Please use apt-cdrom to make this CD-ROM recognized by APT. apt-get "
+#~ "update cannot be used to add new CD-ROMs"
+#~ msgstr ""
+#~ "Используйте apt-cdrom, чтобы APT смог распознать данный CD-ROM. apt-get "
+#~ "update не используется для добавления новых CD-ROM"
+
+#~ msgid "Wrong CD-ROM"
+#~ msgstr "Неверный CD-ROM"
+
+#, c-format
+#~ msgid "Unable to unmount the CD-ROM in %s, it may still be in use."
+#~ msgstr ""
+#~ "Не удалось размонтировать CD-ROM в %s; возможно, он ещё используется."
+
+#~ msgid "Disk not found."
+#~ msgstr "Диск не найден."
+
+#~ msgid "File not found"
+#~ msgstr "Файл не найден"
+
+#, c-format
+#~ msgid "Connecting to %s (%s)"
+#~ msgstr "Соединение с %s (%s)"
+
+#, c-format
+#~ msgid "[IP: %s %s]"
+#~ msgstr "[IP: %s %s]"
+
+#, c-format
+#~ msgid "Could not create a socket for %s (f=%u t=%u p=%u)"
+#~ msgstr "Не удалось создать сокет для %s (f=%u t=%u p=%u)"
+
+#, c-format
+#~ msgid "Cannot initiate the connection to %s:%s (%s)."
+#~ msgstr "Невозможно инициализировать соединение с %s:%s (%s)."
+
+#, c-format
+#~ msgid "Could not connect to %s:%s (%s), connection timed out"
+#~ msgstr ""
+#~ "Не удалось соединиться с %s:%s (%s): время ожидания для соединения истекло"
+
+#~ msgid "Failed"
+#~ msgstr "Неудачно"
+
+#, c-format
+#~ msgid "Could not connect to %s:%s (%s)."
+#~ msgstr "Не удалось соединиться с %s:%s (%s)."
+
+#, c-format
+#~ msgid "Connecting to %s"
+#~ msgstr "Соединение с %s"
+
+#, c-format
+#~ msgid "Could not resolve '%s'"
+#~ msgstr "Не удалось разрешить «%s»"
+
+#, c-format
+#~ msgid "Temporary failure resolving '%s'"
+#~ msgstr "Временная ошибка при разрешении «%s»"
+
+#, c-format
+#~ msgid "System error resolving '%s:%s'"
+#~ msgstr "Системная ошибка при разрешении «%s:%s»"
+
+#, c-format
+#~ msgid "Something wicked happened resolving '%s:%s' (%i - %s)"
+#~ msgstr "Что-то странное произошло при разрешении «%s:%s» (%i - %s)"
+
+#, c-format
+#~ msgid "Unable to connect to %s:%s:"
+#~ msgstr "Невозможно соединиться с %s:%s:"
+
+#~ msgid "Failed to stat"
+#~ msgstr "Не удалось получить атрибуты"
+
+#~ msgid "Invalid URI, local URIS must not start with //"
+#~ msgstr "Неправильный URI: локальный URI не должен начинаться с //"
+
+#~ msgid "Logging in"
+#~ msgstr "Вход в систему"
+
+#~ msgid "Unable to determine the peer name"
+#~ msgstr "Невозможно определить имя удалённого узла"
+
+#~ msgid "Unable to determine the local name"
+#~ msgstr "Невозможно определить локальное имя"
+
+#, c-format
+#~ msgid "The server refused the connection and said: %s"
+#~ msgstr "Сервер разорвал соединение и сообщил: %s"
+
+#, c-format
+#~ msgid "USER failed, server said: %s"
+#~ msgstr "Команда USER не выполнена, сервер сообщил: %s"
+
+#, c-format
+#~ msgid "PASS failed, server said: %s"
+#~ msgstr "Команда PASS не выполнена, сервер сообщил: %s"
+
+#~ msgid ""
+#~ "A proxy server was specified but no login script, Acquire::ftp::"
+#~ "ProxyLogin is empty."
+#~ msgstr ""
+#~ "Прокси-сервер указан, однако нет сценария входа в систему: Acquire::ftp::"
+#~ "ProxyLogin пуст."
+
+#, c-format
+#~ msgid "Login script command '%s' failed, server said: %s"
+#~ msgstr ""
+#~ "Команда «%s» сценария входа в систему завершилась неудачно, сервер "
+#~ "сообщил: %s"
+
+#, c-format
+#~ msgid "TYPE failed, server said: %s"
+#~ msgstr "Команда TYPE не выполнена, сервер сообщил: %s"
+
+#~ msgid "Connection timeout"
+#~ msgstr "Допустимое время ожидания для соединения истекло"
+
+#~ msgid "Server closed the connection"
+#~ msgstr "Сервер прервал соединение"
+
+#~ msgid "Read error"
+#~ msgstr "Ошибка чтения"
+
+#~ msgid "A response overflowed the buffer."
+#~ msgstr "Ответ переполнил буфер."
+
+#~ msgid "Protocol corruption"
+#~ msgstr "Искажение протокола"
+
+#~ msgid "Write error"
+#~ msgstr "Ошибка записи"
+
+#~ msgid "Could not create a socket"
+#~ msgstr "Не удалось создать сокет"
+
+#~ msgid "Could not connect data socket, connection timed out"
+#~ msgstr ""
+#~ "Не удалось присоединить сокет данных: время ожидания для соединения "
+#~ "истекло"
+
+#~ msgid "Could not connect passive socket."
+#~ msgstr "Не удалось присоединить пассивный сокет"
+
+#~ msgid "getaddrinfo was unable to get a listening socket"
+#~ msgstr "Вызов getaddrinfo не смог получить сокет"
+
+#~ msgid "Could not bind a socket"
+#~ msgstr "Не удалось привязать сокет"
+
+#~ msgid "Could not listen on the socket"
+#~ msgstr "Не удалось принимать соединения на сокете"
+
+#~ msgid "Could not determine the socket's name"
+#~ msgstr "Не удалось определить имя сокета"
+
+#~ msgid "Unable to send PORT command"
+#~ msgstr "Невозможно послать команду PORT"
+
+#, c-format
+#~ msgid "Unknown address family %u (AF_*)"
+#~ msgstr "Неизвестное семейство адресов %u (AF_*)"
+
+#, c-format
+#~ msgid "EPRT failed, server said: %s"
+#~ msgstr "Команда EPRT не выполнена, сервер сообщил: %s"
+
+#~ msgid "Data socket connect timed out"
+#~ msgstr "Время на установление соединения для сокета данных истекло"
+
+#~ msgid "Unable to accept connection"
+#~ msgstr "Невозможно принять соединение"
+
+#~ msgid "Problem hashing file"
+#~ msgstr "Проблема при хешировании файла"
+
+#, c-format
+#~ msgid "Unable to fetch file, server said '%s'"
+#~ msgstr "Невозможно получить файл, сервер сообщил: «%s»"
+
+#~ msgid "Data socket timed out"
+#~ msgstr "Время ожидания для сокета данных истекло"
+
+#, c-format
+#~ msgid "Data transfer failed, server said '%s'"
+#~ msgstr "Передача данных завершилась неудачно, сервер сообщил: «%s»"
+
+#~ msgid "Query"
+#~ msgstr "Запрос"
+
+#~ msgid "Unable to invoke "
+#~ msgstr "Невозможно вызвать "
+
+#~ msgid "At least one invalid signature was encountered."
+#~ msgstr "Найдена как минимум одна неправильная подпись."
+
+#~ msgid ""
+#~ "Internal error: Good signature, but could not determine key fingerprint?!"
+#~ msgstr ""
+#~ "Внутренняя ошибка: правильная подпись, но не удалось определить отпечаток "
+#~ "ключа?!"
+
+#~ msgid ""
+#~ "Could not execute 'apt-key' to verify signature (is gnupg installed?)"
+#~ msgstr ""
+#~ "Не удалось выполнить «apt-key» для проверки подписи (программа gnupg "
+#~ "установлена?)"
+
+#, c-format
+#~ msgid ""
+#~ "Clearsigned file isn't valid, got '%s' (does the network require "
+#~ "authentication?)"
+#~ msgstr ""
+#~ "Подписанный файл некорректен: получено «%s» (возможно, в сети требуется "
+#~ "аутентификация?)"
+
+#~ msgid "Unknown error executing apt-key"
+#~ msgstr "Неизвестная ошибка при выполнении apt-key"
+
+#, c-format
+#~ msgid "Signature by key %s uses weak digest algorithm (%s)"
+#~ msgstr "При подписи ключом %s используется нестойкий алгоритм свёртки (%s)"
+
+#~ msgid "The following signatures were invalid:\n"
+#~ msgstr "Следующие подписи неверны:\n"
+
+#~ msgid ""
+#~ "The following signatures couldn't be verified because the public key is "
+#~ "not available:\n"
+#~ msgstr ""
+#~ "Следующие подписи не могут быть проверены, так как недоступен открытый "
+#~ "ключ:\n"
+
+#~ msgid "Error writing to the file"
+#~ msgstr "Ошибка записи в файл"
+
+#~ msgid "Error reading from server. Remote end closed connection"
+#~ msgstr "Ошибка чтения: удалённый сервер прервал соединение"
+
+#~ msgid "Error reading from server"
+#~ msgstr "Ошибка чтения с сервера"
+
+#~ msgid "Error writing to file"
+#~ msgstr "Ошибка записи в файл"
+
+#~ msgid "Select failed"
+#~ msgstr "Ошибка в select"
+
+#~ msgid "Connection timed out"
+#~ msgstr "Время ожидания для соединения истекло"
+
+#~ msgid "Error writing to output file"
+#~ msgstr "Ошибка записи в выходной файл"
+
+#, c-format
+#~ msgid "Unable to read %s"
+#~ msgstr "Невозможно прочитать %s"
+
+#, c-format
+#~ msgid "Unable to change to %s"
+#~ msgstr "Невозможно сменить текущий каталог на %s"
+
+#, c-format
+#~ msgid "No mirror file '%s' found "
+#~ msgstr "Файл «%s» не найден на зеркале"
+
+#, c-format
+#~ msgid "Can not read mirror file '%s'"
+#~ msgstr "Невозможно прочитать файл на зеркале «%s»"
+
+#, c-format
+#~ msgid "No entry found in mirror file '%s'"
+#~ msgstr "Не найден элемент в файл на зеркале «%s»"
+
+#, c-format
+#~ msgid "[Mirror: %s]"
+#~ msgstr "[Зеркало: %s]"
+
+#~ msgid "Failed to set modification time"
+#~ msgstr "Не удалось установить время модификации"
+
+#~ msgid "Connection closed prematurely"
+#~ msgstr "Соединение закрыто преждевременно"
+
+#~ msgid "Waiting for headers"
+#~ msgstr "Ожидание заголовков"
+
+#~ msgid "The HTTP server sent an invalid reply header"
+#~ msgstr "HTTP-сервер послал неверный заголовок"
+
+#~ msgid "Bad header line"
+#~ msgstr "Неверная строка заголовка"
+
+#~ msgid "The HTTP server sent an invalid Content-Length header"
+#~ msgstr "HTTP-сервер послал неверный заголовок Content-Length"
+
+#~ msgid "The HTTP server sent an invalid Content-Range header"
+#~ msgstr "HTTP-сервер послал неверный заголовок Content-Range"
+
+#~ msgid "This HTTP server has broken range support"
+#~ msgstr ""
+#~ "Поддержка байтовых диапазонов в данном HTTP-сервере реализована "
+#~ "некорректно"
+
+#~ msgid "Unknown date format"
+#~ msgstr "Неизвестный формат даты"
+
+#~ msgid "Bad header data"
+#~ msgstr "Неверные данные заголовка"
+
+#~ msgid "Connection failed"
+#~ msgstr "Соединение разорвано"
+
+#, c-format
+#~ msgid ""
+#~ "Automatically disabled %s due to incorrect response from server/proxy. "
+#~ "(man 5 apt.conf)"
+#~ msgstr ""
+#~ "Автоматическое отключение %s из-за некорректного ответа сервера/прокси. "
+#~ "(man 5 apt.conf)"
+
+#~ msgid "Internal error"
+#~ msgstr "Внутренняя ошибка"
+
+#~ msgid "Empty files can't be valid archives"
+#~ msgstr "Пустые файлы не могут быть допустимыми архивами"
+
+#~ msgid "Bad default setting!"
+#~ msgstr "Неправильное значение по умолчанию!"
+
+#~ msgid "Press [Enter] to continue."
+#~ msgstr "Для продолжения нажмите [Enter]."
+
+#~ msgid "Do you want to erase any previously downloaded .deb files?"
+#~ msgstr "Удалить все ранее скачанные .deb файлы?"
+
+#~ msgid "Some errors occurred while unpacking. Packages that were installed"
+#~ msgstr ""
+#~ "Во время распаковки возникли ошибки. Пакеты, которые были установлены,"
+
+#~ msgid "will be configured. This may result in duplicate errors"
+#~ msgstr ""
+#~ "будут настроены. Это может привести к повторению ошибок или возникновению"
+
+#~ msgid ""
+#~ "or errors caused by missing dependencies. This is OK, only the errors"
+#~ msgstr ""
+#~ "новых из-за неудовлетворённых зависимостей. Это нормально, важны только"
+
+#~ msgid ""
+#~ "above this message are important. Please fix them and run [I]nstall again"
+#~ msgstr ""
+#~ "ошибки выше данного сообщения. Исправьте их и выполните установку ещё раз"
+
+#~ msgid "Merging available information"
+#~ msgstr "Объединение доступной информации"
+
+#~ msgid "Invalid archive signature"
+#~ msgstr "Неверная сигнатура архива"
+
+#~ msgid "Error reading archive member header"
+#~ msgstr "Ошибка чтения заголовка элемента архива"
+
+#, c-format
+#~ msgid "Invalid archive member header %s"
+#~ msgstr "Неправильный заголовок элемента архива %s"
+
+#~ msgid "Invalid archive member header"
+#~ msgstr "Неправильный заголовок элемента архива"
+
+#~ msgid "Archive is too short"
+#~ msgstr "Слишком короткий архив"
+
+#~ msgid "Failed to read the archive headers"
+#~ msgstr "Не удалось прочитать заголовки архива"
+
+#, c-format
+#~ msgid "Cannot find a configured compressor for '%s'"
+#~ msgstr "Не удалось найти настроенную программу сжатия для «%s»"
+
+#~ msgid "Corrupted archive"
+#~ msgstr "Повреждённый архив"
+
+#~ msgid "Tar checksum failed, archive corrupted"
+#~ msgstr "Неправильная контрольная сумма Tar — архив повреждён"
+
+#, c-format
+#~ msgid "Unknown TAR header type %u, member %s"
+#~ msgstr "Неизвестный тип %u, элемент %s в заголовке TAR"
+
+#, c-format
+#~ msgid "This is not a valid DEB archive, missing '%s' member"
+#~ msgstr "Это неправильный DEB-архив: отсутствует элемент «%s»"
+
+#, c-format
+#~ msgid "Internal error, could not locate member %s"
+#~ msgstr "Внутренняя ошибка: не удалось найти элемент %s"
+
+#~ msgid "Unparsable control file"
+#~ msgstr "Не удалось разобрать содержимое файла control"
+
+#, c-format
+#~ msgid "Failed to write file %s"
+#~ msgstr "Не удалось записать файл %s"
+
+#, c-format
+#~ msgid "Failed to close file %s"
+#~ msgstr "Не удалось закрыть файл %s"
+
+#, c-format
+#~ msgid "The path %s is too long"
+#~ msgstr "Слишком длинный путь %s"
+
+#, c-format
+#~ msgid "Unpacking %s more than once"
+#~ msgstr "Повторная распаковка %s"
+
+#, c-format
+#~ msgid "The directory %s is diverted"
+#~ msgstr "Каталог %s входит в список отклоняемых"
+
+#, c-format
+#~ msgid "The package is trying to write to the diversion target %s/%s"
+#~ msgstr "Пакет пытается писать в отклонённый файл %s/%s"
+
+#~ msgid "The diversion path is too long"
+#~ msgstr "Путь отклонения слишком длинный"
+
+#, c-format
+#~ msgid "The directory %s is being replaced by a non-directory"
+#~ msgstr "Каталог %s был заменён не-каталогом"
+
+#~ msgid "Failed to locate node in its hash bucket"
+#~ msgstr "Не удалось найти узел в его хеш-цепочке"
+
+#~ msgid "The path is too long"
+#~ msgstr "Путь слишком длинный"
+
+#, c-format
+#~ msgid "Overwrite package match with no version for %s"
+#~ msgstr "У пакета %s, файлы которого заменяются, отсутствует версия"
+
+#, c-format
+#~ msgid "File %s/%s overwrites the one in the package %s"
+#~ msgstr "Файл %s/%s переписывает файл в пакете %s"
+
+#, c-format
+#~ msgid "Unable to stat %s"
+#~ msgstr "Невозможно получить атрибуты %s"
+
+#~ msgid "DropNode called on still linked node"
+#~ msgstr "DropNode вызван для узла, который ещё используется"
+
+#~ msgid "Failed to locate the hash element!"
+#~ msgstr "Не удалось найти элемент хеша!"
+
+#~ msgid "Failed to allocate diversion"
+#~ msgstr "Не удалось создать отклонение"
+
+#~ msgid "Internal error in AddDiversion"
+#~ msgstr "Внутренняя ошибка в AddDiversion"
+
+#, c-format
+#~ msgid "Trying to overwrite a diversion, %s -> %s and %s/%s"
+#~ msgstr "Попытка перезаписи отклонения, %s -> %s и %s/%s"
+
+#, c-format
+#~ msgid "Double add of diversion %s -> %s"
+#~ msgstr "Повторное добавление отклонения %s -> %s"
+
+#, c-format
+#~ msgid "Duplicate conf file %s/%s"
+#~ msgstr "Дубликат файла настройки %s/%s"
+
+#~ msgid ""
+#~ "Updating from such a repository can't be done securely, and is therefore "
+#~ "disabled by default."
+#~ msgstr ""
+#~ "Обновление из этого репозитория нельзя выполнить безопасным способом, "
+#~ "поэтому по умолчанию он отключён."
+
+#~ msgid ""
+#~ "Data from such a repository can't be authenticated and is therefore "
+#~ "potentially dangerous to use."
+#~ msgstr ""
+#~ "Данные из этого репозитория не могут быть аутентифицированы, поэтому их "
+#~ "использование потенциально небезопасно."
+
+#~ msgid ""
+#~ "See apt-secure(8) manpage for repository creation and user configuration "
+#~ "details."
+#~ msgstr ""
+#~ "Информацию о создании репозитория и настройках пользователя смотрите в "
+#~ "справочной странице apt-secure(8)."
+
+#, c-format
+#~ msgid "rename failed, %s (%s -> %s)."
+#~ msgstr "Ошибка в rename: %s (%s -> %s)."
+
+#~ msgid "Hash Sum mismatch"
+#~ msgstr "Хеш-сумма не совпадает"
+
+#~ msgid "Size mismatch"
+#~ msgstr "Не совпадает размер"
+
+#~ msgid "Invalid file format"
+#~ msgstr "Неправильный формат файла"
+
+#~ msgid "Signature error"
+#~ msgstr "Ошибка подписи"
+
+#, c-format
+#~ msgid ""
+#~ "An error occurred during the signature verification. The repository is "
+#~ "not updated and the previous index files will be used. GPG error: %s: %s"
+#~ msgstr ""
+#~ "Произошла ошибка при проверке подписи. Репозиторий не обновлён, и будут "
+#~ "использованы предыдущие индексные файлы. Ошибка GPG: %s: %s"
+
+#, c-format
+#~ msgid "GPG error: %s: %s"
+#~ msgstr "Ошибка GPG: %s: %s"
+
+#, c-format
+#~ msgid ""
+#~ "Skipping acquire of configured file '%s' as repository '%s' doesn't "
+#~ "support architecture '%s'"
+#~ msgstr ""
+#~ "Пропускается получение настроенного файла «%s», так как репозиторий «%s» "
+#~ "не поддерживает архитектуру «%s»"
+
+#, c-format
+#~ msgid ""
+#~ "Unable to find expected entry '%s' in Release file (Wrong sources.list "
+#~ "entry or malformed file)"
+#~ msgstr ""
+#~ "Невозможно найти ожидаемый элемент «%s» в файле Release (некорректная "
+#~ "запись в sources.list или файл)"
+
+#, c-format
+#~ msgid ""
+#~ "Skipping acquire of configured file '%s' as repository '%s' provides only "
+#~ "weak security information for it"
+#~ msgstr ""
+#~ "Пропускается получение настроенного файла «%s», так как репозиторий «%s» "
+#~ "обеспечивает только слабую защиту информации"
+
+#, c-format
+#~ msgid ""
+#~ "Release file for %s is expired (invalid since %s). Updates for this "
+#~ "repository will not be applied."
+#~ msgstr ""
+#~ "Файл Release для %s просрочен (недостоверный уже %s). Обновление этого "
+#~ "репозитория производиться не будет."
+
+#, c-format
+#~ msgid "Conflicting distribution: %s (expected %s but got %s)"
+#~ msgstr "Противоречивый выпуск: %s (ожидался %s, но получен %s)"
+
+#, c-format
+#~ msgid "The repository '%s' is not signed."
+#~ msgstr "Репозиторий «%s» не подписан."
+
+#, c-format
+#~ msgid "The repository '%s' does not have a Release file."
+#~ msgstr "Репозиторий «%s» не содержит файла Release."
+
+#, c-format
+#~ msgid "The repository '%s' is no longer signed."
+#~ msgstr "Репозиторий «%s» больше не подписан."
+
+#~ msgid ""
+#~ "This is normally not allowed, but the option Acquire::"
+#~ "AllowDowngradeToInsecureRepositories was given to override it."
+#~ msgstr ""
+#~ "Обычно это не разрешается, однако указан параметр Acquire::"
+#~ "AllowDowngradeToInsecureRepositories для продолжения."
+
+#, c-format
+#~ msgid ""
+#~ "I wasn't able to locate a file for the %s package. This might mean you "
+#~ "need to manually fix this package. (due to missing arch)"
+#~ msgstr ""
+#~ "Не удалось обнаружить файл пакета %s. Это может означать, что вам "
+#~ "придётся вручную исправить этот пакет (отсутствует архитектура)."
+
+#, c-format
+#~ msgid "Can't find a source to download version '%s' of '%s'"
+#~ msgstr "Невозможно найти источник для загрузки «%2$s» версии «%1$s»"
+
+#, c-format
+#~ msgid ""
+#~ "The package index files are corrupted. No Filename: field for package %s."
+#~ msgstr "Некорректный перечень пакетов. Нет поля Filename: для пакета %s."
+
+#, c-format
+#~ msgid "Changelog unavailable for %s=%s"
+#~ msgstr "Журнал изменений для %s=%s недоступен"
+
+#, c-format
+#~ msgid "The method driver %s could not be found."
+#~ msgstr "Драйвер для метода %s не найден."
+
+#, c-format
+#~ msgid "Is the package %s installed?"
+#~ msgstr "Проверьте, установлен ли пакет %s."
+
+#, c-format
+#~ msgid "Method %s did not start correctly"
+#~ msgstr "Метод %s запустился некорректно"
+
+#, c-format
+#~ msgid ""
+#~ "Please insert the disc labeled: '%s' in the drive '%s' and press [Enter]."
+#~ msgstr "Вставьте диск с меткой «%s» в устройство «%s» и нажмите [Enter]."
+
+#, c-format
+#~ msgid "List directory %spartial is missing."
+#~ msgstr "Каталог списка %spartial отсутствует."
+
+#, c-format
+#~ msgid "Archives directory %spartial is missing."
+#~ msgstr "Архивный каталог %spartial отсутствует."
+
+#, c-format
+#~ msgid "Unable to lock directory %s"
+#~ msgstr "Невозможно заблокировать каталог %s"
+
+#, c-format
+#~ msgid "No sandbox user '%s' on the system, can not drop privileges"
+#~ msgstr ""
+#~ "В системе нет пользователя «%s» для песочницы, невозможно сбросить права"
+
+#, c-format
+#~ msgid ""
+#~ "Can't drop privileges for downloading as file '%s' couldn't be accessed "
+#~ "by user '%s'."
+#~ msgstr ""
+#~ "Невозможно сбросить права для скачивания, так как файл «%s» недоступен "
+#~ "для пользователя «%s»."
+
+#, c-format
+#~ msgid "Clean of %s is not supported"
+#~ msgstr "Очистка «%s» не поддерживается"
+
+#, c-format
+#~ msgid "Retrieving file %li of %li (%s remaining)"
+#~ msgstr "Получение файла %li из %li (осталось %s)"
+
+#, c-format
+#~ msgid "Retrieving file %li of %li"
+#~ msgstr "Получение файла %li из %li"
+
+#, c-format
+#~ msgid ""
+#~ "The package %s needs to be reinstalled, but I can't find an archive for "
+#~ "it."
+#~ msgstr ""
+#~ "Пакет %s нуждается в переустановке, но найти архив для него не удалось."
+
+#~ msgid ""
+#~ "Error, pkgProblemResolver::Resolve generated breaks, this may be caused "
+#~ "by held packages."
+#~ msgstr ""
+#~ "Ошибка: pkgProblemResolver::Resolve привёл к появлению сломанных пакетов. "
+#~ "Это может быть вызвано зафиксированными пакетами."
+
+#~ msgid "Unable to correct problems, you have held broken packages."
+#~ msgstr "Невозможно исправить ошибки: у вас зафиксированы сломанные пакеты."
+
+#~ msgid "The package lists or status file could not be parsed or opened."
+#~ msgstr ""
+#~ "Не удалось открыть либо разобрать содержимое списков пакетов или файла "
+#~ "состояния."
+
+#~ msgid "You may want to run apt-get update to correct these problems"
+#~ msgstr "Вы можете запустить «apt-get update» для исправления этих ошибок"
+
+#~ msgid "The list of sources could not be read."
+#~ msgstr "Не удалось прочитать перечень источников."
+
+#, c-format
+#~ msgid "Release '%s' for '%s' was not found"
+#~ msgstr "Выпуск «%s» для «%s» не найден"
+
+#, c-format
+#~ msgid "Version '%s' for '%s' was not found"
+#~ msgstr "Версия «%s» для «%s» не найдена"
+
+#, c-format
+#~ msgid "Couldn't find task '%s'"
+#~ msgstr "Не удалось найти задачу «%s»"
+
+#, c-format
+#~ msgid "Couldn't find any package by regex '%s'"
+#~ msgstr "Не удалось найти ни один пакет с помощью регулярного выражения «%s»"
+
+#, c-format
+#~ msgid "Couldn't find any package by glob '%s'"
+#~ msgstr "Не удалось найти ни один пакет с помощью шаблона «%s»"
+
+#, c-format
+#~ msgid "Can't select versions from package '%s' as it is purely virtual"
+#~ msgstr ""
+#~ "Не удалось выбрать версии из пакета «%s», так как он полностью виртуальный"
+
+#, c-format
+#~ msgid ""
+#~ "Can't select newest version from package '%s' as it is purely virtual"
+#~ msgstr ""
+#~ "Не удалось выбрать самую новую версию из пакета «%s», так как он "
+#~ "полностью виртуальный"
+
+#, c-format
+#~ msgid ""
+#~ "Can't select candidate version from package %s as it has no candidate"
+#~ msgstr ""
+#~ "Не удалось выбрать версию-кандидата из пакета %s, так как у него нет "
+#~ "кандидатов"
+
+#, c-format
+#~ msgid ""
+#~ "Can't select installed version from package %s as it is not installed"
+#~ msgstr ""
+#~ "Не удалось выбрать установленную версию из пакета %s, так как он не "
+#~ "установлен"
+
+#, c-format
+#~ msgid ""
+#~ "Can't select installed nor candidate version from package '%s' as it has "
+#~ "neither of them"
+#~ msgstr ""
+#~ "Не удалось выбрать ни установленную, ни версию-кандидата из пакета «%s», "
+#~ "так как в нём нет ни той, ни другой"
+
+#, c-format
+#~ msgid "Line %u too long in source list %s."
+#~ msgstr "Строка %u в списке источников %s слишком длинная."
+
+#~ msgid "Unmounting CD-ROM...\n"
+#~ msgstr "Размонтирование CD-ROM…\n"
+
+#, c-format
+#~ msgid "Using CD-ROM mount point %s\n"
+#~ msgstr "Использование %s в качестве точки монтирования CD-ROM\n"
+
+#~ msgid "Waiting for disc...\n"
+#~ msgstr "Ожидание диска…\n"
+
+#~ msgid "Mounting CD-ROM...\n"
+#~ msgstr "Монтирование CD-ROM…\n"
+
+#~ msgid "Identifying... "
+#~ msgstr "Идентификация… "
+
+#, c-format
+#~ msgid "Stored label: %s\n"
+#~ msgstr "Найдена метка: %s\n"
+
+#~ msgid "Scanning disc for index files...\n"
+#~ msgstr "Поиск индексных файлов на диске…\n"
+
+#, c-format
+#~ msgid ""
+#~ "Found %zu package indexes, %zu source indexes, %zu translation indexes "
+#~ "and %zu signatures\n"
+#~ msgstr ""
+#~ "Найдено %zu индексов двоичных пакетов, %zu индексов пакетов с исходным "
+#~ "кодом, %zu индексов переводов и %zu подписей\n"
+
+#~ msgid ""
+#~ "Unable to locate any package files, perhaps this is not a Debian Disc or "
+#~ "the wrong architecture?"
+#~ msgstr ""
+#~ "Не удалось найти ни одного файла пакетов; возможно, это не диск Debian "
+#~ "или не с той архитектурой?"
+
+#, c-format
+#~ msgid "Found label '%s'\n"
+#~ msgstr "Найдена метка «%s»\n"
+
+#~ msgid "That is not a valid name, try again.\n"
+#~ msgstr "Это неправильное имя, попробуйте ещё раз.\n"
+
+#, c-format
+#~ msgid ""
+#~ "This disc is called: \n"
+#~ "'%s'\n"
+#~ msgstr ""
+#~ "Название диска: \n"
+#~ "«%s»\n"
+
+#~ msgid "Copying package lists..."
+#~ msgstr "Копирование списков пакетов…"
+
+#~ msgid "Writing new source list\n"
+#~ msgstr "Запись нового списка источников\n"
+
+#~ msgid "Source list entries for this disc are:\n"
+#~ msgstr "Записи в списке источников для этого диска:\n"
+
+#, c-format
+#~ msgid "Unable to stat %s."
+#~ msgstr "Невозможно получить атрибуты %s."
+
+#, c-format
+#~ msgid "Unable to stat the mount point %s"
+#~ msgstr "Невозможно прочитать атрибуты точки монтирования %s"
+
+#~ msgid "Failed to stat the cdrom"
+#~ msgstr "Невозможно получить атрибуты CD-ROM"
+
+#, c-format
+#~ msgid ""
+#~ "Command line option '%c' [from %s] is not understood in combination with "
+#~ "the other options."
+#~ msgstr ""
+#~ "Параметр командной строки «%c» [из %s] непонятен в комбинации с другими "
+#~ "параметрами."
+
+#, c-format
+#~ msgid ""
+#~ "Command line option %s is not understood in combination with the other "
+#~ "options"
+#~ msgstr ""
+#~ "Параметр командной строки «%s» непонятен в комбинации с другими "
+#~ "параметрами"
+
+#, c-format
+#~ msgid "Command line option %s is not boolean"
+#~ msgstr "Параметр командной строки %s не логического типа"
+
+#, c-format
+#~ msgid "Option %s requires an argument."
+#~ msgstr "Для параметра %s требуется аргумент."
+
+#, c-format
+#~ msgid "Option %s: Configuration item specification must have an =<val>."
+#~ msgstr "Значение параметра %s должно иметь вид =<val>."
+
+#, c-format
+#~ msgid "Option %s requires an integer argument, not '%s'"
+#~ msgstr "Для параметра %s требуется аргумент в виде целого числа, а не «%s»"
+
+#, c-format
+#~ msgid "Option '%s' is too long"
+#~ msgstr "Параметр «%s» слишком длинный"
+
+#, c-format
+#~ msgid "Sense %s is not understood, try true or false."
+#~ msgstr "Смысл %s не ясен, используйте true или false."
+
+#, c-format
+#~ msgid "Invalid operation %s"
+#~ msgstr "Неверная операция %s"
+
+#, c-format
+#~ msgid "Unrecognized type abbreviation: '%c'"
+#~ msgstr "Неизвестное сокращение типа: «%c»"
+
+#, c-format
+#~ msgid "Opening configuration file %s"
+#~ msgstr "Открытие файла настройки %s"
+
+#, c-format
+#~ msgid "Syntax error %s:%u: Block starts with no name."
+#~ msgstr "Синтаксическая ошибка %s:%u: в начале блока нет имени."
+
+#, c-format
+#~ msgid "Syntax error %s:%u: Malformed tag"
+#~ msgstr "Синтаксическая ошибка %s:%u: неправильный тег"
+
+#, c-format
+#~ msgid "Syntax error %s:%u: Extra junk after value"
+#~ msgstr "Синтаксическая ошибка %s:%u: лишние символы после значения"
+
+#, c-format
+#~ msgid "Syntax error %s:%u: Directives can only be done at the top level"
+#~ msgstr ""
+#~ "Синтаксическая ошибка %s:%u: директивы могут задаваться только на верхнем "
+#~ "уровне"
+
+#, c-format
+#~ msgid "Syntax error %s:%u: Too many nested includes"
+#~ msgstr "Синтаксическая ошибка %s:%u: слишком много вложенных include"
+
+#, c-format
+#~ msgid "Syntax error %s:%u: Included from here"
+#~ msgstr "Синтаксическая ошибка %s:%u вызвана include из этого места"
+
+#, c-format
+#~ msgid "Syntax error %s:%u: Unsupported directive '%s'"
+#~ msgstr "Синтаксическая ошибка %s:%u: неподдерживаемая директива «%s»"
+
+#, c-format
+#~ msgid ""
+#~ "Syntax error %s:%u: clear directive requires an option tree as argument"
+#~ msgstr ""
+#~ "Синтаксическая ошибка %s:%u: для директивы clear требуется дерево "
+#~ "параметров в качестве аргумента"
+
+#, c-format
+#~ msgid "Syntax error %s:%u: Extra junk at end of file"
+#~ msgstr "Синтаксическая ошибка %s:%u: лишние символы в конце файла"
+
+#, c-format
+#~ msgid "Problem unlinking the file %s"
+#~ msgstr "Проблема при удалении файла %s"
+
+#, c-format
+#~ msgid "Not using locking for read only lock file %s"
+#~ msgstr ""
+#~ "Блокировка не используется, так как файл блокировки %s доступен только "
+#~ "для чтения"
+
+#, c-format
+#~ msgid "Could not open lock file %s"
+#~ msgstr "Не удалось открыть файл блокировки %s"
+
+#, c-format
+#~ msgid "Not using locking for nfs mounted lock file %s"
+#~ msgstr ""
+#~ "Блокировка не используется, так как файл блокировки %s находится на "
+#~ "файловой системе nfs"
+
+#, c-format
+#~ msgid "Could not get lock %s"
+#~ msgstr "Не удалось получить файл блокировки %s"
+
+#, c-format
+#~ msgid "List of files can't be created as '%s' is not a directory"
+#~ msgstr ""
+#~ "Невозможно создать список файлов, так как «%s» не является каталогом"
+
+#, c-format
+#~ msgid "Ignoring '%s' in directory '%s' as it is not a regular file"
+#~ msgstr "Игнорируется файл «%s» в каталоге «%s», так как это не обычный файл"
+
+#, c-format
+#~ msgid "Ignoring file '%s' in directory '%s' as it has no filename extension"
+#~ msgstr ""
+#~ "Игнорируется файл «%s» в каталоге «%s», так как он не имеет расширения"
+
+#, c-format
+#~ msgid ""
+#~ "Ignoring file '%s' in directory '%s' as it has an invalid filename "
+#~ "extension"
+#~ msgstr ""
+#~ "Игнорируется файл «%s» в каталоге «%s», так как он имеет неправильное "
+#~ "расширение"
+
+#, c-format
+#~ msgid "Waited for %s but it wasn't there"
+#~ msgstr "Ожидалось завершение процесса %s, но он не был запущен"
+
+#, c-format
+#~ msgid "Sub-process %s received a segmentation fault."
+#~ msgstr "В порождённом процессе %s произошла ошибка сегментирования."
+
+#, c-format
+#~ msgid "Sub-process %s received signal %u."
+#~ msgstr "Порождённый процесс %s получил сигнал %u."
+
+#, c-format
+#~ msgid "Sub-process %s returned an error code (%u)"
+#~ msgstr "Порождённый процесс %s вернул код ошибки (%u)"
+
+#, c-format
+#~ msgid "Sub-process %s exited unexpectedly"
+#~ msgstr "Порождённый процесс %s неожиданно завершился"
+
+#, c-format
+#~ msgid "Problem closing the gzip file %s"
+#~ msgstr "Проблема закрытия gzip-файла %s"
+
+#~ msgid "Unexpected end of file"
+#~ msgstr "Неожиданный конец файла"
+
+#~ msgid "Failed to create subprocess IPC"
+#~ msgstr "Не удалось создать IPC с порождённым процессом"
+
+#~ msgid "Failed to exec compressor "
+#~ msgstr "Не удалось выполнить программу сжатия "
+
+#, c-format
+#~ msgid "Could not open file %s"
+#~ msgstr "Не удалось открыть файл %s"
+
+#, c-format
+#~ msgid "Could not open file descriptor %d"
+#~ msgstr "Не удалось открыть файловый дескриптор %d"
+
+#, c-format
+#~ msgid "read, still have %llu to read but none left"
+#~ msgstr ""
+#~ "Ошибка чтения: планировалось прочесть ещё %llu байтов, но ничего больше "
+#~ "нет"
+
+#, c-format
+#~ msgid "write, still have %llu to write but couldn't"
+#~ msgstr ""
+#~ "Ошибка записи: планировалось записать ещё %llu байтов, но не удалось"
+
+#, c-format
+#~ msgid "Problem closing the file %s"
+#~ msgstr "Проблема закрытия файла %s"
+
+#, c-format
+#~ msgid "Problem renaming the file %s to %s"
+#~ msgstr "Проблема при переименовании файла %s в %s"
+
+#~ msgid "Problem syncing the file"
+#~ msgstr "Проблема при синхронизации файла"
+
+#~ msgid "Can't mmap an empty file"
+#~ msgstr "Невозможно отобразить в память пустой файл"
+
+#, c-format
+#~ msgid "Couldn't make mmap of %llu bytes"
+#~ msgstr "Не удалось отобразить в память %llu байтов"
+
+#, c-format
+#~ msgid "Couldn't duplicate file descriptor %i"
+#~ msgstr "Не удалось сделать копию файлового дескриптора %i"
+
+#~ msgid "Unable to close mmap"
+#~ msgstr "Невозможно закрыть отображение в память"
+
+#~ msgid "Unable to synchronize mmap"
+#~ msgstr "Невозможно синхронизировать отображение в память"
+
+#, c-format
+#~ msgid "Couldn't make mmap of %lu bytes"
+#~ msgstr "Не удалось отобразить в память %lu байтов"
+
+#~ msgid "Failed to truncate file"
+#~ msgstr "Не удалось обрезать файл"
+
+#, c-format
+#~ msgid ""
+#~ "Dynamic MMap ran out of room. Please increase the size of APT::Cache-"
+#~ "Start. Current value: %lu. (man 5 apt.conf)"
+#~ msgstr ""
+#~ "Не хватает места для динамического отображения в память. Увеличьте "
+#~ "значение APT::Cache-Start. Текущее значение: %lu. (man 5 apt.conf)"
+
+#, c-format
+#~ msgid ""
+#~ "Unable to increase the size of the MMap as the limit of %lu bytes is "
+#~ "already reached."
+#~ msgstr ""
+#~ "Невозможно увеличить размер отображения в память, так как уже достигнут "
+#~ "предел в %lu байтов."
+
+#~ msgid ""
+#~ "Unable to increase size of the MMap as automatic growing is disabled by "
+#~ "user."
+#~ msgstr ""
+#~ "Невозможно увеличить размер отображения в память, так как автоматическое "
+#~ "увеличение отключено пользователем."
+
+#, c-format
+#~ msgid "%c%s... Error!"
+#~ msgstr "%c%s… Ошибка!"
+
+#, c-format
+#~ msgid "%c%s... Done"
+#~ msgstr "%c%s… Готово"
+
+#~ msgid "..."
+#~ msgstr "…"
+
+#, c-format
+#~ msgid "%c%s... %u%%"
+#~ msgstr "%c%s… %u%%"
+
+#, c-format
+#~ msgid "%lid %lih %limin %lis"
+#~ msgstr "%liд %liч %liмин %liс"
+
+#, c-format
+#~ msgid "%lih %limin %lis"
+#~ msgstr "%liч %liмин %liс"
+
+#, c-format
+#~ msgid "%limin %lis"
+#~ msgstr "%liмин %liс"
+
+#, c-format
+#~ msgid "%lis"
+#~ msgstr "%liс"
+
+#, c-format
+#~ msgid "Selection %s not found"
+#~ msgstr "Не найдено: %s"
+
+#, c-format
+#~ msgid "Target %s wants to acquire the same file (%s) as %s from source %s"
+#~ msgstr ""
+#~ "Для цели %s нужно получить такой же файл (%s), как %s из источника %s"
+
+#, c-format
+#~ msgid "Target %s (%s) is configured multiple times in %s and %s"
+#~ msgstr "Цель %s (%s) настроена несколько раз: в %s и в %s"
+
+#, c-format
+#~ msgid "Unable to parse Release file %s"
+#~ msgstr "Невозможно разобрать содержимое файла Release (%s)"
+
+#, c-format
+#~ msgid "No sections in Release file %s"
+#~ msgstr "Отсутствуют разделы в файле Release (%s)"
+
+#, c-format
+#~ msgid "No Hash entry in Release file %s"
+#~ msgstr "Отсутствуют хеш-суммы в файле Release (%s)"
+
+#, c-format
+#~ msgid ""
+#~ "No Hash entry in Release file %s which is considered strong enough for "
+#~ "security purposes"
+#~ msgstr ""
+#~ "Отсутствуют хеш-суммы в файле Release (%s), которые считались бы "
+#~ "достаточно стойкими с точки зрения безопасности"
+
+#, c-format
+#~ msgid "Invalid 'Date' entry in Release file %s"
+#~ msgstr "Неправильный элемент «Date» в файле Release %s"
+
+#, c-format
+#~ msgid "Invalid 'Valid-Until' entry in Release file %s"
+#~ msgstr "Неправильный элемент «Valid-Until» в файле Release %s"
+
+#, c-format
+#~ msgid "Conflicting values set for option %s regarding source %s %s"
+#~ msgstr "Указаны конфликтующие значения параметра %s из источника %s %s"
+
+#, c-format
+#~ msgid "Invalid value set for option %s regarding source %s %s (%s)"
+#~ msgstr "Указано некорректное значение параметра %s из источника %s %s (%s)"
+
+#, c-format
+#~ msgid "Unable to parse package file %s (%d)"
+#~ msgstr "Невозможно разобрать содержимое файла пакета %s (%d)"
+
+#, c-format
+#~ msgid ""
+#~ "Unable to acquire the dpkg frontend lock (%s), is another process using "
+#~ "it?"
+#~ msgstr ""
+#~ "Невозможно получить блокировку внешнего интерфейса dpkg (%s); она уже "
+#~ "используется другим процессом?"
+
+#, c-format
+#~ msgid "Unable to acquire the dpkg frontend lock (%s), are you root?"
+#~ msgstr ""
+#~ "Невозможно получить блокировку внешнего интерфейса dpkg (%s); у вас есть "
+#~ "права суперпользователя?"
+
+#, c-format
+#~ msgid ""
+#~ "dpkg was interrupted, you must manually run '%s' to correct the problem. "
+#~ msgstr ""
+#~ "Работа dpkg была прервана, вы должны вручную запустить «%s» для "
+#~ "устранения проблемы. "
+
+#, c-format
+#~ msgid ""
+#~ "Unable to lock the administration directory (%s), is another process "
+#~ "using it?"
+#~ msgstr ""
+#~ "Невозможно выполнить блокировку управляющего каталога (%s); он уже "
+#~ "используется другим процессом?"
+
+#, c-format
+#~ msgid "Unable to lock the administration directory (%s), are you root?"
+#~ msgstr ""
+#~ "Невозможно выполнить блокировку управляющего каталога (%s); у вас есть "
+#~ "права суперпользователя?"
+
+#~ msgid "Not locked"
+#~ msgstr "Не заблокирован"
+
+#, c-format
+#~ msgid "Installing %s"
+#~ msgstr "Устанавливается %s"
+
+#, c-format
+#~ msgid "Configuring %s"
+#~ msgstr "Настраивается %s"
+
+#, c-format
+#~ msgid "Removing %s"
+#~ msgstr "Удаляется %s"
+
+#, c-format
+#~ msgid "Completely removing %s"
+#~ msgstr "Выполняется полное удаление %s"
+
+#, c-format
+#~ msgid "Noting disappearance of %s"
+#~ msgstr "Уведомление об исчезновении %s"
+
+#, c-format
+#~ msgid "Running post-installation trigger %s"
+#~ msgstr "Выполняется послеустановочный триггер %s"
+
+#, c-format
+#~ msgid "Directory '%s' missing"
+#~ msgstr "Отсутствует каталог «%s»"
+
+#, c-format
+#~ msgid "Could not open file '%s'"
+#~ msgstr "Не удалось открыть файл «%s»"
+
+#, c-format
+#~ msgid "Preparing %s"
+#~ msgstr "Подготавливается %s"
+
+#, c-format
+#~ msgid "Unpacking %s"
+#~ msgstr "Распаковывается %s"
+
+#, c-format
+#~ msgid "Preparing to configure %s"
+#~ msgstr "Подготавливается для настройки %s"
+
+#, c-format
+#~ msgid "Installed %s"
+#~ msgstr "Установлен %s"
+
+#, c-format
+#~ msgid "Preparing for removal of %s"
+#~ msgstr "Подготавливается для удаления %s"
+
+#, c-format
+#~ msgid "Removed %s"
+#~ msgstr "Удалён %s"
+
+#, c-format
+#~ msgid "Preparing to completely remove %s"
+#~ msgstr "Подготовка к полному удалению %s"
+
+#, c-format
+#~ msgid "Completely removed %s"
+#~ msgstr "%s полностью удалён"
+
+#, c-format
+#~ msgid "Can not write log (%s)"
+#~ msgstr "Невозможно записать журнал (%s)"
+
+#~ msgid "Is /dev/pts mounted?"
+#~ msgstr "Смонтирован ли /dev/pts?"
+
+#~ msgid "Operation was interrupted before it could finish"
+#~ msgstr "Действие прервано до его завершения"
+
+#~ msgid "No apport report written because MaxReports is reached already"
+#~ msgstr "Отчёт apport не записан, так как достигнуто значение MaxReports"
+
+#~ msgid "dependency problems - leaving unconfigured"
+#~ msgstr "проблемы с зависимостями — оставляем ненастроенным"
+
+#~ msgid ""
+#~ "No apport report written because the error message indicates its a "
+#~ "followup error from a previous failure."
+#~ msgstr ""
+#~ "Отчёт apport не записан, так как сообщение об ошибке указывает на "
+#~ "повторную ошибку от предыдущего отказа."
+
+#~ msgid ""
+#~ "No apport report written because the error message indicates a disk full "
+#~ "error"
+#~ msgstr ""
+#~ "Отчёт apport не записан, так как получено сообщение об ошибке о нехватке "
+#~ "места на диске"
+
+#~ msgid ""
+#~ "No apport report written because the error message indicates a out of "
+#~ "memory error"
+#~ msgstr ""
+#~ "Отчёт apport не записан, так как получено сообщение об ошибке о нехватке "
+#~ "памяти"
+
+#~ msgid ""
+#~ "No apport report written because the error message indicates an issue on "
+#~ "the local system"
+#~ msgstr ""
+#~ "Отчёт apport не записан, так как получено сообщение о проблеме в "
+#~ "локальной системе"
+
+#~ msgid ""
+#~ "No apport report written because the error message indicates a dpkg I/O "
+#~ "error"
+#~ msgstr ""
+#~ "Отчёт apport не записан, так как получено сообщение об ошибке ввода-"
+#~ "вывода dpkg"
+
+#~ msgid "Building dependency tree"
+#~ msgstr "Построение дерева зависимостей"
+
+#~ msgid "Candidate versions"
+#~ msgstr "Версии-кандидаты"
+
+#~ msgid "Dependency generation"
+#~ msgstr "Формирование зависимостей"
+
+#~ msgid "Reading state information"
+#~ msgstr "Чтение информации о состоянии"
+
+#, c-format
+#~ msgid "Failed to open StateFile %s"
+#~ msgstr "Не удалось открыть файл состояний %s"
+
+#, c-format
+#~ msgid "Failed to write temporary StateFile %s"
+#~ msgstr "Не удалось записать временный файл состояний %s"
+
+#~ msgid "Send scenario to solver"
+#~ msgstr "Отправка сценария решателю"
+
+#~ msgid "Send request to solver"
+#~ msgstr "Отправка запроса решателю"
+
+#~ msgid "Prepare for receiving solution"
+#~ msgstr "Подготовка к приёму решения"
+
+#~ msgid "External solver failed without a proper error message"
+#~ msgstr ""
+#~ "Внешний решатель завершился с ошибкой, не передав сообщения об ошибке"
+
+#~ msgid "Execute external solver"
+#~ msgstr "Выполнение внешнего решателя"
+
+#, c-format
+#~ msgid "Wrote %i records.\n"
+#~ msgstr "Сохранено %i записей.\n"
+
+#, c-format
+#~ msgid "Wrote %i records with %i missing files.\n"
+#~ msgstr "Сохранено %i записей с %i отсутствующими файлами.\n"
+
+#, c-format
+#~ msgid "Wrote %i records with %i mismatched files\n"
+#~ msgstr "Сохранено %i записей с %i несовпадающими файлами\n"
+
+#, c-format
+#~ msgid "Wrote %i records with %i missing files and %i mismatched files\n"
+#~ msgstr ""
+#~ "Сохранено %i записей с %i отсутствующими файлами и с %i несовпадающими "
+#~ "файлами\n"
+
+#, c-format
+#~ msgid "Can't find authentication record for: %s"
+#~ msgstr "Не удалось найти аутентификационную запись для: %s"
+
+#, c-format
+#~ msgid "Hash mismatch for: %s"
+#~ msgstr "Не совпадает хеш-сумма для: %s"
+
+#, c-format
+#~ msgid "Packaging system '%s' is not supported"
+#~ msgstr "Система пакетирования «%s» не поддерживается"
+
+#~ msgid "Unable to determine a suitable packaging system type"
+#~ msgstr "Невозможно определить подходящий тип системы пакетирования"
+
+#, c-format
+#~ msgid "Progress: [%3i%%]"
+#~ msgstr "Ход выполнения: [%3i%%]"
+
+#~ msgid "Running dpkg"
+#~ msgstr "Запускается dpkg"
+
+#, c-format
+#~ msgid ""
+#~ "Could not perform immediate configuration on '%s'. Please see man 5 apt."
+#~ "conf under APT::Immediate-Configure for details. (%d)"
+#~ msgstr ""
+#~ "Не удалось выполнить оперативную настройку «%s». Подробнее смотрите в man "
+#~ "5 apt.conf об APT::Immediate-Configure. (%d)"
+
+#, c-format
+#~ msgid "Could not configure '%s'. "
+#~ msgstr "Не удалось настроить «%s»."
+
+#, c-format
+#~ msgid ""
+#~ "This installation run will require temporarily removing the essential "
+#~ "package %s due to a Conflicts/Pre-Depends loop. This is often bad, but if "
+#~ "you really want to do it, activate the APT::Force-LoopBreak option."
+#~ msgstr ""
+#~ "Вследствие возникновения циклических зависимостей типа Конфликтует/"
+#~ "Предзависит, для продолжения установки необходимо временно удалить пакет "
+#~ "первой необходимости %s. Это может привести к фатальным последствиям. "
+#~ "Если вы действительно хотите продолжить, установите параметр APT::Force-"
+#~ "LoopBreak."
+
+#~ msgid "Empty package cache"
+#~ msgstr "Кэш пакетов пуст"
+
+#~ msgid "The package cache file is corrupted"
+#~ msgstr "Кэш пакетов повреждён"
+
+#~ msgid "The package cache file is an incompatible version"
+#~ msgstr "Несовместимая версия кэша пакетов"
+
+#, c-format
+#~ msgid "This APT does not support the versioning system '%s'"
+#~ msgstr "Эта версия APT не поддерживает систему версий «%s»"
+
+#, c-format
+#~ msgid "The package cache was built for different architectures: %s vs %s"
+#~ msgstr "Кэш пакетов был создан для разных архитектур: %s против %s"
+
+#~ msgid "The package cache file is corrupted, it has the wrong hash"
+#~ msgstr "Кэш пакетов повреждён: у него неправильный хеш"
+
+#~ msgid "Depends"
+#~ msgstr "Зависит"
+
+#~ msgid "PreDepends"
+#~ msgstr "Предзависит"
+
+#~ msgid "Suggests"
+#~ msgstr "Предлагает"
+
+#~ msgid "Recommends"
+#~ msgstr "Рекомендует"
+
+#~ msgid "Conflicts"
+#~ msgstr "Конфликтует"
+
+#~ msgid "Replaces"
+#~ msgstr "Заменяет"
+
+#~ msgid "Obsoletes"
+#~ msgstr "Замещает"
+
+#~ msgid "Breaks"
+#~ msgstr "Ломает"
+
+#~ msgid "Enhances"
+#~ msgstr "Улучшает"
+
+#~ msgid "required"
+#~ msgstr "необходимый"
+
+#~ msgid "important"
+#~ msgstr "важный"
+
+#~ msgid "standard"
+#~ msgstr "стандартный"
+
+#~ msgid "optional"
+#~ msgstr "необязательный"
+
+#~ msgid "extra"
+#~ msgstr "дополнительный"
+
+#~ msgid "Cache has an incompatible versioning system"
+#~ msgstr "Кэш имеет несовместимую систему версий"
+
+#, c-format
+#~ msgid "Error occurred while processing %s (%s%d)"
+#~ msgstr "Произошла ошибка во время обработки %s (%s%d)"
+
+#~ msgid ""
+#~ "Wow, you exceeded the number of package names this APT is capable of."
+#~ msgstr ""
+#~ "Превышено допустимое количество имён пакетов, которое способен обработать "
+#~ "APT."
+
+#~ msgid "Wow, you exceeded the number of versions this APT is capable of."
+#~ msgstr ""
+#~ "Превышено допустимое количество версий, которое способен обработать APT."
+
+#~ msgid "Wow, you exceeded the number of descriptions this APT is capable of."
+#~ msgstr ""
+#~ "Превышено допустимое количество описаний, которое способен обработать APT."
+
+#~ msgid "Wow, you exceeded the number of dependencies this APT is capable of."
+#~ msgstr ""
+#~ "Превышено допустимое количество зависимостей, которое способен обработать "
+#~ "APT."
+
+#~ msgid "Reading package lists"
+#~ msgstr "Чтение списков пакетов"
+
+#~ msgid "IO Error saving source cache"
+#~ msgstr "Ошибка ввода/вывода при попытке сохранить кэш источников"
+
+#, c-format
+#~ msgid "Index file type '%s' is not supported"
+#~ msgstr "Не поддерживается индексный файл типа «%s»"
+
+#, c-format
+#~ msgid ""
+#~ "The value '%s' is invalid for APT::Default-Release as such a release is "
+#~ "not available in the sources"
+#~ msgstr ""
+#~ "Значение «%s» недопустимо для APT::Default-Release, так как выпуск "
+#~ "недоступен в источниках"
+
+#, c-format
+#~ msgid "Invalid record in the preferences file %s, no Package header"
+#~ msgstr ""
+#~ "Неверная запись в файле предпочтений %s: отсутствует заголовок Package"
+
+#, c-format
+#~ msgid "Did not understand pin type %s"
+#~ msgstr "Неизвестный тип привязки %s"
+
+#, c-format
+#~ msgid "%s: Value %s is outside the range of valid pin priorities (%d to %d)"
+#~ msgstr ""
+#~ "%s: значение %s находится вне диапазона корректных приоритетов привязки "
+#~ "(с %d по %d)"
+
+#~ msgid "No priority (or zero) specified for pin"
+#~ msgstr "Для привязки не указан приоритет (или указан нулевой)"
+
+#, c-format
+#~ msgid "Malformed entry %u in %s file %s (%s)"
+#~ msgstr "Некорректная запись в строке %u файла «%s» %s (%s)"
+
+#, c-format
+#~ msgid "Opening %s"
+#~ msgstr "Открытие %s"
+
+#, c-format
+#~ msgid "Malformed line %u in source list %s (type)"
+#~ msgstr "Некорректная строка %u в списке источников %s (тип)"
+
+#, c-format
+#~ msgid "Type '%s' is not known on line %u in source list %s"
+#~ msgstr "Неизвестный тип «%s» в строке %u в списке источников %s"
+
+#, c-format
+#~ msgid "Malformed stanza %u in source list %s (type)"
+#~ msgstr "Некорректная запись %u в списке источников %s (тип)"
+
+#, c-format
+#~ msgid "Type '%s' is not known on stanza %u in source list %s"
+#~ msgstr "Неизвестный тип «%s» в записи %u в списке источников %s"
+
+#, c-format
+#~ msgid "Unsupported file %s given on commandline"
+#~ msgstr "В командной строке указан неподдерживаемый файл %s"
+
+#~ msgid "You must put some 'source' URIs in your sources.list"
+#~ msgstr ""
+#~ "Вы должны заполнить sources.list, поместив туда URI источников пакетов с "
+#~ "исходным кодом"
+
+#, c-format
+#~ msgid "Cannot convert %s to integer: out of range"
+#~ msgstr ""
+#~ "Невозможно преобразовать %s в целое число: выход за пределы диапазона"
+
+#, c-format
+#~ msgid "Failed to fetch %s  %s"
+#~ msgstr "Не удалось получить %s  %s"
+
+#~ msgid ""
+#~ "Some index files failed to download. They have been ignored, or old ones "
+#~ "used instead."
+#~ msgstr ""
+#~ "Некоторые индексные файлы скачать не удалось. Они были проигнорированы, "
+#~ "или вместо них были использованы старые версии."
+
+#~ msgid "Calculating upgrade"
+#~ msgstr "Расчёт обновлений"
+
+#~ msgid ""
+#~ "Signed file isn't valid, got '%s' (does the network require "
+#~ "authentication?)"
+#~ msgstr ""
+#~ "Подписанный файл некорректен, получено «%s» (возможно в сети требуется "
+#~ "аутентификация?)"
+
+#~ msgid "Invalid '%s' entry in Release file %s"
+#~ msgstr "Неправильный элемент «%s» в файле Release %s"
+
+#~ msgid "There is no public key available for the following key IDs:\n"
+#~ msgstr "Недоступен открытый ключ для следующих ID ключей:\n"
+
+#, fuzzy
+#~ msgid "The repository is insufficiently signed by key %s (%s)"
+#~ msgstr "Каталог %s входит в список diverted"
+
+#~ msgid ""
+#~ "%s dependency for %s can't be satisfied because %s is not allowed on '%s' "
+#~ "packages"
+#~ msgstr ""
+#~ "Зависимость типа %s для %s не может быть удовлетворена, так как %s не "
+#~ "разрешён для пакетов «%s»"
+
+#~ msgid ""
+#~ "%s dependency for %s cannot be satisfied because the package %s cannot be "
+#~ "found"
+#~ msgstr ""
+#~ "Зависимость типа %s для %s не может быть удовлетворена, так как пакет %s "
+#~ "не найден"
+
+#~ msgid ""
+#~ "Failed to satisfy %s dependency for %s: Installed package %s is too new"
+#~ msgstr ""
+#~ "Не удалось удовлетворить зависимость типа %s для пакета %s: Установленный "
+#~ "пакет %s новее, чем надо"
+
+#~ msgid ""
+#~ "%s dependency for %s cannot be satisfied because candidate version of "
+#~ "package %s can't satisfy version requirements"
+#~ msgstr ""
+#~ "Зависимость типа %s для %s не может быть удовлетворена, так как версия-"
+#~ "кандидат пакета %s не может удовлетворить требованиям по версии"
+
+#~ msgid ""
+#~ "%s dependency for %s cannot be satisfied because package %s has no "
+#~ "candidate version"
+#~ msgstr ""
+#~ "Зависимость типа %s для %s не может быть удовлетворена, так как пакет %s "
+#~ "не имеет версии-кандидата"
+
+#~ msgid "Failed to satisfy %s dependency for %s: %s"
+#~ msgstr "Невозможно удовлетворить зависимость типа %s для пакета %s: %s"
+
+#~ msgid "Build-dependencies for %s could not be satisfied."
+#~ msgstr "Зависимости для сборки %s не могут быть удовлетворены."
+
+#~ msgid "Problem unlinking %s"
+#~ msgstr "Не удалось удалить %s"
+
+#~ msgid "Failed to unlink %s"
+#~ msgstr "Не удалось удалить %s"
+
+#~ msgid ""
+#~ "Usage: apt-cache [options] command\n"
+#~ "       apt-cache [options] show pkg1 [pkg2 ...]\n"
+#~ "\n"
+#~ "apt-cache is a low-level tool used to query information\n"
+#~ "from APT's binary cache files\n"
+#~ msgstr ""
+#~ "Использование: apt-cache [параметры] команда\n"
+#~ "          или: apt-cache [параметры] show пакет1 [пакет2…]\n"
+#~ "\n"
+#~ "apt-cache — низкоуровневый инструмент для поиска\n"
+#~ "информации в двоичных кэш-файлах APT\n"
+
+#~ msgid "Commands:"
+#~ msgstr "Команды:"
+
+#~ msgid ""
+#~ "Options:\n"
+#~ "  -h   This help text.\n"
+#~ "  -p=? The package cache.\n"
+#~ "  -s=? The source cache.\n"
+#~ "  -q   Disable progress indicator.\n"
+#~ "  -i   Show only important deps for the unmet command.\n"
+#~ "  -c=? Read this configuration file\n"
+#~ "  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp\n"
+#~ "See the apt-cache(8) and apt.conf(5) manual pages for more information.\n"
+#~ msgstr ""
+#~ "Параметры:\n"
+#~ "  -h   Эта справка.\n"
+#~ "  -p=? Кэш пакетов.\n"
+#~ "  -s=? Кэш источников.\n"
+#~ "  -q   Не показывать индикатор хода выполнения.\n"
+#~ "  -i   Показывать только важные зависимости для команды unmet.\n"
+#~ "  -c=? Читать указанный файл настройки.\n"
+#~ "  -o=? Задать значение произвольной настройки, например, -o dir::cache=/"
+#~ "tmp\n"
+#~ "Подробности в справочных страницах apt-cache(8) и apt.conf(5).\n"
+
+#~ msgid ""
+#~ "Usage: apt [options] command\n"
+#~ "\n"
+#~ "CLI for apt.\n"
+#~ msgstr ""
+#~ "Использование: apt [параметры] команда\n"
+#~ "\n"
+#~ "Интерфейс командной строки для apt.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Options:\n"
+#~ "  -h   This help text\n"
+#~ "  -d   CD-ROM mount point\n"
+#~ "  -r   Rename a recognized CD-ROM\n"
+#~ "  -m   No mounting\n"
+#~ "  -f   Fast mode, don't check package files\n"
+#~ "  -a   Thorough scan mode\n"
+#~ "  --no-auto-detect Do not try to auto detect drive and mount point\n"
+#~ "  -c=? Read this configuration file\n"
+#~ "  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp\n"
+#~ "See fstab(5)\n"
+#~ msgstr ""
+#~ "Параметры:\n"
+#~ "  -h   эта справка\n"
+#~ "  -q   показывать сообщения о работе, не выводить индикатор хода работы\n"
+#~ "  -qq  показывать только сообщения об ошибках\n"
+#~ "  -s   не выполнять действия на самом деле, только имитация работы\n"
+#~ "  -f   читать/писать данные о пометках в заданный файл\n"
+#~ "  -c=? читать указанный файл настройки\n"
+#~ "  -o=? задать значение произвольному параметру настройки,\n"
+#~ "       например, -o dir::cache=/tmp\n"
+#~ "В справочных страницах apt-mark(8) и apt.conf(5)\n"
+#~ "содержится дополнительная информация."
+
+#~ msgid ""
+#~ "Options:\n"
+#~ "  -h   This help text.\n"
+#~ "  -c=? Read this configuration file\n"
+#~ "  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp\n"
+#~ msgstr ""
+#~ "Параметры:\n"
+#~ "   -h   Этот текст.\n"
+#~ "   -с=? Читать указанный файл настройки.\n"
+#~ "   -o=? Задать значение произвольной настройке, например, -o dir::cache=/"
+#~ "tmp\n"
+
+#~ msgid ""
+#~ "Options:\n"
+#~ "  -h  This help text.\n"
+#~ "  -q  Loggable output - no progress indicator\n"
+#~ "  -qq No output except for errors\n"
+#~ "  -s  No-act. Just prints what would be done.\n"
+#~ "  -f  read/write auto/manual marking in the given file\n"
+#~ "  -c=? Read this configuration file\n"
+#~ "  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp\n"
+#~ "See the apt-mark(8) and apt.conf(5) manual pages for more information."
+#~ msgstr ""
+#~ "Параметры:\n"
+#~ "  -h   эта справка\n"
+#~ "  -q   показывать сообщения о работе, не выводить индикатор хода работы\n"
+#~ "  -qq  показывать только сообщения об ошибках\n"
+#~ "  -s   не выполнять действия на самом деле, только имитация работы\n"
+#~ "  -f   читать/писать данные о пометках в заданный файл\n"
+#~ "  -c=? читать указанный файл настройки\n"
+#~ "  -o=? задать значение произвольному параметру настройки,\n"
+#~ "       например, -o dir::cache=/tmp\n"
+#~ "В справочных страницах apt-mark(8) и apt.conf(5)\n"
+#~ "содержится дополнительная информация."
+
+#~ msgid ""
+#~ "Usage: apt-sortpkgs [options] file1 [file2 ...]\n"
+#~ "\n"
+#~ "apt-sortpkgs is a simple tool to sort package files. The -s option is "
+#~ "used\n"
+#~ "to indicate what kind of file it is.\n"
+#~ "\n"
+#~ "Options:\n"
+#~ "  -h   This help text\n"
+#~ "  -s   Use source file sorting\n"
+#~ "  -c=? Read this configuration file\n"
+#~ "  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp\n"
+#~ msgstr ""
+#~ "Использование: apt-sortpkgs [параметры] файл1 [файл2…]\n"
+#~ "\n"
+#~ "apt-sortpkgs — простой инструмент для сортировки списков пакетов. "
+#~ "Параметр -s\n"
+#~ "используется для указания типа списка.\n"
+#~ "\n"
+#~ "Параметры:\n"
+#~ "  -h   этот текст\n"
+#~ "  -s   сортировать список файлов пакетов исходного кода\n"
+#~ "  -c=? читать указанный файл настройки\n"
+#~ "  -o=? Задать значение произвольной настройке, например, -o dir::cache=/"
+#~ "tmp\n"
+
+#~ msgid "Child process failed"
+#~ msgstr "Порождённый процесс завершился неудачно"
+
+#, fuzzy
+#~ msgid "Must specifc at least one srv record"
+#~ msgstr "Укажите, как минимум, одну пару url/имя файла"
+
+#~ msgid "Failed to create pipes"
+#~ msgstr "Не удалось создать каналы"
+
+#~ msgid "Failed to exec gzip "
+#~ msgstr "Не удалось выполнить gzip "
+
+#~ msgid "Total dependency version space: "
+#~ msgstr "Всего информации о зависимостях: "
+
+#~ msgid "%s %s for %s compiled on %s %s\n"
+#~ msgstr "%s %s для %s скомпилирован %s %s\n"
+
+#~ msgid "You don't have enough free space in %s"
+#~ msgstr "Недостаточно места в %s"
+
+#~ msgid "Done"
+#~ msgstr "Готово"
+
+#~ msgid "Hit "
+#~ msgstr "В кэше "
+
+#~ msgid "Get:"
+#~ msgstr "Получено:"
+
+#~ msgid "Ign "
+#~ msgstr "Игн "
+
+#~ msgid "Err "
+#~ msgstr "Ош  "
+
+#~ msgid "Unable to find hash sum for '%s' in Release file"
+#~ msgstr "Невозможно найти хеш-сумму «%s» в файле Release"
+
+#~ msgid "Package %s %s was not found while processing file dependencies"
+#~ msgstr "Во время обработки файла зависимостей не найден пакет %s %s"
+
+#~ msgid "Couldn't stat source package list %s"
+#~ msgstr "Не удалось получить атрибуты списка пакетов исходного кода %s"
+
+#~ msgid "Collecting File Provides"
+#~ msgstr "Сбор информации о Provides"
+
+#~ msgid "Vendor block %s contains no fingerprint"
+#~ msgstr "Блок поставщика %s не содержит отпечатка (fingerprint)"
+
+#~ msgid "Unable to parse package file %s (2)"
+#~ msgstr "Невозможно разобрать содержимое пакета %s (2)"
+
+#~ msgid "Malformed stanza %u in source list %s (URI parse)"
+#~ msgstr "Искажённая строфа %u в списке источников %s (анализ URI)"
+
+#~ msgid "Malformed line %lu in source list %s ([option] unparseable)"
+#~ msgstr ""
+#~ "Искажённая строка %lu в списке источников %s ([параметр] неразбираем)"
+
+#~ msgid "Malformed line %lu in source list %s ([option] too short)"
+#~ msgstr ""
+#~ "Искажённая строка %lu в списке источников %s ([параметр] слишком короткий)"
+
+#~ msgid "Malformed line %lu in source list %s ([%s] is not an assignment)"
+#~ msgstr "Искажённая строка %lu в списке источников %s (([%s] не назначаем)"
+
+#~ msgid "Malformed line %lu in source list %s ([%s] has no key)"
+#~ msgstr "Искажённая строка %lu в списке источников %s ([%s] не имеет ключа)"
+
+#~ msgid "Malformed line %lu in source list %s ([%s] key %s has no value)"
+#~ msgstr ""
+#~ "Искажённая строка %lu в списке источников %s (([%s] ключ %s не имеет "
+#~ "значения)"
+
+#~ msgid "Malformed line %lu in source list %s (URI)"
+#~ msgstr "Искажённая строка %lu в списке источников %s (проблема в URI)"
+
+#~ msgid "Malformed line %lu in source list %s (dist)"
+#~ msgstr ""
+#~ "Искажённая строка %lu в списке источников %s (проблема в имени "
+#~ "дистрибутива)"
+
+#~ msgid "Malformed line %lu in source list %s (URI parse)"
+#~ msgstr "Искажённая строка %lu в списке источников %s (анализ URI)"
+
+#~ msgid "Malformed line %lu in source list %s (absolute dist)"
+#~ msgstr "Искажённая строка %lu в списке источников %s (absolute dist)"
+
+#~ msgid "Malformed line %lu in source list %s (dist parse)"
+#~ msgstr "Искажённая строка %lu в списке источников %s (dist parse)"
+
+#~ msgid "No keyring installed in %s."
+#~ msgstr "Связка ключей в %s не установлена."
+
+#~ msgid "Failed to create FILE*"
+#~ msgstr "Не удалось создать FILE*"
+
+#, fuzzy
+#~ msgid "Internal error, Upgrade broke stuff"
+#~ msgstr "Внутренняя ошибка, AllUpgrade всё поломал"
+
+#~ msgid "%s not a valid DEB package."
+#~ msgstr "%s не является правильным DEB-пакетом."
+
+#~ msgid ""
+#~ "Using CD-ROM mount point %s\n"
+#~ "Mounting CD-ROM\n"
+#~ msgstr ""
+#~ "В качестве точки монтирования CD-ROM используется %s\n"
+#~ "Монтируется CD-ROM\n"
+
+#~ msgid ""
+#~ "Could not patch %s with mmap and with file operation usage - the patch "
+#~ "seems to be corrupt."
+#~ msgstr ""
+#~ "Не удалось наложить заплату %s с использованием mmap и файловой операции "
+#~ "— вероятно, повреждена заплата."
+
+#~ msgid ""
+#~ "Could not patch %s with mmap (but no mmap specific fail) - the patch "
+#~ "seems to be corrupt."
+#~ msgstr ""
+#~ "Не удалось наложить заплату %s с использованием mmap (но не из-за mmap) — "
+#~ "вероятно, повреждена заплата."
+
+#~ msgid "Ignore unavailable target release '%s' of package '%s'"
+#~ msgstr "Игнорируется недоступный выпуск «%s» пакета «%s»"
+
+#~ msgid "Downloading %s %s"
+#~ msgstr "Выполняется загрузка %s %s"
+
+#~ msgid "This is not a valid DEB archive, it has no '%s', '%s' or '%s' member"
+#~ msgstr ""
+#~ "Это неправильный DEB-архив — отсутствует составная часть «%s», «%s» или "
+#~ "«%s»"
+
+#~ msgid "MD5Sum mismatch"
+#~ msgstr "MD5Sum не совпадает"
+
+#~ msgid ""
+#~ "I wasn't able to locate a file for the %s package. This might mean you "
+#~ "need to manually fix this package."
+#~ msgstr ""
+#~ "Не удалось обнаружить файл пакета %s. Это может означать, что вам "
+#~ "придётся вручную исправить этот пакет."
+
+#~ msgid "Can not write log, openpty() failed (/dev/pts not mounted?)\n"
+#~ msgstr ""
+#~ "Не удалось записать в журнал, неудачное выполнение openpty() (/dev/pts не "
+#~ "смонтирован?)\n"
+
+#~ msgid "File %s doesn't start with a clearsigned message"
+#~ msgstr "Файл %s не начинается с прозрачно подписанного сообщения"
+
+#~ msgid "Skipping nonexistent file %s"
+#~ msgstr "Пропускается несуществующий файл %s"
+
+#~ msgid "Failed to remove %s"
+#~ msgstr "Не удалось удалить %s"
+
+#~ msgid "Unable to create %s"
+#~ msgstr "Не удалось создать %s"
+
+#~ msgid "Failed to stat %sinfo"
+#~ msgstr "Не удалось получить атрибуты %sinfo"
+
+#~ msgid "The info and temp directories need to be on the same filesystem"
+#~ msgstr "Каталоги info и temp должны находиться на одной файловой системе"
+
+#~ msgid "Failed to change to the admin dir %sinfo"
+#~ msgstr ""
+#~ "Не удалось сменить текущий каталог на административный каталог %sinfo"
+
+#~ msgid "Internal error getting a package name"
+#~ msgstr "Внутренняя ошибка при получении имени пакета"
+
+#~ msgid "Reading file listing"
+#~ msgstr "Чтение списков файлов в пакете"
+
+#~ msgid ""
+#~ "Failed to open the list file '%sinfo/%s'. If you cannot restore this file "
+#~ "then make it empty and immediately re-install the same version of the "
+#~ "package!"
+#~ msgstr ""
+#~ "Не удалось открыть список файлов «%sinfo/%s». Если вы не сможете "
+#~ "восстановить этот файл, то обнулите его и немедленно переустановите ту же "
+#~ "версию пакета!"
+
+#~ msgid "Failed reading the list file %sinfo/%s"
+#~ msgstr "Ошибка чтения списка файлов %sinfo/%s"
+
+#~ msgid "Internal error getting a node"
+#~ msgstr "Внутренняя ошибка при получении node"
+
+#~ msgid "Failed to open the diversions file %sdiversions"
+#~ msgstr "Не удалось открыть файл diversions %sdiversions"
+
+#~ msgid "The diversion file is corrupted"
+#~ msgstr "Файл diversions повреждён"
+
+#~ msgid "Invalid line in the diversion file: %s"
+#~ msgstr "Неверная строка в файле diversions: %s"
+
+#~ msgid "Internal error adding a diversion"
+#~ msgstr "Внутренняя ошибка при добавлении diversion"
+
+#~ msgid "The pkg cache must be initialized first"
+#~ msgstr "В первую очередь должен быть инициализирован кэш пакетов"
+
+#~ msgid "Failed to find a Package: header, offset %lu"
+#~ msgstr "Не удалось найти заголовок Package:, смещение %lu"
+
+#~ msgid "Bad ConfFile section in the status file. Offset %lu"
+#~ msgstr "Неверная секция ConfFile в status-файле. Смещение %lu"
+
+#~ msgid "Error parsing MD5. Offset %lu"
+#~ msgstr "Ошибка чтения контрольной суммы. Смещение %lu"
+
+#~ msgid "Couldn't change to %s"
+#~ msgstr "Не удалось перейти в каталог %s"
+
+#~ msgid "Failed to locate a valid control file"
+#~ msgstr "Не удалось найти правильный control-файл"
+
+#~ msgid "Couldn't open pipe for %s"
+#~ msgstr "Не удалось открыть канал для %s"
+
+#~ msgid "Read error from %s process"
+#~ msgstr "Ошибка чтения из процесса %s"
+
+#~ msgid "Got a single header line over %u chars"
+#~ msgstr "Получен заголовок длиннее %u символов"
+
+#~ msgid "Note: This is done automatic and on purpose by dpkg."
+#~ msgstr "Замечание: это сделано автоматически и специально программой dpkg."
+
+#~ msgid "Malformed override %s line %lu #1"
+#~ msgstr "Неправильная запись о переназначении (override) %s на строке %lu #1"
+
+#~ msgid "Malformed override %s line %lu #2"
+#~ msgstr "Неправильная запись о переназначении (override) %s на строке %lu #2"
+
+#~ msgid "Malformed override %s line %lu #3"
+#~ msgstr "Неправильная запись о переназначении (override) %s на строке %lu #3"
+
+#~ msgid "decompressor"
+#~ msgstr "декомпрессор"
+
+#~ msgid "read, still have %lu to read but none left"
+#~ msgstr ""
+#~ "ошибка при чтении. собирались прочесть ещё %lu байт, но ничего больше нет"
+
+#~ msgid "write, still have %lu to write but couldn't"
+#~ msgstr "ошибка при записи, собирались записать ещё %lu байт, но не смогли"
+
+#~ msgid ""
+#~ "Could not perform immediate configuration on already unpacked '%s'. "
+#~ "Please see man 5 apt.conf under APT::Immediate-Configure for details."
+#~ msgstr ""
+#~ "Не удалось выполнить оперативную настройку уже распакованного «%s». "
+#~ "Подробней, смотрите в man 5 apt.conf о APT::Immediate-Configure."
+
+#~ msgid "Error occurred while processing %s (NewPackage)"
+#~ msgstr "Произошла ошибка во время обработки %s (NewPackage)"
+
+#~ msgid "Error occurred while processing %s (UsePackage1)"
+#~ msgstr "Произошла ошибка во время обработки %s (UsePackage1)"
+
+#~ msgid "Error occurred while processing %s (NewFileDesc1)"
+#~ msgstr "Произошла ошибка во время обработки %s (NewFileDesc1)"
+
+#~ msgid "Error occurred while processing %s (UsePackage2)"
+#~ msgstr "Произошла ошибка во время обработки %s (UsePackage2)"
+
+#~ msgid "Error occurred while processing %s (NewFileVer1)"
+#~ msgstr "Произошла ошибка во время обработки %s (NewFileVer1)"
+
+#~ msgid "Error occurred while processing %s (NewVersion%d)"
+#~ msgstr "Произошла ошибка во время обработки %s (NewVersion%d)"
+
+#~ msgid "Error occurred while processing %s (UsePackage3)"
+#~ msgstr "Произошла ошибка во время обработки %s (UsePackage3)"
+
+#~ msgid "Error occurred while processing %s (NewFileDesc2)"
+#~ msgstr "Произошла ошибка во время обработки %s (NewFileDesc2)"
+
+#~ msgid "Error occurred while processing %s (FindPkg)"
+#~ msgstr "Произошла ошибка во время обработки %s (FindPkg)"
+
+#~ msgid "Error occurred while processing %s (CollectFileProvides)"
+#~ msgstr "Произошла ошибка во время обработки %s (CollectFileProvides)"
+
+#~ msgid "Internal error, could not locate member"
+#~ msgstr "Внутренняя ошибка, не удалось найти составную часть"
+
+#~ msgid "Internal error, group '%s' has no installable pseudo package"
+#~ msgstr "Внутренняя ошибка, группа %s не устанавливается псевдо-пакетом"
+
+#~ msgid "Release file expired, ignoring %s (invalid since %s)"
+#~ msgstr ""
+#~ "Файл Release просрочен, игнорируется %s (недостоверный начиная с %s)"
+
+#~ msgid "E: Argument list from Acquire::gpgv::Options too long. Exiting."
+#~ msgstr ""
+#~ "E: Слишком большой список параметров у Acquire::gpgv::Options. Завершение "
+#~ "работы."
+
+#~ msgid "Error occurred while processing %s (NewVersion2)"
+#~ msgstr "Произошла ошибка во время обработки %s (NewVersion2)"
+
+#~ msgid "Malformed line %u in source list %s (vendor id)"
+#~ msgstr "Искажённая строка %u в списке источников %s (vendor id)"
+
+#~ msgid "Couldn't access keyring: '%s'"
+#~ msgstr "Нет доступа к связке (keyring) ключей: '%s'"
+
+#, fuzzy
+#~ msgid "Could not patch file"
+#~ msgstr "Не удалось открыть файл %s"
+
+#~ msgid "       %4i %s\n"
+#~ msgstr "       %4i %s\n"

@@ -1,0 +1,3 @@
+libapt-inst.so.2.0:/usr/lib:1.2.31
+libapt-pkg.so.5.0:/usr/lib:1.2.31
+libapt-private.so.0.0:/usr/lib:1.2.31

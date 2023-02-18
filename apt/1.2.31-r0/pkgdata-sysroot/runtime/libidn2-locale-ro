@@ -1,0 +1,15 @@
+PN: libidn2
+PV: 2.3.0
+PR: r0
+PKGV: 2.3.0
+PKGR: r0
+LICENSE: (GPLv2+ | LGPLv3) & GPLv3+
+DESCRIPTION_libidn2-locale-ro: Implementation of the Stringprep, Punycode and IDNA specifications defined by the IETF Internationalized Domain Names (IDN) working group.  This package contains language translation files for the ro locale.
+SUMMARY_libidn2-locale-ro: Internationalized Domain Name support library - ro translations
+RPROVIDES_libidn2-locale-ro: libidn2-locale ro-translation
+RRECOMMENDS_libidn2-locale-ro: virtual-locale-ro
+SECTION: libs
+PKG_libidn2-locale-ro: libidn2-locale-ro
+FILES_libidn2-locale-ro: /usr/share/locale/ro
+FILES_INFO: {"/usr/share/locale/ro/LC_MESSAGES/libidn2.mo": 702}
+PKGSIZE_libidn2-locale-ro: 702

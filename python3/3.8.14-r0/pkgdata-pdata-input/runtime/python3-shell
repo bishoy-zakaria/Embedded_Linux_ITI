@@ -1,0 +1,14 @@
+PN: python3
+PV: 3.8.14
+PR: r0
+PKGV: 3.8.14
+PKGR: r0
+LICENSE: PSF-2.0 & BSD-0-Clause
+DESCRIPTION: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+SUMMARY_python3-shell: Python shell-like functionality
+RDEPENDS_python3-shell: python3-compression python3-core python3-stringold
+SECTION: devel/python
+PKG_python3-shell: python3-shell
+FILES_python3-shell:  /usr/lib/python3.8/cmd.py /usr/lib/python3.8/glob.py /usr/lib/python3.8/shlex.py /usr/lib/python3.8/__pycache__/cmd.*.pyc /usr/lib/python3.8/__pycache__/glob.*.pyc /usr/lib/python3.8/__pycache__/shlex.*.pyc
+FILES_INFO: {"/usr/lib/python3.8/__pycache__/cmd.cpython-38.opt-1.pyc": 12626, "/usr/lib/python3.8/__pycache__/cmd.cpython-38.opt-2.pyc": 7201, "/usr/lib/python3.8/__pycache__/cmd.cpython-38.pyc": 12626, "/usr/lib/python3.8/__pycache__/glob.cpython-38.opt-1.pyc": 4278, "/usr/lib/python3.8/__pycache__/glob.cpython-38.opt-2.pyc": 3418, "/usr/lib/python3.8/__pycache__/glob.cpython-38.pyc": 4343, "/usr/lib/python3.8/__pycache__/shlex.cpython-38.opt-1.pyc": 7536, "/usr/lib/python3.8/__pycache__/shlex.cpython-38.opt-2.pyc": 6979, "/usr/lib/python3.8/__pycache__/shlex.cpython-38.pyc": 7536, "/usr/lib/python3.8/cmd.py": 14860, "/usr/lib/python3.8/glob.py": 5697, "/usr/lib/python3.8/shlex.py": 13325}
+PKGSIZE_python3-shell: 100425

@@ -1,0 +1,20 @@
+PN: ncurses
+PV: 6.2
+PR: r0
+PKGV: 6.2
+PKGR: r0
+LICENSE: MIT
+DESCRIPTION_ncurses-libform: ncurses form library
+SUMMARY_ncurses-libform: ncurses form library
+RDEPENDS_ncurses-libform: glibc (>= 2.31+git0+d4b7559457) ncurses-libncurses (>= 6.2) ncurses-libtinfo (>= 6.2)
+RPROVIDES_ncurses-libform:  ncurses-libform (=6.2)
+SECTION: libs
+PKG_ncurses-libform: libform5
+FILES_ncurses-libform: /usr/lib/libform.so.5 /usr/lib/libform.so.5.9
+FILES_INFO: {"/usr/lib/libform.so.5": 14, "/usr/lib/libform.so.5.9": 34600}
+pkg_postinst_ncurses-libform: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_ncurses-libform: /usr/lib/libform.so.5.9
+FILERPROVIDES_/usr/lib/libform.so.5.9_ncurses-libform:  libform.so.5
+FILERDEPENDSFLIST_ncurses-libform: /usr/lib/libform.so.5.9
+FILERDEPENDS_/usr/lib/libform.so.5.9_ncurses-libform:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.4) libncurses.so.5 libtinfo.so.5 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_ncurses-libform: 34614

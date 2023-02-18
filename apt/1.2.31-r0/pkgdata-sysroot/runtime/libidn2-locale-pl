@@ -1,0 +1,15 @@
+PN: libidn2
+PV: 2.3.0
+PR: r0
+PKGV: 2.3.0
+PKGR: r0
+LICENSE: (GPLv2+ | LGPLv3) & GPLv3+
+DESCRIPTION_libidn2-locale-pl: Implementation of the Stringprep, Punycode and IDNA specifications defined by the IETF Internationalized Domain Names (IDN) working group.  This package contains language translation files for the pl locale.
+SUMMARY_libidn2-locale-pl: Internationalized Domain Name support library - pl translations
+RPROVIDES_libidn2-locale-pl: libidn2-locale pl-translation
+RRECOMMENDS_libidn2-locale-pl: virtual-locale-pl
+SECTION: libs
+PKG_libidn2-locale-pl: libidn2-locale-pl
+FILES_libidn2-locale-pl: /usr/share/locale/pl
+FILES_INFO: {"/usr/share/locale/pl/LC_MESSAGES/libidn2.mo": 4978}
+PKGSIZE_libidn2-locale-pl: 4978

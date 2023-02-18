@@ -1,0 +1,20 @@
+PN: ncurses
+PV: 6.2
+PR: r0
+PKGV: 6.2
+PKGR: r0
+LICENSE: MIT
+DESCRIPTION_ncurses-libncurses: ncurses ncurses library
+SUMMARY_ncurses-libncurses: ncurses ncurses library
+RDEPENDS_ncurses-libncurses: glibc (>= 2.31+git0+d4b7559457) ncurses-libtinfo (>= 6.2)
+RPROVIDES_ncurses-libncurses:  ncurses-libncurses (=6.2)
+SECTION: libs
+PKG_ncurses-libncurses: libncurses5
+FILES_ncurses-libncurses: /lib/libncurses.so.5 /lib/libncurses.so.5.9
+FILES_INFO: {"/lib/libncurses.so.5": 17, "/lib/libncurses.so.5.9": 91388}
+pkg_postinst_ncurses-libncurses: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_ncurses-libncurses: /lib/libncurses.so.5.9
+FILERPROVIDES_/lib/libncurses.so.5.9_ncurses-libncurses:  libncurses.so.5
+FILERDEPENDSFLIST_ncurses-libncurses: /lib/libncurses.so.5.9
+FILERDEPENDS_/lib/libncurses.so.5.9_ncurses-libncurses:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.4) libtinfo.so.5 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_ncurses-libncurses: 91405

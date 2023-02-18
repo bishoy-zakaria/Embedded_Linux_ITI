@@ -1,0 +1,15 @@
+PN: libunistring
+PV: 0.9.10
+PR: r0
+PKGV: 0.9.10
+PKGR: r0
+LICENSE: LGPLv3+ | GPLv2
+DESCRIPTION_libunistring-dbg: Text files are nowadays usually encoded in Unicode, and may consist of very different scripts from Latin letters to Chinese Hanzi with many kinds of special characters accents, right-to-left writing marks, hyphens, Roman numbers, and much more. But the POSIX platform APIs for text do not contain adequate functions for dealing with particular properties of many Unicode characters. In fact, the POSIX APIs for text have several assumptions at their base which don't hold for Unicode text.  This library provides functions for manipulating Unicode strings and for manipulating C strings according to the Unicode standard.  This package contains documentation.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_libunistring-dbg: Library for manipulating C and Unicode strings - Debugging files
+RRECOMMENDS_libunistring-dbg: glibc-dbg
+SECTION_libunistring-dbg: devel
+PKG_libunistring-dbg: libunistring-dbg
+ALLOW_EMPTY_libunistring-dbg: 1
+FILES_libunistring-dbg: /usr/lib/debug /usr/lib/debug-static /usr/src/debug
+FILES_INFO: {"/usr/lib/.debug/libunistring.so.2.1.0": 2120016}
+PKGSIZE_libunistring-dbg: 2120016

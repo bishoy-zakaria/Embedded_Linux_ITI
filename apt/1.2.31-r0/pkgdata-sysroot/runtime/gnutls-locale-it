@@ -1,0 +1,15 @@
+PN: gnutls
+PV: 3.6.14
+PR: r0
+PKGV: 3.6.14
+PKGR: r0
+LICENSE: GPLv3+ & LGPLv2.1+
+DESCRIPTION_gnutls-locale-it: a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them.  This package contains language translation files for the it locale.
+SUMMARY_gnutls-locale-it: GNU Transport Layer Security Library - it translations
+RPROVIDES_gnutls-locale-it: gnutls-locale it-translation gnutls-locale-it (=3.6.14)
+RRECOMMENDS_gnutls-locale-it: virtual-locale-it
+SECTION: base
+PKG_gnutls-locale-it: libgnutls-locale-it
+FILES_gnutls-locale-it: /usr/share/locale/it
+FILES_INFO: {"/usr/share/locale/it/LC_MESSAGES/gnutls.mo": 34940}
+PKGSIZE_gnutls-locale-it: 34940

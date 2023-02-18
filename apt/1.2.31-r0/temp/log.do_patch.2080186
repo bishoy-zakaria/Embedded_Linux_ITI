@@ -1,0 +1,251 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-extended/xz/xz_5.2.4.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/patch/patch_2.7.6.bb:do_populate_sysroot', '/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['patch-native', 'attr-native']
+NOTE: Skipping as already exists in sysroot: ['xz-native', 'quilt-native', 'automake-native', 'autoconf-native', 'gettext-minimal-native', 'gnu-config-native', 'libtool-native', 'texinfo-dummy-native', 'm4-native']
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Searching for use-host.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+DEBUG: Searching for makerace.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+DEBUG: Searching for no-nls-dpkg.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+DEBUG: Searching for fix-gcc-4.6-null-not-defined.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+DEBUG: Searching for truncate-filename.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+DEBUG: Searching for nodoc.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+DEBUG: Searching for disable-configure-in-makefile.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+DEBUG: Searching for disable-test.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+DEBUG: Searching for 0001-environment.mak-musl-based-systems-can-generate-shar.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+DEBUG: Searching for 0001-apt-1.2.12-Fix-musl-build.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+DEBUG: Searching for 0001-Include-array.h-for-std-array.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+DEBUG: Searching for CVE-2020-3810.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+NOTE: Applying patch 'use-host.patch' (../meta/recipes-devtools/apt/apt/use-host.patch)
+NOTE: Applying patch 'makerace.patch' (../meta/recipes-devtools/apt/apt/makerace.patch)
+NOTE: Applying patch 'no-nls-dpkg.patch' (../meta/recipes-devtools/apt/apt/no-nls-dpkg.patch)
+NOTE: Applying patch 'fix-gcc-4.6-null-not-defined.patch' (../meta/recipes-devtools/apt/apt/fix-gcc-4.6-null-not-defined.patch)
+NOTE: Applying patch 'truncate-filename.patch' (../meta/recipes-devtools/apt/apt/truncate-filename.patch)
+NOTE: Applying patch 'nodoc.patch' (../meta/recipes-devtools/apt/apt/nodoc.patch)
+NOTE: Applying patch 'disable-configure-in-makefile.patch' (../meta/recipes-devtools/apt/apt/disable-configure-in-makefile.patch)
+NOTE: Applying patch 'disable-test.patch' (../meta/recipes-devtools/apt/apt/disable-test.patch)
+NOTE: Applying patch '0001-environment.mak-musl-based-systems-can-generate-shar.patch' (../meta/recipes-devtools/apt/apt/0001-environment.mak-musl-based-systems-can-generate-shar.patch)
+NOTE: Applying patch '0001-apt-1.2.12-Fix-musl-build.patch' (../meta/recipes-devtools/apt/apt/0001-apt-1.2.12-Fix-musl-build.patch)
+NOTE: Applying patch '0001-Include-array.h-for-std-array.patch' (../meta/recipes-devtools/apt/apt/0001-Include-array.h-for-std-array.patch)
+NOTE: Applying patch 'CVE-2020-3810.patch' (../meta/recipes-devtools/apt/apt/CVE-2020-3810.patch)
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished
+DEBUG: Executing python function do_qa_patch
+DEBUG: Python function do_qa_patch finished

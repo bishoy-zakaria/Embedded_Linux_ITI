@@ -1,0 +1,16 @@
+PN: util-linux
+PV: 2.35.1
+PR: r0
+PKGV: 2.35.1
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD-3-Clause & BSD-4-Clause
+DESCRIPTION_util-linux-uuidd: util-linux uuidd
+SUMMARY_util-linux-uuidd: util-linux uuidd
+RDEPENDS_util-linux-uuidd: glibc (>= 2.31+git0+d4b7559457) util-linux-libuuid (>= 2.35.1)
+SECTION: base
+PKG_util-linux-uuidd: util-linux-uuidd
+FILES_util-linux-uuidd: /usr/sbin/uuidd
+FILES_INFO: {"/usr/sbin/uuidd": 26108}
+FILERDEPENDSFLIST_util-linux-uuidd: /usr/sbin/uuidd
+FILERDEPENDS_/usr/sbin/uuidd_util-linux-uuidd:  librt.so.1(GLIBC_2.4) ld-linux-armhf.so.3(GLIBC_2.4) libuuid.so.1(UUIDD_PRIVATE) libuuid.so.1(UUID_1.0) libc.so.6(GLIBC_2.28) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libuuid.so.1 librt.so.1 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_util-linux-uuidd: 26108

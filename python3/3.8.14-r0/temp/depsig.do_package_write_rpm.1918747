@@ -1,0 +1,71 @@
+OEOuthashBasic
+5
+SSTATE_PKGSPEC=sstate:python3:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:3.8.14:r0:cortexa7t2hf-neon-vfpv4:3:
+task=package_write_rpm
+drwxrwxr-x                                                                                       .
+drwxr-xr-x                                                                                       ./deploy-rpms
+drwxr-xr-x                                                                                       ./deploy-rpms/cortexa7t2hf_neon_vfpv4
+-rw-r--r--               832632 bccac019bd26ea66b5f410d730d5e3e787d9081581d561dd8664ff132b45a36a ./deploy-rpms/cortexa7t2hf_neon_vfpv4/libpython3.8-1.0-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--              4751548 9e990281c2a5d141a9a22ff2e5c3255e318cd9697f65a3a8010eb8b0639aef8f ./deploy-rpms/cortexa7t2hf_neon_vfpv4/libpython3.8-staticdev-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               196188 466e249380a7bba824f557bffd75ceea9ffce21da27d6b542b656276377e225c ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-2to3-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               250972 4c7b120ca8fa035af7f236ed0aca83a2479ca4779adc83cfd4f87671ca56e8bd ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-asyncio-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                49648 b226eeb0564fdf768afd7ae0397b3f2d3be52edc32782bcb66aca903cfb2b5b6 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-audio-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                22088 df7a23e891e217aacadbbbb9f572c05d23b0c185a58d1b3c3381fd559a63cdaf ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-codecs-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                18912 a59d7887f64f96c45835a6e5cebe2d35840b844d5827b3282fbc83d1573c6748 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-compile-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               101092 08305fc63a17d0aded1aca6b9c01c951efeceb33ee67d94779830c80b95bad10 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-compression-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--              1371972 3048a2cdce59658bd2618819f0929afadefb33cfa028f0c35c4f1e693aa77ba0 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-core-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                80064 7b1263c6743f85bcf652da76cfb58430375ec83f333a42359a7707622f9808ae ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-crypt-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                86628 d1b13b8490010677d8421ba6b333f6ca55ca7451cf4bdf2ab59e9bfa12fb6987 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-ctypes-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                53340 b0423bd2ed2957bf93de701e5e0e0076bcb40bb18449214c54499f21b93b5c1e ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-curses-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               101352 91f873d935212813d49a94b8edba97763d70b74b6bc2f1728a667359bdea31aa ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-datetime-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                23336 821f4876f9eeb864ed6271a55fcaebcc7c198f5252d3ebef73a629b84b86c667 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-db-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--              5077800 d8ca8ce5046206da95a7c07e1c119ac040ac01bc9ae0e437a90e6b1ff5b09a8f ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-dbg-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                52160 14e49c52f02e2d32bb5c47a2c4f236c62b6d127ef5bedb81e10f9c8660ae3900 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-debugger-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               163528 ac9b163cea07a7150f59a2214c4721f6256f0876120b2d6e6c8bde1f51610ebc ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-dev-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                41076 e848dd8cea1cb32dfa54145e47286d9520a746e4d1d6b4883fa068cf469807f6 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-difflib-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               909176 0937b8367d1a515627f06830366672979f2fbd1b9003e7eb9dcaba77425f3884 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-distutils-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                13320 0bd59ce7086b3432b03266926d750fc75ee83d1e33aac0ecc4983e46ce4e1f7e ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-doc-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                50280 56b5f680d34660cf4b0b85efc5864f5f0380a8fb64ee9211a5db8eb69ea73fcc ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-doctest-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               205556 e54bca0356767c7ff4b5e86c4fa5e180c6bf0a033652dd7e3fbedd4a6ad80d0b ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-email-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                12524 33b214e4b67b9e5127ecc3b93e5a8482b706fb00d83534f860661621725b023a ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-fcntl-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                12980 04f70706497d3fcda6aa06efab03caffddd6110817ec62e76157af4971d2b055 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-gdbm-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                58620 c707c0fc11d5c3a415242b2e272b501978f778ffea5d3c0cb0d49f3e2198aa50 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-html-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               506136 6d3cce8887f2410548095e61b7f92c2f2c2d702babfdada61d2ef3d8b47333f8 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-idle-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                13248 7d951261096953c06ab67c7a5094d636c64ed98647e1ea9489dfdf5d3e0c586b ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-image-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               201004 39c4d2aefbd37c494ed27061964333b7630b92c3c3aefce1e61cb6dc2a2555be ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-io-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                41060 f203a48899b7036e2e16fac66b44287346d4f07f8683d1c08e2e24d313f0e499 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-json-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                82252 97b3baf1f88854fb2382f5221ca4d93fd765b31b5c48c56f2d88719d064fada9 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-logging-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                43568 d562901adaa1324e2b7da479e0517f3673133a17b077abf44041d6b1a77d9b5b ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-mailbox-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                36052 b08677fd8f570fdbec829fa9ca6bfe975fe15396a8d3a62fed309ff420b04eeb ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-math-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                16884 f7aafc01130ece99643571aaeec7bb253e2db15aa56fae9f578b6fd81ed13c4d ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-mime-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--              3399560 4056907583e5264db504da0ea1727296caacebb590b61fde729f5ddb7879de6b ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-misc-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                14264 728cdf3c0fc9711ccb5f034f635b8ac0e8953224b1161c9ad8ebbaf6df8898ba ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-mmap-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                 7012 5be3558fbab0d5e0105a6fd432130d2b9a46bb6fbde5651ec0f89459b5b810f9 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-modules-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               159184 fdd33e9bd3464cab4fbfaba4151f07dda7d0d774bb925b095956c5ba3ffd4ea8 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-multiprocessing-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               291404 e6b3539fe68efa446b571d51210ae8976d3dd2ff83b7bf43470ad177a5ec982b ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-netclient-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                37652 77b61d911622329e34fd59dfdbb2435ab0cd4b092806ec81c1e69be36d849157 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-netserver-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               179580 a82120b12926925b1967cf8145c7595e525fd03d4f770d872987b793eb084af4 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-numbers-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               105980 3e5d8095e0d44edcc6fd869ac00f0e42650b158ccca1af79e405d1e9384681e9 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-pickle-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                 5864 c5678e4f0082e15c9b109c4a41429b3692056138b31747ee23a877422a3701d3 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-pkgutil-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                25284 f6de0a2a7d2453766f309dc65fb2ceb9bbf475860fc519fd63abf7f4365b78e1 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-plistlib-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                18032 25cbc20ec4146dcef647e2261ac8fb94f5ca0d7d292214386e7b66e30ea1f409 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-pprint-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                42296 b19a0635ac8648e658f705d8db2c4e0e8cf17e2380b23ed852656d5f3b6563bd ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-profile-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                 7184 7b9ed2678804e14674642b8849351f49b9510aa0ec06081f0d1be975e6f0fad4 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-ptest-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               199328 22af619d41570efa3c798c7a8822777d4f6a20b79b5a6358c667675f41a1511f ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-pydoc-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                10940 0abe1fd5faaccc9e30fa271f196f28fbbc6b56d940c07a256f8079610cc20e13 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-resource-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                25832 735b949ea7632c7513473b91cf32d29dc2f0ac4918e6285b0ac994e6d88db434 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-shell-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                40008 157cc09459911a97baa2434ffdb07cdbaeb7847808414b0c847d3aa75a594867 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-smtpd-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                34524 85316d3013e635c75a27d347045cfcd8fcd0a0718ad801ca65dc531ac50a250b ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-sqlite3-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--              2809136 be41b30b504d4f7dc8ce9ad2846985c2f4c69d2f293c966aa2d8afb0446ea29b ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-src-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                13212 c3b709064e67a27d7c70022729d3c13fdb8c7683c4da0c372a72c125a54ea362 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-stringold-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                 9948 626583c5765c7dbe08f9fcabe8e9a5f97091860f581e6637a74918911c0bf66f ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-syslog-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                12028 eb85635ac3d5911bf44241d748356b24817c4b4c31afc20efbf6c7d9dfa36abf ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-terminal-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--              7617920 dfe4951468cf65658bdda570ae18ef2cbabbb07655d7968d9e5793d561eb6a52 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-tests-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                25248 522ca960b02d80983c4dd1f0a82add467a75c561a7ebc23335c03d6dcdbb9ef9 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-threading-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               172428 c342de97f838adc5bc7031e09930f32961ff135ce63dfff6b20a4f647c1dba10 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-tkinter-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                42880 84d4c9f3a766b28c8c60f86347cbd39e6ec17213fe503ed179ab33f094b4dbac ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-typing-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               119108 c9c60993eebde209a3d5e13b21edf567a702b420762c1e40d9d12745905e35d0 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-unittest-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                15392 d389ff4b26910891867d4987430ecfe61c634ecbe2554a4ca134aa2d79b27623 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-unixadmin-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                23540 5856d449db2878a35c33d62870248c3fd8f448bfb751b1d73aa959f14445e197 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-venv-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--               222416 e0438e5142056c1a217fa4f55feee09d8e678d06845eb4566a3fcb7846dd174f ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-xml-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm
+-rw-r--r--                49568 e972fbc6035588dbc8f87f73319b1cc633fcfe13af59f6b93551ab9184e64416 ./deploy-rpms/cortexa7t2hf_neon_vfpv4/python3-xmlrpc-3.8.14-r0.cortexa7t2hf_neon_vfpv4.rpm

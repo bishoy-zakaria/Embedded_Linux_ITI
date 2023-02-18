@@ -1,0 +1,15 @@
+PN: libidn2
+PV: 2.3.0
+PR: r0
+PKGV: 2.3.0
+PKGR: r0
+LICENSE: (GPLv2+ | LGPLv3) & GPLv3+
+DESCRIPTION_libidn2-locale-uk: Implementation of the Stringprep, Punycode and IDNA specifications defined by the IETF Internationalized Domain Names (IDN) working group.  This package contains language translation files for the uk locale.
+SUMMARY_libidn2-locale-uk: Internationalized Domain Name support library - uk translations
+RPROVIDES_libidn2-locale-uk: libidn2-locale uk-translation
+RRECOMMENDS_libidn2-locale-uk: virtual-locale-uk
+SECTION: libs
+PKG_libidn2-locale-uk: libidn2-locale-uk
+FILES_libidn2-locale-uk: /usr/share/locale/uk
+FILES_INFO: {"/usr/share/locale/uk/LC_MESSAGES/libidn2.mo": 6375}
+PKGSIZE_libidn2-locale-uk: 6375

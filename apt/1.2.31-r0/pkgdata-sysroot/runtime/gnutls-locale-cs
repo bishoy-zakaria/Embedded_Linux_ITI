@@ -1,0 +1,15 @@
+PN: gnutls
+PV: 3.6.14
+PR: r0
+PKGV: 3.6.14
+PKGR: r0
+LICENSE: GPLv3+ & LGPLv2.1+
+DESCRIPTION_gnutls-locale-cs: a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them.  This package contains language translation files for the cs locale.
+SUMMARY_gnutls-locale-cs: GNU Transport Layer Security Library - cs translations
+RPROVIDES_gnutls-locale-cs: gnutls-locale cs-translation gnutls-locale-cs (=3.6.14)
+RRECOMMENDS_gnutls-locale-cs: virtual-locale-cs
+SECTION: base
+PKG_gnutls-locale-cs: libgnutls-locale-cs
+FILES_gnutls-locale-cs: /usr/share/locale/cs
+FILES_INFO: {"/usr/share/locale/cs/LC_MESSAGES/gnutls.mo": 34151}
+PKGSIZE_gnutls-locale-cs: 34151

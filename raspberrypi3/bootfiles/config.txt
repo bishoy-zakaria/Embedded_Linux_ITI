@@ -1185,6 +1185,8 @@
 ##     Default 35.
 ##
 #dtparam=pwr_led_gpio=35
+# Enable video camera
+start_x=1
 # Enable VC4 Graphics
 dtoverlay=vc4-fkms-v3d
 

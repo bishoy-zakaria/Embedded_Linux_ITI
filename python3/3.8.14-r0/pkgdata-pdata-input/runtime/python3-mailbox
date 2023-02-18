@@ -1,0 +1,14 @@
+PN: python3
+PV: 3.8.14
+PR: r0
+PKGV: 3.8.14
+PKGR: r0
+LICENSE: PSF-2.0 & BSD-0-Clause
+DESCRIPTION: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+SUMMARY_python3-mailbox: Python mailbox format support
+RDEPENDS_python3-mailbox: python3-core python3-crypt python3-datetime python3-email python3-fcntl python3-io python3-math python3-mime python3-netclient python3-stringold
+SECTION: devel/python
+PKG_python3-mailbox: python3-mailbox
+FILES_python3-mailbox:  /usr/lib/python3.8/mailbox.py /usr/lib/python3.8/__pycache__/mailbox.*.pyc
+FILES_INFO: {"/usr/lib/python3.8/__pycache__/mailbox.cpython-38.opt-1.pyc": 60184, "/usr/lib/python3.8/__pycache__/mailbox.cpython-38.opt-2.pyc": 53582, "/usr/lib/python3.8/__pycache__/mailbox.cpython-38.pyc": 60264, "/usr/lib/python3.8/mailbox.py": 78661}
+PKGSIZE_python3-mailbox: 252691

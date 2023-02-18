@@ -1,0 +1,30 @@
+PN: db
+PE: 1
+PV: 5.3.28
+PR: r1
+PKGE: 1
+PKGV: 5.3.28
+PKGR: r1
+LICENSE: Sleepycat
+DESCRIPTION: Provides the foundational storage services for your application, no matter how demanding and unique your requirements may seem to be
+SUMMARY: Berkeley Database v5
+RDEPENDS_db-bin: db (>= 5.3.28) glibc (>= 2.31+git0+d4b7559457)
+SECTION: libs
+PKG_db-bin: db-bin
+FILES_db-bin: /usr/bin/* /usr/sbin/*
+FILES_INFO: {"/usr/bin/db_archive": 9608, "/usr/bin/db_checkpoint": 9612, "/usr/bin/db_deadlock": 9608, "/usr/bin/db_dump": 9604, "/usr/bin/db_hotbackup": 13708, "/usr/bin/db_load": 17796, "/usr/bin/db_log_verify": 9612, "/usr/bin/db_printlog": 21896, "/usr/bin/db_recover": 9608, "/usr/bin/db_replicate": 5516, "/usr/bin/db_stat": 9604, "/usr/bin/db_tuner": 13708, "/usr/bin/db_upgrade": 9608}
+FILERDEPENDSFLIST_db-bin: /usr/bin/db@underscore@archive /usr/bin/db@underscore@checkpoint /usr/bin/db@underscore@deadlock /usr/bin/db@underscore@dump /usr/bin/db@underscore@hotbackup /usr/bin/db@underscore@load /usr/bin/db@underscore@log@underscore@verify /usr/bin/db@underscore@printlog /usr/bin/db@underscore@recover /usr/bin/db@underscore@replicate /usr/bin/db@underscore@stat /usr/bin/db@underscore@tuner /usr/bin/db@underscore@upgrade
+FILERDEPENDS_/usr/bin/db@underscore@archive_db-bin:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libdb-5.3.so libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@checkpoint_db-bin:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libdb-5.3.so libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@deadlock_db-bin:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libdb-5.3.so libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@dump_db-bin:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libdb-5.3.so libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@hotbackup_db-bin:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libdb-5.3.so libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@load_db-bin:  ld-linux-armhf.so.3(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libc.so.6(GLIBC_2.4) libdb-5.3.so libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@log@underscore@verify_db-bin:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libdb-5.3.so libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@printlog_db-bin:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libdb-5.3.so libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@recover_db-bin:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libdb-5.3.so libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@replicate_db-bin:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libdb-5.3.so libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@stat_db-bin:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libdb-5.3.so libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@tuner_db-bin:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libdb-5.3.so libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/db@underscore@upgrade_db-bin:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libdb-5.3.so libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_db-bin: 149488

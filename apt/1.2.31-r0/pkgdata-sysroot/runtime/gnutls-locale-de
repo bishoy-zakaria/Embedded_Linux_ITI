@@ -1,0 +1,15 @@
+PN: gnutls
+PV: 3.6.14
+PR: r0
+PKGV: 3.6.14
+PKGR: r0
+LICENSE: GPLv3+ & LGPLv2.1+
+DESCRIPTION_gnutls-locale-de: a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them.  This package contains language translation files for the de locale.
+SUMMARY_gnutls-locale-de: GNU Transport Layer Security Library - de translations
+RPROVIDES_gnutls-locale-de: gnutls-locale de-translation gnutls-locale-de (=3.6.14)
+RRECOMMENDS_gnutls-locale-de: virtual-locale-de
+SECTION: base
+PKG_gnutls-locale-de: libgnutls-locale-de
+FILES_gnutls-locale-de: /usr/share/locale/de
+FILES_INFO: {"/usr/share/locale/de/LC_MESSAGES/gnutls.mo": 24988}
+PKGSIZE_gnutls-locale-de: 24988

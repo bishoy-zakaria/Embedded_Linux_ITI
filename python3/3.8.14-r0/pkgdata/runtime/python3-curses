@@ -1,0 +1,17 @@
+PN: python3
+PV: 3.8.14
+PR: r0
+PKGV: 3.8.14
+PKGR: r0@EXTENDPRAUTO@
+LICENSE: PSF-2.0 & BSD-0-Clause
+DESCRIPTION: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+SUMMARY_python3-curses: Python curses support
+RDEPENDS_python3-curses: python3-core glibc (>= 2.31+git0+d4b7559457) ncurses-libncursesw (>= 6.2) ncurses-libpanelw (>= 6.2) ncurses-libtinfo (>= 6.2)
+SECTION: devel/python
+PKG_python3-curses: python3-curses
+FILES_python3-curses:  /usr/lib/python3.8/curses /usr/lib/python3.8/lib-dynload/_curses.*.so /usr/lib/python3.8/lib-dynload/_curses_panel.*.so
+FILES_INFO: {"/usr/lib/python3.8/curses/__init__.py": 3800, "/usr/lib/python3.8/curses/__pycache__/__init__.cpython-38.opt-1.pyc": 2140, "/usr/lib/python3.8/curses/__pycache__/__init__.cpython-38.opt-2.pyc": 1618, "/usr/lib/python3.8/curses/__pycache__/__init__.cpython-38.pyc": 2140, "/usr/lib/python3.8/curses/__pycache__/ascii.cpython-38.opt-1.pyc": 3957, "/usr/lib/python3.8/curses/__pycache__/ascii.cpython-38.opt-2.pyc": 3889, "/usr/lib/python3.8/curses/__pycache__/ascii.cpython-38.pyc": 3957, "/usr/lib/python3.8/curses/__pycache__/has_key.cpython-38.opt-1.pyc": 4555, "/usr/lib/python3.8/curses/__pycache__/has_key.cpython-38.opt-2.pyc": 4555, "/usr/lib/python3.8/curses/__pycache__/has_key.cpython-38.pyc": 4555, "/usr/lib/python3.8/curses/__pycache__/panel.cpython-38.opt-1.pyc": 223, "/usr/lib/python3.8/curses/__pycache__/panel.cpython-38.opt-2.pyc": 155, "/usr/lib/python3.8/curses/__pycache__/panel.cpython-38.pyc": 223, "/usr/lib/python3.8/curses/__pycache__/textpad.cpython-38.opt-1.pyc": 5907, "/usr/lib/python3.8/curses/__pycache__/textpad.cpython-38.opt-2.pyc": 4345, "/usr/lib/python3.8/curses/__pycache__/textpad.cpython-38.pyc": 5907, "/usr/lib/python3.8/curses/ascii.py": 2547, "/usr/lib/python3.8/curses/has_key.py": 5634, "/usr/lib/python3.8/curses/panel.py": 87, "/usr/lib/python3.8/curses/textpad.py": 7657, "/usr/lib/python3.8/lib-dynload/_curses.cpython-38-arm-linux-gnueabi.so": 90188, "/usr/lib/python3.8/lib-dynload/_curses_panel.cpython-38-arm-linux-gnueabi.so": 9764}
+FILERDEPENDSFLIST_python3-curses: /usr/lib/python3.8/lib-dynload/@underscore@curses.cpython-38-arm-linux-gnueabi.so /usr/lib/python3.8/lib-dynload/@underscore@curses@underscore@panel.cpython-38-arm-linux-gnueabi.so
+FILERDEPENDS_/usr/lib/python3.8/lib-dynload/@underscore@curses.cpython-38-arm-linux-gnueabi.so_python3-curses:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libncursesw.so.5 libtinfo.so.5 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python3.8/lib-dynload/@underscore@curses@underscore@panel.cpython-38-arm-linux-gnueabi.so_python3-curses:  libpanelw.so.5 rtld(GNU_HASH)
+PKGSIZE_python3-curses: 167803

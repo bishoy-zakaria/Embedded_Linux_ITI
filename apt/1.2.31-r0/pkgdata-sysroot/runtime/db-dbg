@@ -1,0 +1,17 @@
+PN: db
+PE: 1
+PV: 5.3.28
+PR: r1
+PKGE: 1
+PKGV: 5.3.28
+PKGR: r1
+LICENSE: Sleepycat
+DESCRIPTION_db-dbg: Provides the foundational storage services for your application, no matter how demanding and unique your requirements may seem to be  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_db-dbg: Berkeley Database v5 - Debugging files
+RRECOMMENDS_db-dbg: glibc-dbg libgcc-dbg libstdc++-dbg
+SECTION_db-dbg: devel
+PKG_db-dbg: db-dbg
+ALLOW_EMPTY_db-dbg: 1
+FILES_db-dbg: /usr/lib/debug /usr/lib/debug-static /usr/src/debug
+FILES_INFO: {"/usr/bin/.debug/db_archive": 95184, "/usr/bin/.debug/db_checkpoint": 130008, "/usr/bin/.debug/db_deadlock": 129748, "/usr/bin/.debug/db_dump": 138616, "/usr/bin/.debug/db_hotbackup": 106312, "/usr/bin/.debug/db_load": 162480, "/usr/bin/.debug/db_log_verify": 132500, "/usr/bin/.debug/db_printlog": 432288, "/usr/bin/.debug/db_recover": 98228, "/usr/bin/.debug/db_replicate": 123652, "/usr/bin/.debug/db_stat": 131876, "/usr/bin/.debug/db_tuner": 128812, "/usr/bin/.debug/db_upgrade": 96228, "/usr/lib/.debug/libdb-5.3.so": 10048588, "/usr/lib/.debug/libdb_cxx-5.3.so": 11149640}
+PKGSIZE_db-dbg: 23104160

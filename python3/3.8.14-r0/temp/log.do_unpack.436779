@@ -1,0 +1,597 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-extended/xz/xz_5.2.4.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['xz-native', 'automake-native', 'libtool-native', 'gettext-minimal-native', 'quilt-native', 'autoconf-native', 'gnu-config-native', 'texinfo-dummy-native', 'm4-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native/:g' /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/automake-native/fixmepath /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/libtool-native/fixmepath /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/quilt-native/fixmepath /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/autoconf-native/fixmepath /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/gnu-config-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/bishoy/Desktop/sources/poky/build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/bishoy/Desktop/sources/poky/build/tmp/pkgdata/raspberrypi3:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/temp/fifo.436779:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/build/downloads/Python-3.8.14.tar.xz to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for run-ptest in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/run-ptest to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for create_manifest3.py in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/create_manifest3.py to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for get_module_deps3.py in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/get_module_deps3.py to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for python3-manifest.json in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/python3-manifest.json to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for check_build_completeness.py in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/check_build_completeness.py to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for cgi_py.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/cgi_py.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0001-Do-not-add-usr-lib-termcap-to-linker-flags-to-avoid-.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0001-Do-not-add-usr-lib-termcap-to-linker-flags-to-avoid-.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for avoid_warning_about_tkinter.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/avoid_warning_about_tkinter.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0001-Do-not-use-the-shell-version-of-python-config-that-w.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0001-Do-not-use-the-shell-version-of-python-config-that-w.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for python-config.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/python-config.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0001-Makefile.pre-use-qemu-wrapper-when-gathering-profile.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0001-Makefile.pre-use-qemu-wrapper-when-gathering-profile.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0001-Do-not-hardcode-lib-as-location-for-site-packages-an.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0001-Do-not-hardcode-lib-as-location-for-site-packages-an.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0001-python3-use-cc_basename-to-replace-CC-for-checking-c.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0001-python3-use-cc_basename-to-replace-CC-for-checking-c.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0001-Lib-sysconfig.py-fix-another-place-where-lib-is-hard.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0001-Lib-sysconfig.py-fix-another-place-where-lib-is-hard.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0001-Makefile-fix-Issue36464-parallel-build-race-problem.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0001-Makefile-fix-Issue36464-parallel-build-race-problem.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0001-bpo-36852-proper-detection-of-mips-architecture-for-.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0001-bpo-36852-proper-detection-of-mips-architecture-for-.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for crosspythonpath.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/crosspythonpath.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for reformat_sysconfig.py in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/reformat_sysconfig.py to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0001-Use-FLAG_REF-always-for-interned-strings.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0001-Use-FLAG_REF-always-for-interned-strings.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0001-test_locale.py-correct-the-test-output-format.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0001-test_locale.py-correct-the-test-output-format.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0017-setup.py-do-not-report-missing-dependencies-for-disa.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0017-setup.py-do-not-report-missing-dependencies-for-disa.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0001-setup.py-pass-missing-libraries-to-Extension-for-mul.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0001-setup.py-pass-missing-libraries-to-Extension-for-mul.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0001-Makefile-do-not-compile-.pyc-in-parallel.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0001-Makefile-do-not-compile-.pyc-in-parallel.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0001-configure.ac-fix-LIBPL.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0001-configure.ac-fix-LIBPL.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0001-python3-Do-not-hardcode-lib-for-distutils.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0001-python3-Do-not-hardcode-lib-for-distutils.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for 0020-configure.ac-setup.py-do-not-add-a-curses-include-pa.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/0020-configure.ac-setup.py-do-not-add-a-curses-include-pa.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for makerace.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/makerace.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for CVE-2022-45061.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/CVE-2022-45061.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Searching for CVE-2022-37454.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3-3.8.14/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/python/python3/CVE-2022-37454.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/Python-3.8.14/Misc/NEWS
+DEBUG: SOURCE_DATE_EPOCH: 1662498626
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

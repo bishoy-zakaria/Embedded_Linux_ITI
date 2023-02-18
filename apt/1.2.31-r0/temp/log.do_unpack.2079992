@@ -1,0 +1,257 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-extended/xz/xz_5.2.4.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['xz-native', 'automake-native', 'autoconf-native', 'gettext-minimal-native', 'gnu-config-native', 'quilt-native', 'libtool-native', 'texinfo-dummy-native', 'm4-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot-native/:g' /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/automake-native/fixmepath /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/autoconf-native/fixmepath /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/gnu-config-native/fixmepath /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/quilt-native/fixmepath /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/libtool-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/bishoy/Desktop/sources/poky/build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/bishoy/Desktop/sources/poky/build/tmp/pkgdata/raspberrypi3:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/temp/fifo.2079992:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/build/downloads/apt_1.2.31.tar.xz to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/
+DEBUG: Searching for use-host.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/use-host.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/
+DEBUG: Searching for makerace.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/makerace.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/
+DEBUG: Searching for no-nls-dpkg.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/no-nls-dpkg.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/
+DEBUG: Searching for fix-gcc-4.6-null-not-defined.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/fix-gcc-4.6-null-not-defined.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/
+DEBUG: Searching for truncate-filename.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/truncate-filename.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/
+DEBUG: Searching for nodoc.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/nodoc.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/
+DEBUG: Searching for disable-configure-in-makefile.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/disable-configure-in-makefile.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/
+DEBUG: Searching for disable-test.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/disable-test.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/
+DEBUG: Searching for 0001-environment.mak-musl-based-systems-can-generate-shar.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/0001-environment.mak-musl-based-systems-can-generate-shar.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/
+DEBUG: Searching for 0001-apt-1.2.12-Fix-musl-build.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/0001-apt-1.2.12-Fix-musl-build.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/
+DEBUG: Searching for 0001-Include-array.h-for-std-array.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/0001-Include-array.h-for-std-array.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/
+DEBUG: Searching for CVE-2020-3810.patch in paths:
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/poky
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/raspberrypi3
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/armv7ve
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/rpi
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/arm
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt-1.2.31/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/
+    /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/files/
+NOTE: Unpacking /home/bishoy/Desktop/sources/poky/meta/recipes-devtools/apt/apt/CVE-2020-3810.patch to /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function create_source_date_epoch_stamp
+DEBUG: Newest file found: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/debian/copyright
+DEBUG: SOURCE_DATE_EPOCH: 1552399411
+DEBUG: Python function create_source_date_epoch_stamp finished
+DEBUG: Executing python function do_qa_unpack
+DEBUG: Python function do_qa_unpack finished

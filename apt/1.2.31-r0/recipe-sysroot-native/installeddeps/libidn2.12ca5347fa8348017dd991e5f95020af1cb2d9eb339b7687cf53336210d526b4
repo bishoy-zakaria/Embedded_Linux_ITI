@@ -1,0 +1,12 @@
+recipe-sysroot/usr/lib/libidn2.so.0
+recipe-sysroot/usr/lib/libidn2.so
+recipe-sysroot/usr/lib/libidn2.so.0.3.7
+recipe-sysroot/usr/lib/pkgconfig/libidn2.pc
+recipe-sysroot/usr/include/idn2.h
+recipe-sysroot/sysroot-providers/libidn2
+recipe-sysroot/usr/lib/pkgconfig/
+recipe-sysroot/sysroot-providers/
+recipe-sysroot/usr/include/
+recipe-sysroot/usr/share/
+recipe-sysroot/usr/lib/
+recipe-sysroot/usr/

@@ -1,0 +1,4 @@
+#!/bin/sh
+echo 'ERROR: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot-native/usr/bin/ncursesw6-config should not be used, use an alternative such as pkg-config' >&2
+echo '--should-not-have-used-/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot-native/usr/bin/ncursesw6-config'
+exit 1

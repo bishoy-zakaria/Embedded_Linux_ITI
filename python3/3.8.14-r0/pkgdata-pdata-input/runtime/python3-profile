@@ -1,0 +1,18 @@
+PN: python3
+PV: 3.8.14
+PR: r0
+PKGV: 3.8.14
+PKGR: r0
+LICENSE: PSF-2.0 & BSD-0-Clause
+DESCRIPTION: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+SUMMARY_python3-profile: Python basic performance profiling support
+RDEPENDS_python3-profile: python3-core glibc (>= 2.31+git0+d4b7559457)
+SECTION: devel/python
+PKG_python3-profile: python3-profile
+FILES_python3-profile:  /usr/lib/python3.8/cProfile.py /usr/lib/python3.8/lib-dynload/_lsprof.*.so /usr/lib/python3.8/profile.py /usr/lib/python3.8/pstats.py /usr/lib/python3.8/__pycache__/cProfile.*.pyc /usr/lib/python3.8/__pycache__/profile.*.pyc /usr/lib/python3.8/__pycache__/pstats.*.pyc
+FILES_INFO: {"/usr/lib/python3.8/__pycache__/cProfile.cpython-38.opt-1.pyc": 5480, "/usr/lib/python3.8/__pycache__/cProfile.cpython-38.opt-2.pyc": 5019, "/usr/lib/python3.8/__pycache__/cProfile.cpython-38.pyc": 5480, "/usr/lib/python3.8/__pycache__/profile.cpython-38.opt-1.pyc": 14545, "/usr/lib/python3.8/__pycache__/profile.cpython-38.opt-2.pyc": 11567, "/usr/lib/python3.8/__pycache__/profile.cpython-38.pyc": 14758, "/usr/lib/python3.8/__pycache__/pstats.cpython-38.opt-1.pyc": 22066, "/usr/lib/python3.8/__pycache__/pstats.cpython-38.opt-2.pyc": 19542, "/usr/lib/python3.8/__pycache__/pstats.cpython-38.pyc": 22066, "/usr/lib/python3.8/cProfile.py": 7000, "/usr/lib/python3.8/lib-dynload/_lsprof.cpython-38-arm-linux-gnueabi.so": 14088, "/usr/lib/python3.8/profile.py": 23536, "/usr/lib/python3.8/pstats.py": 27345}
+FILERDEPENDSFLIST_python3-profile: /usr/lib/python3.8/cProfile.py /usr/lib/python3.8/lib-dynload/@underscore@lsprof.cpython-38-arm-linux-gnueabi.so /usr/lib/python3.8/profile.py
+FILERDEPENDS_/usr/lib/python3.8/cProfile.py_python3-profile:  /usr/bin/env
+FILERDEPENDS_/usr/lib/python3.8/lib-dynload/@underscore@lsprof.cpython-38-arm-linux-gnueabi.so_python3-profile:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.4) libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python3.8/profile.py_python3-profile:  /usr/bin/env
+PKGSIZE_python3-profile: 192492

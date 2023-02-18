@@ -1,0 +1,20 @@
+PN: util-linux
+PV: 2.35.1
+PR: r0
+PKGV: 2.35.1
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD-3-Clause & BSD-4-Clause
+DESCRIPTION_util-linux-more: util-linux more
+SUMMARY_util-linux-more: util-linux more
+RDEPENDS_util-linux-more: update-alternatives-opkg glibc (>= 2.31+git0+d4b7559457) ncurses-libtinfo (>= 6.2)
+SECTION: base
+PKG_util-linux-more: util-linux-more
+FILES_util-linux-more: /bin/more.util-linux
+FILES_INFO: {"/bin/more.util-linux": 26000}
+pkg_postinst_util-linux-more: #!/bin/sh\nset -e\n\tupdate-alternatives --install /bin/more more /bin/more.util-linux 80\n
+pkg_prerm_util-linux-more: #!/bin/sh\nset -e\n\tupdate-alternatives --remove  more /bin/more.util-linux\n
+FILERPROVIDESFLIST_util-linux-more:  /bin/more.util-linux
+FILERPROVIDES_/bin/more.util-linux_util-linux-more:  /bin/more
+FILERDEPENDSFLIST_util-linux-more: /bin/more.util-linux
+FILERDEPENDS_/bin/more.util-linux_util-linux-more:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.28) libc.so.6(GLIBC_2.11) libc.so.6(GLIBC_2.4) libtinfo.so.5 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_util-linux-more: 26000

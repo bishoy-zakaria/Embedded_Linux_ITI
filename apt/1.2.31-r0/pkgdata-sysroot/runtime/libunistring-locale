@@ -1,0 +1,13 @@
+PN: libunistring
+PV: 0.9.10
+PR: r0
+PKGV: 0.9.10
+PKGR: r0
+LICENSE: LGPLv3+ | GPLv2
+DESCRIPTION: Text files are nowadays usually encoded in Unicode, and may consist of very different scripts from Latin letters to Chinese Hanzi with many kinds of special characters accents, right-to-left writing marks, hyphens, Roman numbers, and much more. But the POSIX platform APIs for text do not contain adequate functions for dealing with particular properties of many Unicode characters. In fact, the POSIX APIs for text have several assumptions at their base which don't hold for Unicode text.  This library provides functions for manipulating Unicode strings and for manipulating C strings according to the Unicode standard.  This package contains documentation.
+SUMMARY: Library for manipulating C and Unicode strings
+SECTION: devel
+PKG_libunistring-locale: libunistring-locale
+FILES_libunistring-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_libunistring-locale: 0

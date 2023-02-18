@@ -1,0 +1,26 @@
+PN: glibc
+PV: 2.31+gitAUTOINC+d4b7559457
+PR: r0
+PKGV: 2.31+git0+d4b7559457
+PKGR: r0
+LICENSE: GPLv2 & LGPLv2.1
+DESCRIPTION_glibc-utils: Miscellaneous utilities including getconf, iconv, locale, gencat, ...
+SUMMARY_glibc-utils: Miscellaneous utilities provided by glibc
+RDEPENDS_glibc-utils: glibc (>= 2.31+git0+d4b7559457)
+RPROVIDES_glibc-utils: eglibc-utils glibc-utils (=2.31+git0+d4b7559457)
+SECTION: libs
+PKG_glibc-utils: libc6-utils
+FILES_glibc-utils: /usr/bin/* /usr/sbin/*
+FILES_INFO: {"/usr/bin/gencat": 13828, "/usr/bin/getconf": 21984, "/usr/bin/getent": 18060, "/usr/bin/iconv": 38416, "/usr/bin/locale": 31640, "/usr/bin/makedb": 13828, "/usr/bin/pcprofiledump": 9736, "/usr/bin/pldd": 9680, "/usr/bin/sprof": 17920, "/usr/sbin/iconvconfig": 17932}
+FILERDEPENDSFLIST_glibc-utils: /usr/bin/gencat /usr/bin/getconf /usr/bin/getent /usr/bin/iconv /usr/bin/locale /usr/bin/makedb /usr/bin/pcprofiledump /usr/bin/pldd /usr/bin/sprof /usr/sbin/iconvconfig
+FILERDEPENDS_/usr/bin/gencat_glibc-utils:  libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS_/usr/bin/getconf_glibc-utils:  libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS_/usr/bin/getent_glibc-utils:  libc.so.6(GLIBC_2.10) libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS_/usr/bin/iconv_glibc-utils:  libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS_/usr/bin/locale_glibc-utils:  libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS_/usr/bin/makedb_glibc-utils:  libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS_/usr/bin/pcprofiledump_glibc-utils:  libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS_/usr/bin/pldd_glibc-utils:  libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS_/usr/bin/sprof_glibc-utils:  libdl.so.2(GLIBC_2.4) libc.so.6(GLIBC_2.4) libdl.so.2 libc.so.6
+FILERDEPENDS_/usr/sbin/iconvconfig_glibc-utils:  libc.so.6(GLIBC_2.4) libc.so.6
+PKGSIZE_glibc-utils: 193024

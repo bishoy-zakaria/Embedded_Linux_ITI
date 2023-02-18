@@ -1,0 +1,20 @@
+PN: gnutls
+PV: 3.6.14
+PR: r0
+PKGV: 3.6.14
+PKGR: r0
+LICENSE_gnutls-openssl: GPLv3+
+DESCRIPTION: a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them.
+SUMMARY: GNU Transport Layer Security Library
+RDEPENDS_gnutls-openssl: glibc (>= 2.31+git0+d4b7559457) gmp (>= 6.2.0) gnutls (>= 3.6.14) libidn2 (>= 2.3.0) libunistring (>= 0.9.10) nettle (>= 3.5.1)
+RPROVIDES_gnutls-openssl:  gnutls-openssl (=3.6.14)
+SECTION: base
+PKG_gnutls-openssl: libgnutls-openssl27
+FILES_gnutls-openssl: /usr/lib/libgnutls-openssl.so.*
+FILES_INFO: {"/usr/lib/libgnutls-openssl.so.27": 27, "/usr/lib/libgnutls-openssl.so.27.0.2": 62824}
+pkg_postinst_gnutls-openssl: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_gnutls-openssl: /usr/lib/libgnutls-openssl.so.27.0.2
+FILERPROVIDES_/usr/lib/libgnutls-openssl.so.27.0.2_gnutls-openssl:  libgnutls-openssl.so.27
+FILERDEPENDSFLIST_gnutls-openssl: /usr/lib/libgnutls-openssl.so.27.0.2
+FILERDEPENDS_/usr/lib/libgnutls-openssl.so.27.0.2_gnutls-openssl:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.28) libc.so.6(GLIBC_2.25) libc.so.6(GLIBC_2.4) libgnutls.so.30(GNUTLS_3_4) libgnutls.so.30 libidn2.so.0 libunistring.so.2 libnettle.so.7 libhogweed.so.5 libgmp.so.10 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_gnutls-openssl: 62851

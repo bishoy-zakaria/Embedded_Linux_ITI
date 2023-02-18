@@ -1,0 +1,33 @@
+OEOuthashBasic
+5
+SSTATE_PKGSPEC=sstate:apt:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:1.2.31:r0:cortexa7t2hf-neon-vfpv4:3:
+task=packagedata
+drwxrwxr-x                                                                                       .
+drwxr-xr-x                                                                                       ./pkgdata-pdata-input
+-rw-r--r--                   95 28fa11784eadb2f25712520ef786d5c0426eb1454a9af2358877a3cb69272c9e ./pkgdata-pdata-input/apt
+drwxr-xr-x                                                                                       ./pkgdata-pdata-input/runtime
+-rw-r--r--                19671 cbe5053f93ce940bcde8c90ac98158d6b29ef0830b909a9223f22af02c200050 ./pkgdata-pdata-input/runtime/apt
+-rw-r--r--                 1751 5826dc8ebd300b34dbbd7ec7ac997c6054a57dc86bf1c2d46b8148a4e5e40531 ./pkgdata-pdata-input/runtime/apt-dbg
+-rw-r--r--                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./pkgdata-pdata-input/runtime/apt-dbg.packaged
+-rw-r--r--                 4103 968cd3cf158cf7b4b4a1100938718fe7eff2995540c140b7a0b21767a4ecbe5d ./pkgdata-pdata-input/runtime/apt-dev
+-rw-r--r--                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./pkgdata-pdata-input/runtime/apt-dev.packaged
+-rw-r--r--                 1146 3f026e1fe71812b397ff90e5caf509592518ed14a318f2cf8b23f02f5f1f0258 ./pkgdata-pdata-input/runtime/apt-doc
+-rw-r--r--                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./pkgdata-pdata-input/runtime/apt-doc.packaged
+-rw-r--r--                  397 b69e52059b8d12855ba8b6322601abedcf7ca5521122b84f734fb561d24ecfea ./pkgdata-pdata-input/runtime/apt-locale
+-rw-r--r--                15545 8c95feb7b180f1f935a9a887e809925d07ec76e0285c2e735c36f4ce5ba74b2e ./pkgdata-pdata-input/runtime/apt-src
+-rw-r--r--                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./pkgdata-pdata-input/runtime/apt-src.packaged
+-rw-r--r--                  624 4511b71e6e15fcbf13262bc43d6e2c698cdf48ed2e11a63215d18623ec9d5fc9 ./pkgdata-pdata-input/runtime/apt-staticdev
+-rw-r--r--                 1685 432bc8f7d2d6532e9aff2a13c5aedabde348eb5526dba18c6a4b3a3c9e912694 ./pkgdata-pdata-input/runtime/apt-utils
+-rw-r--r--                  477 4bdd6d506656965c58964dcd5493759477dd626d4273b00f1fcd185193f9f846 ./pkgdata-pdata-input/runtime/apt-utils-doc
+-rw-r--r--                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./pkgdata-pdata-input/runtime/apt-utils.packaged
+-rw-r--r--                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./pkgdata-pdata-input/runtime/apt.packaged
+drwxr-xr-x                                                                                       ./pkgdata-pdata-input/runtime-reverse
+lrwxrwxrwx                                                                                       ./pkgdata-pdata-input/runtime-reverse/apt -> ../runtime/apt
+lrwxrwxrwx                                                                                       ./pkgdata-pdata-input/runtime-reverse/apt-dbg -> ../runtime/apt-dbg
+lrwxrwxrwx                                                                                       ./pkgdata-pdata-input/runtime-reverse/apt-dev -> ../runtime/apt-dev
+lrwxrwxrwx                                                                                       ./pkgdata-pdata-input/runtime-reverse/apt-doc -> ../runtime/apt-doc
+lrwxrwxrwx                                                                                       ./pkgdata-pdata-input/runtime-reverse/apt-src -> ../runtime/apt-src
+lrwxrwxrwx                                                                                       ./pkgdata-pdata-input/runtime-reverse/apt-utils -> ../runtime/apt-utils
+drwxr-xr-x                                                                                       ./pkgdata-pdata-input/runtime-rprovides
+drwxr-xr-x                                                                                       ./pkgdata-pdata-input/shlibs2
+-rw-r--r--                  107 4a87cd00abbcac8ac854f131b14016d57f4be8b4bbed05a4901b7dceaa6a6eab ./pkgdata-pdata-input/shlibs2/apt.list

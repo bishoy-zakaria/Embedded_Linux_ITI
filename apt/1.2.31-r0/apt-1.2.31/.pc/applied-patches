@@ -1,0 +1,12 @@
+use-host.patch
+makerace.patch
+no-nls-dpkg.patch
+fix-gcc-4.6-null-not-defined.patch
+truncate-filename.patch
+nodoc.patch
+disable-configure-in-makefile.patch
+disable-test.patch
+0001-environment.mak-musl-based-systems-can-generate-shar.patch
+0001-apt-1.2.12-Fix-musl-build.patch
+0001-Include-array.h-for-std-array.patch
+CVE-2020-3810.patch

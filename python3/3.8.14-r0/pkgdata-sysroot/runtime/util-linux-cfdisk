@@ -1,0 +1,16 @@
+PN: util-linux
+PV: 2.35.1
+PR: r0
+PKGV: 2.35.1
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD-3-Clause & BSD-4-Clause
+DESCRIPTION_util-linux-cfdisk: util-linux cfdisk
+SUMMARY_util-linux-cfdisk: util-linux cfdisk
+RDEPENDS_util-linux-cfdisk: glibc (>= 2.31+git0+d4b7559457) ncurses-libncursesw (>= 6.2) ncurses-libtinfo (>= 6.2) util-linux-libfdisk (>= 2.35.1) util-linux-libmount (>= 2.35.1) util-linux-libsmartcols (>= 2.35.1)
+SECTION: base
+PKG_util-linux-cfdisk: util-linux-cfdisk
+FILES_util-linux-cfdisk: /sbin/cfdisk
+FILES_INFO: {"/sbin/cfdisk": 67180}
+FILERDEPENDSFLIST_util-linux-cfdisk: /sbin/cfdisk
+FILERDEPENDS_/sbin/cfdisk_util-linux-cfdisk:  ld-linux-armhf.so.3(GLIBC_2.4) libmount.so.1(MOUNT_2.19) libmount.so.1(MOUNT_2.24) libsmartcols.so.1(SMARTCOLS_2.28) libsmartcols.so.1(SMARTCOLS_2.25) libfdisk.so.1(FDISK_2.28) libfdisk.so.1(FDISK_2.31) libfdisk.so.1(FDISK_2.26) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.4) libsmartcols.so.1 libfdisk.so.1 libmount.so.1 libncursesw.so.5 libtinfo.so.5 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_util-linux-cfdisk: 67180

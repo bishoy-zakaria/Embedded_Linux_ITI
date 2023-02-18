@@ -1,0 +1,15 @@
+PN: libidn2
+PV: 2.3.0
+PR: r0
+PKGV: 2.3.0
+PKGR: r0
+LICENSE: (GPLv2+ | LGPLv3) & GPLv3+
+DESCRIPTION_libidn2-locale-fi: Implementation of the Stringprep, Punycode and IDNA specifications defined by the IETF Internationalized Domain Names (IDN) working group.  This package contains language translation files for the fi locale.
+SUMMARY_libidn2-locale-fi: Internationalized Domain Name support library - fi translations
+RPROVIDES_libidn2-locale-fi: libidn2-locale fi-translation
+RRECOMMENDS_libidn2-locale-fi: virtual-locale-fi
+SECTION: libs
+PKG_libidn2-locale-fi: libidn2-locale-fi
+FILES_libidn2-locale-fi: /usr/share/locale/fi
+FILES_INFO: {"/usr/share/locale/fi/LC_MESSAGES/libidn2.mo": 1020}
+PKGSIZE_libidn2-locale-fi: 1020

@@ -1,0 +1,20 @@
+PN: util-linux
+PV: 2.35.1
+PR: r0
+PKGV: 2.35.1
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD-3-Clause & BSD-4-Clause
+DESCRIPTION_util-linux-fdisk: util-linux fdisk
+SUMMARY_util-linux-fdisk: util-linux fdisk
+RDEPENDS_util-linux-fdisk: update-alternatives-opkg glibc (>= 2.31+git0+d4b7559457) ncurses-libtinfo (>= 6.2) util-linux-libfdisk (>= 2.35.1) util-linux-libsmartcols (>= 2.35.1)
+SECTION: base
+PKG_util-linux-fdisk: util-linux-fdisk
+FILES_util-linux-fdisk: /sbin/fdisk.util-linux
+FILES_INFO: {"/sbin/fdisk.util-linux": 95704}
+pkg_postinst_util-linux-fdisk: #!/bin/sh\nset -e\n\tupdate-alternatives --install /sbin/fdisk fdisk /sbin/fdisk.util-linux 80\n
+pkg_prerm_util-linux-fdisk: #!/bin/sh\nset -e\n\tupdate-alternatives --remove  fdisk /sbin/fdisk.util-linux\n
+FILERPROVIDESFLIST_util-linux-fdisk:  /sbin/fdisk.util-linux
+FILERPROVIDES_/sbin/fdisk.util-linux_util-linux-fdisk:  /sbin/fdisk
+FILERDEPENDSFLIST_util-linux-fdisk: /sbin/fdisk.util-linux
+FILERDEPENDS_/sbin/fdisk.util-linux_util-linux-fdisk:  ld-linux-armhf.so.3(GLIBC_2.4) libsmartcols.so.1(SMARTCOLS_2.25) libc.so.6(GLIBC_2.28) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.4) libfdisk.so.1(FDISK_2.33) libfdisk.so.1(FDISK_2.28) libfdisk.so.1(FDISK_2.30) libfdisk.so.1(FDISK_2.27) libfdisk.so.1(FDISK_2.31) libfdisk.so.1(FDISK_2.29) libfdisk.so.1(FDISK_2.32) libfdisk.so.1(FDISK_2.26) libfdisk.so.1 libsmartcols.so.1 libtinfo.so.5 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_util-linux-fdisk: 95704

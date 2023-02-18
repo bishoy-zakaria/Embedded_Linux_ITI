@@ -1,0 +1,20 @@
+PN: xz
+PV: 5.2.4
+PR: r0
+PKGV: 5.2.4
+PKGR: r0
+LICENSE_liblzma: PD
+DESCRIPTION: XZ Utils is free general-purpose data compression software with a high compression ratio. XZ Utils were written for POSIX-like systems, but also work on some not-so-POSIX systems. XZ Utils are the successor to LZMA Utils.
+SUMMARY: Utilities for managing LZMA compressed files
+RDEPENDS_liblzma: glibc (>= 2.31+git0+d4b7559457)
+RPROVIDES_liblzma:  liblzma (=5.2.4)
+SECTION: base
+PKG_liblzma: liblzma5
+FILES_liblzma: /usr/lib/liblzma*.so.*
+FILES_INFO: {"/usr/lib/liblzma.so.5": 16, "/usr/lib/liblzma.so.5.2.4": 103776}
+pkg_postinst_liblzma: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_liblzma: /usr/lib/liblzma.so.5.2.4
+FILERPROVIDES_/usr/lib/liblzma.so.5.2.4_liblzma:  liblzma.so.5(XZ_5.0) liblzma.so.5(XZ_5.2) liblzma.so.5(XZ_5.2) liblzma.so.5
+FILERDEPENDSFLIST_liblzma: /usr/lib/liblzma.so.5.2.4
+FILERDEPENDS_/usr/lib/liblzma.so.5.2.4_liblzma:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.6) libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_liblzma: 103792

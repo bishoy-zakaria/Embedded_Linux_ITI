@@ -1,0 +1,20 @@
+PN: python3
+PV: 3.8.14
+PR: r0
+PKGV: 3.8.14
+PKGR: r0
+LICENSE: PSF-2.0 & BSD-0-Clause
+DESCRIPTION: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+SUMMARY: The Python Programming Language
+RDEPENDS_libpython3: libgcc glibc (>= 2.31+git0+d4b7559457)
+RPROVIDES_libpython3:  libpython3 (=3.8.14)
+SECTION: devel/python
+PKG_libpython3: libpython3.8-1.0
+FILES_libpython3: /usr/lib/libpython*.so.*
+FILES_INFO: {"/usr/lib/libpython3.8.so.1.0": 2060664}
+pkg_postinst_libpython3: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libpython3: /usr/lib/libpython3.8.so.1.0
+FILERPROVIDES_/usr/lib/libpython3.8.so.1.0_libpython3:  libpython3.8.so.1.0
+FILERDEPENDSFLIST_libpython3: /usr/lib/libpython3.8.so.1.0
+FILERDEPENDS_/usr/lib/libpython3.8.so.1.0_libpython3:  libutil.so.1(GLIBC_2.4) libdl.so.2(GLIBC_2.4) libm.so.6(GLIBC_2.4) libm.so.6(GLIBC_2.29) ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.25) libc.so.6(GLIBC_2.26) libc.so.6(GLIBC_2.28) libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.9) libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.27) libc.so.6(GLIBC_2.6) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libpthread.so.0 libdl.so.2 libutil.so.1 libm.so.6 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_libpython3: 2060664

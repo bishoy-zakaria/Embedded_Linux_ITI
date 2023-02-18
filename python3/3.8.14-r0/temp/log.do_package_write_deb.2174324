@@ -1,0 +1,100 @@
+DEBUG: Executing python function sstate_task_prefunc
+DEBUG: Python function sstate_task_prefunc finished
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/dpkg/dpkg_1.19.8.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.2.bb:do_populate_sysroot', 'virtual:native:/home/bishoy/Desktop/sources/poky/meta/recipes-devtools/pseudo/pseudo_git.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['dpkg-native', 'gettext-native']
+NOTE: Skipping as already exists in sysroot: ['opkg-utils-native', 'pseudo-native', 'xz-native', 'gnu-config-native', 'autoconf-native', 'gettext-minimal-native', 'automake-native', 'zlib-native', 'bzip2-native', 'pkgconfig-native', 'quilt-native', 'libtool-native', 'perl-native', 'patch-native', 'm4-native', 'texinfo-dummy-native', 'gdbm-native', 'db-native', 'attr-native']
+DEBUG: sed -e 's:^[^/]*/:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native/:g' /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/dpkg-native/fixmepath /home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/gettext-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/bishoy/Desktop/sources/poky/build/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/bishoy/Desktop/sources/poky/build/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/bishoy/Desktop/sources/poky/build/tmp/pkgdata/raspberrypi3:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/temp/fifo.2174324:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_package_write_deb
+DEBUG: Executing python function read_subpackage_metadata
+DEBUG: Python function read_subpackage_metadata finished
+DEBUG: Executing python function do_package_deb
+NOTE: Not creating empty archive for python3-3.8.14-r0
+NOTE: Not creating empty archive for python3-man-3.8.14-r0
+NOTE: Not creating empty archive for python3-locale-3.8.14-r0
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: libpython3 -> libpython3.8-1.0
+NOTE: Not creating empty archive for python3-staticdev-3.8.14-r0
+NOTE: libgcc1 rprovides libgcc, not replacing the latter
+NOTE: tzdata-europe rprovides tzdata-europe, not replacing the latter
+NOTE: libgdbm-dev rprovides gdbm-dev, not replacing the latter
+NOTE: libc6-dev rprovides glibc-dev, not replacing the latter
+NOTE: libgcc-s-dev rprovides libgcc-dev, not replacing the latter
+NOTE: libnsl-dev rprovides libnsl2-dev, not replacing the latter
+NOTE: libcrypt-dev rprovides libxcrypt-dev, not replacing the latter
+NOTE: libreadline-dev rprovides readline-dev, not replacing the latter
+NOTE: libz-dev rprovides zlib-dev, not replacing the latter
+NOTE: package name mapping done: glibc -> libc6
+NOTE: libgcc1 rprovides libgcc, not replacing the latter
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: libtirpc -> libtirpc3
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: libsqlite3 -> libsqlite3-0
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: util-linux-libuuid -> libuuid1
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: libcrypto -> libcrypto1.1
+NOTE: package name mapping done: libssl -> libssl1.1
+NOTE: package name mapping done: gdbm -> libgdbm6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: Not creating empty archive for python3-distutils-windows-3.8.14-r0
+NOTE: package name mapping done: gdbm-compat -> libgdbm-compat4
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: ncurses-libncursesw -> libncursesw5
+NOTE: package name mapping done: ncurses-libpanelw -> libpanelw5
+NOTE: package name mapping done: ncurses-libtinfo -> libtinfo5
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: libffi -> libffi7
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: libcrypto -> libcrypto1.1
+NOTE: package name mapping done: libxcrypt -> libcrypt2
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: libbz2 -> libbz2-1
+NOTE: package name mapping done: liblzma -> liblzma5
+NOTE: package name mapping done: libpython3 -> libpython3.8-1.0
+NOTE: package name mapping done: readline -> libreadline8
+NOTE: package name mapping done: zlib -> libz1
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: package name mapping done: glibc -> libc6
+NOTE: libgdbm-dbg rprovides gdbm-dbg, not replacing the latter
+NOTE: libc6-dbg rprovides glibc-dbg, not replacing the latter
+NOTE: libnsl-dbg rprovides libnsl2-dbg, not replacing the latter
+NOTE: libcrypt-dbg rprovides libxcrypt-dbg, not replacing the latter
+NOTE: libreadline-dbg rprovides readline-dbg, not replacing the latter
+NOTE: libz-dbg rprovides zlib-dbg, not replacing the latter
+DEBUG: Python function do_package_deb finished
+DEBUG: Python function do_package_write_deb finished
+DEBUG: Executing python function sstate_task_postfunc
+NOTE: Using umask 0o002 (not 22) for sstate packaging
+DEBUG: Preparing tree /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-debs for packaging at /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/sstate-build-package_write_deb/deploy-debs
+DEBUG: Executing python function sstate_hardcode_path
+NOTE: Removing hardcoded paths from sstate package: 'find /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/sstate-build-package_write_deb/ \( -name "*.la" -o -name "*-config" -o -name "*_config" -o -name "postinst-*" -o -name "Makefile" -o -name "_sysconfigdata.py" \) -type f | xargs grep -l -e '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot' -e '/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native' -e '/home/bishoy/Desktop/sources/poky/build/tmp/hosttools' | tee /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/sstate-build-package_write_deb/fixmepath | xargs --no-run-if-empty sed -i -e 's:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native:FIXMESTAGINGDIRHOST:g' -e 's:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot:FIXMESTAGINGDIRTARGET:g' -e 's:/home/bishoy/Desktop/sources/poky/build/tmp/hosttools:FIXME_HOSTTOOLS_DIR:g''
+DEBUG: Python function sstate_hardcode_path finished
+DEBUG: Executing python function sstate_report_unihash
+DEBUG: Reported task ce13e8c465a8a8d4c52fa709e99b05339967a345bd221a460a5292c3020e6ebf as unihash ce13e8c465a8a8d4c52fa709e99b05339967a345bd221a460a5292c3020e6ebf to unix:///home/bishoy/Desktop/sources/poky/build/hashserve.sock
+DEBUG: Python function sstate_report_unihash finished
+DEBUG: Executing shell function sstate_create_package
+DEBUG: Shell function sstate_create_package finished
+DEBUG: Executing python function sstate_hardcode_path_unpack
+DEBUG: Python function sstate_hardcode_path_unpack finished
+DEBUG: Executing python function uninative_changeinterp
+DEBUG: Python function uninative_changeinterp finished
+DEBUG: Staging files from /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/deploy-debs to /home/bishoy/Desktop/sources/poky/build/tmp/deploy/deb
+DEBUG: Python function sstate_task_postfunc finished

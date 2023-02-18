@@ -1,0 +1,15 @@
+PN: gnutls
+PV: 3.6.14
+PR: r0
+PKGV: 3.6.14
+PKGR: r0
+LICENSE: GPLv3+ & LGPLv2.1+
+DESCRIPTION_gnutls-locale-sr: a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them.  This package contains language translation files for the sr locale.
+SUMMARY_gnutls-locale-sr: GNU Transport Layer Security Library - sr translations
+RPROVIDES_gnutls-locale-sr: gnutls-locale sr-translation gnutls-locale-sr (=3.6.14)
+RRECOMMENDS_gnutls-locale-sr: virtual-locale-sr
+SECTION: base
+PKG_gnutls-locale-sr: libgnutls-locale-sr
+FILES_gnutls-locale-sr: /usr/share/locale/sr
+FILES_INFO: {"/usr/share/locale/sr/LC_MESSAGES/gnutls.mo": 29706}
+PKGSIZE_gnutls-locale-sr: 29706

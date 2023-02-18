@@ -1,0 +1,20 @@
+PN: util-linux
+PV: 2.35.1
+PR: r0
+PKGV: 2.35.1
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD-3-Clause & BSD-4-Clause
+DESCRIPTION_util-linux-umount: util-linux umount
+SUMMARY_util-linux-umount: util-linux umount
+RDEPENDS_util-linux-umount: update-alternatives-opkg glibc (>= 2.31+git0+d4b7559457) util-linux-libmount (>= 2.35.1)
+SECTION: base
+PKG_util-linux-umount: util-linux-umount
+FILES_util-linux-umount: /bin/umount.util-linux
+FILES_INFO: {"/bin/umount.util-linux": 21956}
+pkg_postinst_util-linux-umount: #!/bin/sh\nset -e\n\tupdate-alternatives --install /bin/umount umount /bin/umount.util-linux 80\n
+pkg_prerm_util-linux-umount: #!/bin/sh\nset -e\n\tupdate-alternatives --remove  umount /bin/umount.util-linux\n
+FILERPROVIDESFLIST_util-linux-umount:  /bin/umount.util-linux
+FILERPROVIDES_/bin/umount.util-linux_util-linux-umount:  /bin/umount
+FILERDEPENDSFLIST_util-linux-umount: /bin/umount.util-linux
+FILERDEPENDS_/bin/umount.util-linux_util-linux-umount:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libmount.so.1(MOUNT_2.25) libmount.so.1(MOUNT_2.30) libmount.so.1(MOUNT_2.20) libmount.so.1(MOUNT_2_35) libmount.so.1(MOUNT_2.23) libmount.so.1(MOUNT_2.22) libmount.so.1(MOUNT_2.33) libmount.so.1(MOUNT_2.21) libmount.so.1(MOUNT_2.24) libmount.so.1(MOUNT_2.19) libmount.so.1 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_util-linux-umount: 21956

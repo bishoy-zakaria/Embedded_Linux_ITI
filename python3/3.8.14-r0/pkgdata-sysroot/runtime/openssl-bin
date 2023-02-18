@@ -1,0 +1,17 @@
+PN: openssl
+PV: 1.1.1s
+PR: r0
+PKGV: 1.1.1s
+PKGR: r0
+LICENSE: openssl
+DESCRIPTION: Secure Socket Layer (SSL) binary and related cryptographic tools.
+SUMMARY: Secure Socket Layer
+RDEPENDS_openssl-bin: openssl-conf glibc (>= 2.31+git0+d4b7559457) libcrypto (>= 1.1.1s) libssl (>= 1.1.1s)
+SECTION: libs/network
+PKG_openssl-bin: openssl-bin
+FILES_openssl-bin: /usr/bin/* /usr/sbin/*
+FILES_INFO: {"/usr/bin/c_rehash": 6729, "/usr/bin/openssl": 485684}
+FILERDEPENDSFLIST_openssl-bin: /usr/bin/c@underscore@rehash /usr/bin/openssl
+FILERDEPENDS_/usr/bin/c@underscore@rehash_openssl-bin:  /usr/bin/env
+FILERDEPENDS_/usr/bin/openssl_openssl-bin:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.4) libpthread.so.0(GLIBC_2.4) libssl.so.1.1(OPENSSL_1_1_1) libssl.so.1.1(OPENSSL_1_1_0) libcrypto.so.1.1(OPENSSL_1_1_1) libcrypto.so.1.1(OPENSSL_1_1_0) libssl.so.1.1 libcrypto.so.1.1 libpthread.so.0 libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_openssl-bin: 492413

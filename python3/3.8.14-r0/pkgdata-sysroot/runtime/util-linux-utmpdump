@@ -1,0 +1,20 @@
+PN: util-linux
+PV: 2.35.1
+PR: r0
+PKGV: 2.35.1
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD-3-Clause & BSD-4-Clause
+DESCRIPTION_util-linux-utmpdump: util-linux utmpdump
+SUMMARY_util-linux-utmpdump: util-linux utmpdump
+RDEPENDS_util-linux-utmpdump: update-alternatives-opkg glibc (>= 2.31+git0+d4b7559457)
+SECTION: base
+PKG_util-linux-utmpdump: util-linux-utmpdump
+FILES_util-linux-utmpdump: /usr/bin/utmpdump.util-linux
+FILES_INFO: {"/usr/bin/utmpdump.util-linux": 17860}
+pkg_postinst_util-linux-utmpdump: #!/bin/sh\nset -e\n\tupdate-alternatives --install /usr/bin/utmpdump utmpdump /usr/bin/utmpdump.util-linux 80\n
+pkg_prerm_util-linux-utmpdump: #!/bin/sh\nset -e\n\tupdate-alternatives --remove  utmpdump /usr/bin/utmpdump.util-linux\n
+FILERPROVIDESFLIST_util-linux-utmpdump:  /usr/bin/utmpdump.util-linux
+FILERPROVIDES_/usr/bin/utmpdump.util-linux_util-linux-utmpdump:  /usr/bin/utmpdump
+FILERDEPENDSFLIST_util-linux-utmpdump: /usr/bin/utmpdump.util-linux
+FILERDEPENDS_/usr/bin/utmpdump.util-linux_util-linux-utmpdump:  ld-linux-armhf.so.3(GLIBC_2.4) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.4) libc.so.6 ld-linux-armhf.so.3 rtld(GNU_HASH)
+PKGSIZE_util-linux-utmpdump: 17860

@@ -1,0 +1,150 @@
+DEBUG: Executing shell function autotools_preconfigure
+DEBUG: Shell function autotools_preconfigure finished
+DEBUG: Executing python function autotools_aclocals
+DEBUG: SITE files ['endian-little', 'bit-32', 'arm-common', 'arm-32', 'common-linux', 'common-glibc', 'arm-linux', 'arm-linux-gnueabi', 'common']
+DEBUG: Python function autotools_aclocals finished
+DEBUG: Executing shell function do_configure
+automake (GNU automake) 1.16.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv2+: GNU GPL version 2 or later <https://gnu.org/licenses/gpl-2.0.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Tom Tromey <tromey@redhat.com>
+       and Alexandre Duret-Lutz <adl@gnu.org>.
+AUTOV is 1.16
+NOTE: Executing ACLOCAL="aclocal --system-acdir=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot/usr/share/aclocal/ --automake-acdir=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot-native/usr/share/aclocal-1.16" autoreconf -Wcross --verbose --install --force --exclude=autopoint,autoheader -I /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/buildlib/ -I /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot-native/usr/share/aclocal/
+autoreconf: Entering directory `.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --system-acdir=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot/usr/share/aclocal/ --automake-acdir=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot-native/usr/share/aclocal-1.16 -I /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/buildlib/ -I /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot-native/usr/share/aclocal/ --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: AM_GNU_GETTEXT is used, but not AM_GNU_GETTEXT_VERSION
+autoreconf: configure.ac: not using Libtool
+autoreconf: running: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot-native/usr/bin/autoconf --include=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/apt-1.2.31/buildlib/ --include=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot-native/usr/share/aclocal/ --force
+autoreconf: configure.ac: not using Automake
+autoreconf: running: gnu-configize
+autoreconf: Leaving directory `.'
+NOTE: Running ../apt-1.2.31/configure  --build=x86_64-linux 		  --host=arm-poky-linux-gnueabi 		  --target=arm-poky-linux-gnueabi 		  --prefix=/usr 		  --exec_prefix=/usr 		  --bindir=/usr/bin 		  --sbindir=/usr/sbin 		  --libexecdir=/usr/libexec 		  --datadir=/usr/share 		  --sysconfdir=/etc 		  --sharedstatedir=/com 		  --localstatedir=/var 		  --libdir=/usr/lib 		  --includedir=/usr/include 		  --oldincludedir=/usr/include 		  --infodir=/usr/share/info 		  --mandir=/usr/share/man 		  --disable-silent-rules 		  --disable-dependency-tracking 		  --with-libtool-sysroot=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot  --disable-static  ac_cv_lib_bz2_BZ2_bzopen=no ac_cv_lib_lz4_LZ4F_createCompressionContext=no ac_cv_lib_lzma_lzma_easy_encoder=yes --enable-nls 
+configure: WARNING: unrecognized options: --disable-silent-rules, --disable-dependency-tracking, --with-libtool-sysroot, --disable-static
+configure: loading site script /home/bishoy/Desktop/sources/poky/meta/site/endian-little
+configure: loading site script /home/bishoy/Desktop/sources/poky/meta/site/arm-common
+configure: loading site script /home/bishoy/Desktop/sources/poky/meta/site/arm-32
+configure: loading site script /home/bishoy/Desktop/sources/poky/meta/site/common-linux
+configure: loading site script /home/bishoy/Desktop/sources/poky/meta/site/common-glibc
+configure: loading site script /home/bishoy/Desktop/sources/poky/meta/site/arm-linux
+configure: loading site script /home/bishoy/Desktop/sources/poky/meta/site/common
+configure: loading site script /home/bishoy/Desktop/sources/meta-openembedded/meta-networking/site/endian-little
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... arm-poky-linux-gnueabi
+checking target system type... arm-poky-linux-gnueabi
+checking for arm-poky-linux-gnueabi-gcc... arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot accepts -g... yes
+checking for arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot option to accept ISO C89... none needed
+checking for library containing strerror... none required
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+checking whether we are using the GNU C++ compiler... yes
+checking whether arm-poky-linux-gnueabi-g++  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot accepts -g... yes
+checking how to run the C preprocessor... arm-poky-linux-gnueabi-gcc -E --sysroot=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security
+checking for arm-poky-linux-gnueabi-ranlib... arm-poky-linux-gnueabi-gcc-ranlib
+checking for arm-poky-linux-gnueabi-ar... arm-poky-linux-gnueabi-gcc-ar
+checking for library containing gethostbyname... none required
+checking for library containing connect... none required
+checking for grep that handles long lines and -e... /home/bishoy/Desktop/sources/poky/build/tmp/hosttools/grep
+checking for egrep... /home/bishoy/Desktop/sources/poky/build/tmp/hosttools/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking db.h usability... yes
+checking db.h presence... yes
+checking for db.h... yes
+checking if we can link against BerkeleyDB... yes
+checking for curl_easy_init in -lcurl... yes
+checking curl/curl.h usability... yes
+checking curl/curl.h presence... yes
+checking for curl/curl.h... yes
+checking for gzopen in -lz... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking for LZ4F_createCompressionContext in -llz4... (cached) no
+checking for BZ2_bzopen in -lbz2... (cached) no
+checking for lzma_easy_encoder in -llzma... (cached) yes
+checking lzma.h usability... yes
+checking lzma.h presence... yes
+checking for lzma.h... yes
+checking debian architecture... arm
+checking for statvfs... yes
+checking for struct statfs.f_type... yes
+checking for timegm... yes
+checking whether byte ordering is bigendian... (cached) no
+checking for missing socklen_t... no
+checking for h_errno... normal
+checking for getresuid... yes
+checking for getresgid... yes
+checking for setresuid... (cached) yes
+checking for setresgid... yes
+checking for ptsname_r... yes
+checking for doxygen... no
+checking for xsltproc... no
+checking for w3m... no
+checking for po4a... no
+checking for dot... NO
+checking for dot... no
+dirname: missing operand
+Try 'dirname --help' for more information.
+checking for getconf... /home/bishoy/Desktop/sources/poky/build/tmp/hosttools/getconf
+checking number of cpus... 8
+checking processor multiplier... 2
+checking number of processes to run during make... 16
+checking if arm-poky-linux-gnueabi-g++  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot -MD works... yes, for output
+checking whether make sets $(MAKE)... yes
+checking for a BSD-compatible install... /home/bishoy/Desktop/sources/poky/build/tmp/hosttools/install -c
+checking for a thread-safe mkdir -p... /home/bishoy/Desktop/sources/poky/build/tmp/hosttools/mkdir -p
+checking for a sed that does not truncate output... (cached) sed
+checking whether NLS is requested... yes
+checking for msgfmt... /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot-native/usr/bin/msgfmt
+checking for gmsgfmt... /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot-native/usr/bin/msgfmt
+checking for xgettext... /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot-native/usr/bin/xgettext
+checking for msgmerge... /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot-native/usr/bin/msgmerge
+checking for ld... arm-poky-linux-gnueabi-ld --sysroot=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot 
+checking if the linker (arm-poky-linux-gnueabi-ld --sysroot=/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/recipe-sysroot ) is GNU ld... yes
+checking for shared library run path origin... /bin/bash: ../apt-1.2.31/buildlib/config.rpath: No such file or directory
+done
+checking 32-bit host C ABI... yes
+checking for the common suffixes of directories in the library search path... lib,lib
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for bash... /bin/bash
+configure: creating ./config.status
+config.status: creating environment.mak
+config.status: creating makefile
+config.status: creating doc/Doxyfile
+config.status: creating include/config.h
+config.status: creating include/apti18n.h
+config.status: executing po-directories commands
+configure: WARNING: unrecognized options: --disable-silent-rules, --disable-dependency-tracking, --with-libtool-sysroot, --disable-static
+DEBUG: Shell function do_configure finished
+DEBUG: Executing python function do_qa_configure
+NOTE: Checking autotools environment for common misconfiguration
+NOTE: Checking configure output for unrecognised options
+DEBUG: Python function do_qa_configure finished
+DEBUG: Executing shell function autotools_postconfigure
+DEBUG: Shell function autotools_postconfigure finished

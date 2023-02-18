@@ -1,0 +1,15 @@
+PN: libidn2
+PV: 2.3.0
+PR: r0
+PKGV: 2.3.0
+PKGR: r0
+LICENSE: (GPLv2+ | LGPLv3) & GPLv3+
+DESCRIPTION_libidn2-locale-fur: Implementation of the Stringprep, Punycode and IDNA specifications defined by the IETF Internationalized Domain Names (IDN) working group.  This package contains language translation files for the fur locale.
+SUMMARY_libidn2-locale-fur: Internationalized Domain Name support library - fur translations
+RPROVIDES_libidn2-locale-fur: libidn2-locale fur-translation
+RRECOMMENDS_libidn2-locale-fur: virtual-locale-fur
+SECTION: libs
+PKG_libidn2-locale-fur: libidn2-locale-fur
+FILES_libidn2-locale-fur: /usr/share/locale/fur
+FILES_INFO: {"/usr/share/locale/fur/LC_MESSAGES/libidn2.mo": 4542}
+PKGSIZE_libidn2-locale-fur: 4542

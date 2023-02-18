@@ -1,0 +1,15 @@
+PN: libidn2
+PV: 2.3.0
+PR: r0
+PKGV: 2.3.0
+PKGR: r0
+LICENSE: (GPLv2+ | LGPLv3) & GPLv3+
+DESCRIPTION_libidn2-locale-eo: Implementation of the Stringprep, Punycode and IDNA specifications defined by the IETF Internationalized Domain Names (IDN) working group.  This package contains language translation files for the eo locale.
+SUMMARY_libidn2-locale-eo: Internationalized Domain Name support library - eo translations
+RPROVIDES_libidn2-locale-eo: libidn2-locale eo-translation
+RRECOMMENDS_libidn2-locale-eo: virtual-locale-eo
+SECTION: libs
+PKG_libidn2-locale-eo: libidn2-locale-eo
+FILES_libidn2-locale-eo: /usr/share/locale/eo
+FILES_INFO: {"/usr/share/locale/eo/LC_MESSAGES/libidn2.mo": 1005}
+PKGSIZE_libidn2-locale-eo: 1005
