@@ -1,4 +1,0 @@
-#!/bin/sh
-echo 'ERROR: /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native/usr/bin/ncursesw5-config should not be used, use an alternative such as pkg-config' >&2
-echo '--should-not-have-used-/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native/usr/bin/ncursesw5-config'
-exit 1

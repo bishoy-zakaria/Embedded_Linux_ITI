@@ -1,3 +1,0 @@
-glibc (>= 2.31+git0+d4b7559457)
-libnsl2 (>= 1.2.0+git0+4a062cf418)
-libtirpc (>= 1.2.6)

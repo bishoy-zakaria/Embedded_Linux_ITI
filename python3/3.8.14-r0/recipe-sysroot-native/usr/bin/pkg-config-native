@@ -1,7 +1,0 @@
-#! /bin/sh
-
-export PKG_CONFIG_PATH="/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native/usr/lib/pkgconfig:/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native/usr/share/pkgconfig"
-export PKG_CONFIG_LIBDIR="/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/python3/3.8.14-r0/recipe-sysroot-native/usr/lib/pkgconfig"
-unset PKG_CONFIG_SYSROOT_DIR
-
-pkg-config "$@"

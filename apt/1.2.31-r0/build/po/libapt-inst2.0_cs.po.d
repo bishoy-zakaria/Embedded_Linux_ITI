@@ -1,1 +1,0 @@
-/home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build/po/domains/libapt-inst2.0/cs.po : cs.po /home/bishoy/Desktop/sources/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/apt/1.2.31-r0/build/po/libapt-inst2.0.pot

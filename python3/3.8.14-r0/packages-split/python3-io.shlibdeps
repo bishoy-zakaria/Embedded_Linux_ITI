@@ -1,3 +1,0 @@
-glibc (>= 2.31+git0+d4b7559457)
-libcrypto (>= 1.1.1s)
-libssl (>= 1.1.1s)
